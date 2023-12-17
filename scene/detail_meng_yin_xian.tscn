@@ -1,0 +1,589 @@
+[gd_scene load_steps=29 format=3 uid="uid://tdguk2fr8fgd"]
+
+[ext_resource type="PackedScene" uid="uid://d3dikcgncjlkv" path="res://main/scene/DetailPage.tscn" id="1_v2lw7"]
+[ext_resource type="Texture2D" uid="uid://bao1y5gjpt2g1" path="res://main/assets/texture/mengyin/蒙阴景点图片/微信图片_202310261309025.jpg" id="2_c6q33"]
+[ext_resource type="Script" path="res://main/scene/detail_meng_yin_xian.gd" id="2_f2w7v"]
+[ext_resource type="Texture2D" uid="uid://cil1tsquuioll" path="res://main/assets/texture/mengyin/蒙阴景点图片/微信图片_202310261309024.jpg" id="3_2s7xo"]
+[ext_resource type="Texture2D" uid="uid://7p7qodiajgkr" path="res://main/assets/texture/mengyin/蒙阴景点图片/微信图片_202310261309023.jpg" id="4_hlpjb"]
+[ext_resource type="Texture2D" uid="uid://dh8g4o3kqu78h" path="res://main/assets/texture/mengyin/蒙阴景点图片/微信图片_202310261309022.jpg" id="5_yfjyd"]
+[ext_resource type="Texture2D" uid="uid://vn62xc2iarje" path="res://main/assets/texture/mengyin/蒙阴景点图片/微信图片_202310261309021.jpg" id="6_yejjg"]
+[ext_resource type="Texture2D" uid="uid://c27ixbgmtmdp3" path="res://main/assets/texture/mengyin/蒙阴景点图片/微信图片_20231026130902.jpg" id="7_8w5je"]
+[ext_resource type="FontFile" uid="uid://xi2gj0edmhup" path="res://main/assets/font/TitleSTZHONGS.TTF" id="8_7f0xl"]
+[ext_resource type="Texture2D" uid="uid://c5ud872b28i7q" path="res://main/assets/texture/mengyin/曹氏范.png" id="9_0idvp"]
+[ext_resource type="FontFile" uid="uid://bik6b8g3jwe5i" path="res://main/assets/font/simhei.ttf" id="9_rti5h"]
+[ext_resource type="FontFile" uid="uid://dv7hgtrm5wmj3" path="res://main/assets/font/msyhbd.ttc" id="10_5uff8"]
+[ext_resource type="Texture2D" uid="uid://dtdgdhjbk6qd3" path="res://main/assets/texture/mengyin/典故配图.png" id="11_n8jv7"]
+[ext_resource type="AudioStream" uid="uid://dcp2irjilbt5c" path="res://main/assets/sound/mengyin/愿亲人早日养好伤.mp3" id="13_r370y"]
+[ext_resource type="Shader" path="res://main/assets/shader/ColorCircleShader.gdshader" id="13_ubwni"]
+[ext_resource type="AudioStream" uid="uid://dq7agr24f8j01" path="res://main/assets/sound/mengyin/沂蒙小调王华买爹2.mp3" id="14_dex08"]
+[ext_resource type="Texture2D" uid="uid://d3jwqpwdjwhx8" path="res://main/assets/texture/icon/音乐.png" id="14_nnp6t"]
+[ext_resource type="AudioStream" uid="uid://ld2k011ercbm" path="res://main/assets/sound/mengyin/沂蒙小调王华买爹.mp3" id="15_iolxm"]
+[ext_resource type="FontFile" uid="uid://d2efdtbddu7o3" path="res://main/assets/font/STFANGSO.TTF" id="15_mhoj0"]
+[ext_resource type="AudioStream" uid="uid://b8gw5mxq5b00k" path="res://main/assets/sound/mengyin/沂蒙小调逛逛天运大商城.mp3" id="16_l02r5"]
+[ext_resource type="Texture2D" uid="uid://ufl2v3qngqkn" path="res://main/assets/texture/icon/白播放2.png" id="16_sdp45"]
+[ext_resource type="AudioStream" uid="uid://dqi13bsufdly8" path="res://main/assets/sound/mengyin/沂蒙山小调.mp3" id="17_l6mhm"]
+[ext_resource type="Texture2D" uid="uid://dcrvggb3j13tq" path="res://main/assets/texture/icon/白暂停.png" id="17_rrjjq"]
+[ext_resource type="AudioStream" uid="uid://clu7qoqkiu4ck" path="res://main/assets/sound/mengyin/沂蒙红嫂.mp3" id="18_xlnfc"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p3m6p"]
+shader = ExtResource("13_ubwni")
+shader_parameter/texture_size = Vector2(100, 100)
+shader_parameter/radius = 50.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gbkm1"]
+texture = ExtResource("16_sdp45")
+modulate_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n6s0t"]
+texture = ExtResource("16_sdp45")
+modulate_color = Color(0.282353, 0.282353, 0.282353, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nkc1t"]
+texture = ExtResource("17_rrjjq")
+modulate_color = Color(0, 0, 0, 1)
+
+[node name="DetailMengYinXian" instance=ExtResource("1_v2lw7")]
+script = ExtResource("2_f2w7v")
+ID = "MENGYINXIAN"
+
+[node name="TitleLabel" parent="TitleCanvasLayer/TitleHBoxContainer/TitlePanel" index="0"]
+text = "蒙阴县"
+
+[node name="ImgGridContainer" parent="ScrollContainer/WholeVBoxContainer/Imgs" index="0"]
+columns = 6
+
+[node name="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="0"]
+texture = ExtResource("2_c6q33")
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_2s7xo")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("4_hlpjb")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect4" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="3"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("5_yfjyd")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect5" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="4"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("6_yejjg")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect6" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="5"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("7_8w5je")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PlaceName" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Title_ButtonHBoxContainer" index="1"]
+text = "蒙阴县"
+
+[node name="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer" index="0"]
+text = "蒙阴历史文化"
+
+[node name="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer/HBoxContainer" index="1"]
+text = "	蒙阴县，隶属山东省临沂市，位于山东省中南部、临沂市西北部，地处泰沂山脉腹地、蒙山之阴；东邻沂水、沂南县，西靠新泰市，南依蒙山与费县、平邑县交界，北与沂源县接壤。根据第七次人口普查数据，截至2020年11月1日零时，蒙阴县常住人口为485252人 。
+	蒙阴县西汉初建县，因在蒙山之阴而得名，隶属兖州泰山郡。西晋末，因战乱废县。元皇庆二年（1313年），重建蒙阴县。1953年8月，属临沂地区。1994年12月，临沂撤地设市，仍属临沂市 。蒙阴县被命名为第二批“绿水青山就是金山银山”实践创新基地 、第二批国家农产品质量安全县、 第二批节水型社会建设达标县（区） 、国家园林县城 等。
+	2021年，蒙阴县实现地区生产总值195.87亿元，增长7.8%；一般公共预算收入11.4亿元，增长7.1%；固定资产投资87.7亿元，增长12.1%；社会消费品零售总额79.2亿元，增长16.2%；居民人均可支配收入28808元，增长9.3%
+	西汉初建县，因在蒙山之阴而得名，隶属兖州泰山郡。王莽篡位后，曾改称蒙恩县。东汉初，地属盖、牟二城。三国魏，复置蒙阴县，属徐州琅邪郡。西晋末，因战乱废。北魏时，于蒙阴地置新泰县，属南青州东安郡。东魏时，东安郡之新泰县改称蒙阴县，仍属东安郡。北齐，将蒙阴县并入东泰山郡之新泰县。隋、唐五代至南宋景定初年（1262年），蒙阴地域属新泰县。南宋景定三年（1262年），蒙阴地又由新泰县划入沂水县，称新泰镇（旧蒙阴县志叫新寨镇）。元皇庆二年（1313年），重建蒙阴县，属益都路莒州。另据《重建蒙阴县碑》载，重建蒙阴县为元延佑二年（1315年）。明洪武二年（1369年），属青州府。清雍正八年（1730年），改属莒州。雍正十二年（1734年），属沂州府。民国二年（1913年），废府设道，蒙阴县属岱南道。民国三年（1914年），蒙阴县属济宁道。民国十四年（1925年），改属琅琊道。民国十七年（1928年），废道，直属于省。民国二十五年（1936年），属山东省第三区行政督察专员公署。民国三十年（1941年）9月，将原蒙阴县的大部分地区划为新蒙县、泰宁县、博莱县。蒙阴县属鲁中区二专区。民国三十二年（1943年）3月，蒙阴县撤销，同年9月恢复，仍属二专区。民国三十六年（1947年），蒙阴县更名为灵甫县。1949年，恢复原名。1949年7月，属沂蒙专区。1950年6月，改属沂水专区。1953年8月，属临沂地区。1994年12月，临沂撤地设市，仍属临沂市。
+	蒙阴县方言，属北方方言，语音接近普通话。与普通话的差异主要表现在语音方面，语汇方面有其特色，但差异不大 。
+	戏剧曲艺戏剧是该县人民喜爱的艺术形式之一。清末、民初，民间就有小型戏班，除演传统戏剧外，还自编有关当地题材的剧目，如《串龙珠》反映公某行霸，官逼民反；《月河记》反映奸情谋杀案件；《宋天王大闹狮子山》反映宋家榛子崖村宋玉恒带领群众抗拒官府砍伐山林案件。这些剧目上演后，深得人民喜爱。全县流行的剧种，主要有：山东梆子、京剧、豫剧和弦子戏、吕剧、话剧、歌剧等 。艺在全县较为流行，也是群众喜闻乐见的艺术形式之一。流行曲种有：评书、渔鼓、山东琴书、山东快书、柳琴、河南坠子等。革命战争年代，解放区的说唱文学，作为“团结人民，打击敌人”的锐利武器，在现实斗争中发挥着重大作用。如普遍流行的“山东快书”《大战岱崮山》、《二曹大闹蒙阴城》、《击毙张灵甫》等，都生动活泼地达到了文艺为政治服务的目的 。
+	名胜古迹播报编辑2022年，蒙阴县A级景区达19个，其中，5A级景区1个、4A级景区2个、3A级景区5个、2A级景区11个；省级旅游强镇4个、省级旅游特色村17个，省级工、农业旅游示范点18个，省级景区化村庄21个，国家级乡村旅游重点村2个，省级乡村旅游重点村4个，省级“好客人家”农家乐258户。全年接待游客769.3万人次，实现旅游总收入69.24亿元。 蒙山国家森林公园蒙山国家森林公园（蒙山云蒙景区）地处蒙阴县南部，蒙山山脉北侧，现为国家AAAAA级旅游区，国家森林公园、国家地质公园 。景区面积5.5万亩，包括蒙山瀑布、雨王庙、云蒙峰、百花峪、老龙潭、望海楼6个景区，最有名的有蒙山叠翠、叠瀑、云海、日出、林海花潮、赏涛观瀑、蒙山秋色、雪山玉谷8大景观。1993年被省林业厅批准为省级森林公园，2005年被评为“山东十大最美的地方”第二名和国家级地质公园 [11]。杏山溶洞杏山溶洞位于蒙阴县城南部10千米处的桃墟镇杏山村。此洞是杏山村民在1994年1月6日修建房屋采石时发现的，并已于1994年12月17日正式向游人开放 [11]。孟良崮孟良崮旅游区，位于山东省蒙阴县垛庄镇驻地，距县城28千米，是全国红色旅游经典景区、国家森林公园、国家3A级旅游区、全国爱国主义教育基地、山东省传统教育基地。孟良崮旅游区是集国防教育、军事体验、旅游观光为一体的大型旅游景区。主要有孟良崮战役纪念馆、孟良崮战役纪念碑、山上军事公园、孟良崮国家级森林公园等景点。 [11]云蒙湖云蒙湖，位于蒙阴县城东15千米，它占地4200公项，蓄水7.82亿立方米，坝高29.8米，坝长1665米，流域面积160公顷，灌溉面积10.7万公顷，每年平均向下游供水3.79亿立方米，为山东省第二大人工湖，中国北方大型人工湖之一。中山寺中山寺，位于蒙阴县城东部的坦埠镇驻地西北2.5千米处，距县城30千米。建于唐朝，因座落在中山之阳的林荫之中，故名。该寺规模宏大，鼎盛时期有僧人500余人，年年有盛会，乡乡有客来。“中山晚照”是蒙阴古八景之一。唐朝诗人白居易和宋朝文学家苏轼曾到此游览，并留有诗句。主要有大雄宝殿、文昌殿、古槐、古柏和银杏树群等景点。 [11]地下银河地下银河，位于蒙阴县城西北6千米（蒙阴县完庄）处，是一处溶洞景观。溶洞全长10000余米，分上、中、下三层，是山东省发现的最大的、保存最完整的地下自然景观。溶洞形成于始新纪时期地壳运动，距今约一亿两千万年左右，是中国钟乳发育最丰富的溶洞，典型的喀斯特岩溶地貌奇观。
+	蒙阴县文物胜迹分布图著名人物播报编辑历史名人刘洪字元卓，东汉末年天文学家和历算学家。秦山郡蒙阴人。刘洪撰成《九章算术注》。在此基础上，还发明了“正负数珠算”。因此被后人称为“珠算”的早期奠基人、“算圣”。蒙恬秦武将，蒙阴县人，故里在蒙阴县城西南7.5千米处的边家城子村。被秦始皇封为秦国将领、内史。秦统一六国后，率兵北击匈奴，并筑长城，修直道。公元前210年，秦始皇巡游途中病死；秦二世胡亥赐蒙恬自杀。李奈字时珍，蒙阴李家保德村人，生于书香之家，善书法，工诗词。1427年中进士，初任行人。后任南京监察御史、陕西布政司左参议。景泰年间（1450—1456），辞官故里，著有《春秋管窥》一书行世。公鼐字孝与，号周庭，今山东蒙阴县人。明代著名文学家、诗人，明朝万历前期“山左三大家”之一。官至礼部右侍郎兼翰林院侍读学士、协理詹事府詹事、两朝实录副总裁、赠礼部尚书，谥“文介”。
+	张垫蒙阴县人，热心教育事业，曾变卖家产，兴办义学。建起书堂5间，名“北麓书院”。穷苦人家的子弟，一律免收学费。人们尊称他为张子 。
+	革命模范刘晓浦亦名刘太和、刘昱厚、刘小浦。蒙阴县垛庄镇垛庄村人。早年在济南求学，后考入江苏南通实业纺织学校。多次走向街头、集市，宣传革命思想，揭露帝国主义及其走狗的残暴行径，1931年4月5日，刘晓浦在济南英勇就义。刘一梦原名刘增容，刘晓浦的侄子，参加革命后化名刘一梦、刘大觉。革命作家。早年在临沂五中上学，毕业后考入南京金陵大学文学系，后转上海大学社会系。他经常以“一梦、大觉”为笔名发表文章抨击旧社会的黑暗。曾任山东省团省委书记。他在“四五”惨案中被国民党反动军阀韩复榘枪杀于济南，年仅26岁。娄家骃蒙阴县岱崮镇井旺庄人，出身于地主家庭。17岁时到济南军事教战所求学。不久，娄家骃到陕西当兵，从班长升到代理团长。1933年9月，他率队参加并负责指挥了由中共新泰县委组织的龙须崮暴动。12月，县长张尊孟把娄家骃杀害于城东河滩。垛庄四大娘彭大娘、韩大娘、段大娘、李大娘，真名分别叫杨松桂、谢德甫、张新民、吴金凤，都是蒙阴县垛庄镇垛庄村人。抗日战争时期，这四位大娘先后于1938年和1939年加入中国共产党，并分别担任妇救会长、副区长、副乡长等职。有时部队人数多，且分属几个部队，给养需要量很大。她们便组织各村将摊好的煎饼各按数量、时间送到指定地点；她们也及时将做好的500双鞋交给了八路军部队。沂蒙六姐妹1947年6月10日，《鲁中大众报》以《妇女支前拥军样样好》为题，报道了蒙阴县野店乡烟庄村张玉梅、伊廷珍、杨桂英、伊淑英、冀贞兰、公方莲6人。她们组织妇女、儿童抢运粮食、子弹和马草。先后烙了5000斤粮食的煎饼、筹运草料5000斤、运送子弹24箱、洗军衣800多身、做军鞋300多双、募捐鸡蛋450个的模范事迹。从此，“沂蒙六姐妹”的事迹传遍了沂蒙山区，传遍了山东，传遍了全国。"
+
+[node name="DetailVBoxContainer2" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="3"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_7f0xl")
+theme_override_font_sizes/font_size = 35
+text = "典故——解放蒙阴城"
+
+[node name="ImgHBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2" index="1"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+
+[node name="CaoshifanVBoxContainer" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2/ImgHBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Cao_Portriate" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2/ImgHBoxContainer/CaoshifanVBoxContainer" index="0"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("9_0idvp")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2/ImgHBoxContainer/CaoshifanVBoxContainer" index="1"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_5uff8")
+theme_override_font_sizes/font_size = 30
+text = "曹世范画像"
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2/ImgHBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("11_n8jv7")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2" index="2"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_rti5h")
+theme_override_font_sizes/font_size = 16
+text = "	“春天来了万物都发青呀，咱们根据地家家忙春耕啊。有主力和民兵，攻打蒙阴城……机枪扫、炸弹轰，我军去冲锋，激战两昼夜收复了蒙阴城……”这首歌在1945年春我军解放蒙阴城后，曾响彻蒙山，唱遍汶水，激动过无数人的心扉，鼓舞了无数人的斗志。时至今日，在我们拜访当年参加过收复蒙阴山城战斗的老英雄时，他们总是情不自禁地唱起这首歌，歌声把我们的话题带到那烽火连天的岁月。
+	1939年6月日军占据蒙阴城后，构筑工事，建立伪政权，扩充伪军，使蒙阴城成为安扎在沂蒙山区的一个中心据点和残酷“扫荡”根据地的屯兵基地。
+为彻底解放沂蒙山区，扩大抗日根据地，准备对日大反攻，1945年3月初，八路军鲁中军区决定由一、四、九、十一共4个团和地方武装发起解放蒙阴城的战斗，一团担任主攻。鲁中军区司令员王建安亲临前线指挥，蒙阴党政军民踊跃参战支前，誓从侵略者手中夺回被蹂躏6年之久的山城。驻守蒙阴城的有日军一个加强小队50余人，伪军12个中队1200余人。该城经日伪军多年经营，城防巩固，碉堡林立，且配备了强大的交叉火力，易守难攻。按照预定的作战部署，鲁中军区一团侦察英雄曹世范、曹凤洲在内线人员接应下，事先进入城内，于3月8日晚10时将日军驻守的西城门炸了一个窟窿。惊天动地的爆炸声揭开了解放山城的序幕！我攻击部队秘密接近西门的部署未能实现，攻城时间推迟。曹世范是位智勇双全的侦察英雄，左臂负伤致残，曾凭着一只手带1名通讯员打退两连伪军的围攻，被八路军山东军区政治部主任肖华誉为“单手英雄”。曹凤洲是一位机警善战的班长。“二曹”发现情况有变，果断行事，借炸毁西门、日伪军混乱之机，大闹蒙阴城。他们二人身着伪军服，手提匣子枪，在西城门内大喊：“八路军进城啦，快去救援！”然后在黑暗中趁机向混乱中的伪军开火，正处于高度紧张中的伪军立即无目标地射击。当伪军向西门集中时，他们又在南门大喊：“八路军进城啦！”趁机又打几枪。日伪军在他们的指挥下，时而拥到西门，时而奔向南门，时而互相射击，在慌乱混战中度过了惊恐地一夜。天亮后，“二曹”在内线关系的掩护下，乔装打扮，大摇大摆地出了城，向首长汇报了大闹蒙阴城的经过，受到高度赞扬。9日上午，新泰日军两个小队向蒙阴增援，被我四团预伏部队俘虏1名，余者全歼。而城周围的店子、南官庄、常路等7个伪据点及外围工事当天被我十一团和蒙阴县独立营等全部扫清。
+	攻占西门是攻城战斗的关键。西门城楼是全城的制高点，由日军驻守，它与西北、西南两个炮楼形成交叉火力，与城里中心碉堡遥相呼应，易守难攻。9日晚7点半，一团一营主攻西门。我炮兵将山炮推至西门80米处，抵近射击，首发命中城门上的炮楼，一营指战员冒枪林弹雨猛烈地进攻。三连担负攻占西门的突击任务。战前，全连指战员都写下了决心书，干部、党员毅然交出了随身携带的文件、笔记本等，表示誓死攻下西城门的决心。两军相遇勇者胜，五班的勇士倒下去，六班的勇士冲上来，六班的勇士倒下去，七班的勇士们又冲上来。勇士们的身躯铺成了冲锋的道路，烈士的鲜血染红了城墙。经过血战我军突击部队终于控制了西门城楼。一连随即冲进了城里，经过一场激烈的厮杀，消灭了大部日军。同时，一团三营和十一团分别攻进了东门和北门。10日拂晓战斗胜利结束。战场上躺卧着狼籍不堪的敌尸，堆放着缴获的大批物资，被俘的8名日军、956名伪军和伪县长唐耘三、伪县大队长石绍武在我威严的支前民兵押解下垂头丧气地向城外走去。   
+	当红日冉冉升起，一道道缤纷多彩的霞光辉映着解放了的山城时，从济南飞来两架日军飞机，绕着山城转了两圈，投了两颗炸弹，打了几梭机枪，无可奈何地溜走了。1999年10月，中共蒙阴县委、蒙阴县人民政府将其遗址公布为县级重点文物保护单位。2015年1月，临沂市人民政府将其公布为临沂市第一批重点抗日战争遗址。时光易逝，人生易老。革命历史是不能忘的，战斗中革命先辈展现的无畏精神是我们宝贵的精神财富，将永远是激励我们继续前进不竭的动力源泉！"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer3" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="4"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_7f0xl")
+theme_override_font_sizes/font_size = 35
+text = "蒙山传说"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3" index="1"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_rti5h")
+theme_override_font_sizes/font_size = 16
+text = "	传说，古时候在魏巍的蒙山上，居住着两位隐姓埋名的修道人。蒙山顶峰前向阳处有一座“朝阳洞”，里面住着一位婆婆。蒙山山脚下的人们都叫她大山奶奶。大山奶奶天天在洞里打坐，诵经奉佛。蒙山顶峰东首有一洞乃叫“水帘洞”，里面住着一位禅师，自称王禅。他天天在洞内修炼，研习天文地理、阴阳八卦、奇门遁甲以及部兵摆阵的“兵部战策”。
+	一曰清晨，大山奶奶在洞内打坐，天宫里的王母娘娘驾临蒙山，赏珍玉百块。这日大山奶奶将珍玉放入水中冲洗干净，拿到洞外的石崖之上瞭晒，王禅云游路过此处，看罢分外眼红，立即施展法术，轻轻地将宝贝摄入袖中，变化一阵清风而去。
+	王禅回到洞中，觉得大有不妥之处，遂欲归还珍玉，无奈大山奶奶己动怒，弃蒙山前往泰山定居，珍玉抛落山下，凡落到的地方，山坡地貌，都象征珍玉内里的纹理图案，已变成宝地，形成村庄。山下过着游牧打猎流动生活的民众，到珍玉降落的风水宝地落脚谋生，按照珍玉纹理所形成的地理特点，起上了村庄的名字。这就由珍玉形成山略地理图形，变成了蒙山山下的珍略村庄。
+	托塔天王李靖又命万年老龟飢在蒙峰之上护山，龟头向西，龟尾向东，和岩石连为一体。自此，蒙山顶峰便叫“龟蒙顶”，那巨龟的灵气罩住蒙山，云雾缭绕。"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer4" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="5"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_7f0xl")
+theme_override_font_sizes/font_size = 35
+text = "“东住佛和西住佛”的传说"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4" index="1"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_rti5h")
+theme_override_font_sizes/font_size = 16
+text = "	东西住佛的故事蒙阴县城西北有一条岭,岭东边有个庄叫东住佛,龄西边有个庄叫西住佛。
+	其实原先这两个庄是叫东嘱尉、西嘱咐。早年,蒙阴城有个老汉,他武艺高强,刀枪拳棒样样皆通,尤其擅长枪法。一杆枪使起来银光闪闪如怪蟒出洞,变化莫测。因此,不少人拜他为师,学练武艺有个小伙子叫王七,也在他门下学武。
+	王七能吃苦,不惜力气,五年之后,枪法就很有些功夫了。挺枪一扎,能穿透八张生牛皮。王七渐渐骄傲起来,以为自已了不起了。
+	老汉常说他:“年刀月棍一辈子的枪,这枪为百兵之帅,要真练好,得下一辈子功夫,切不可自满,否则要吃大亏的。”王七根本听不进老汉的话,反而在背后自称“大枪王”。话说这一天,王七要回家探亲,他辞别老汉,提了枪便上路了。
+	走到城西岭下,天色已晚,庄上的人说:这岭上条老狼,又凶又狡猾,已经伤过几条人命了,就连老练的猎人也拿它无办法。劝他住下,明天再走。王七却夸口说:“谁个不知道俺大枪王!有这杆枪,十几个人也近不了身,还怕一条狼!”
+	说完,乘着月色,上了岭。到了岭上,果然从乱树棵子里窜出一只杂毛乍起的老狼,朝王七扑来。组王七拉开架式,挺枪便刺,那老狼一扭腰闪过,接着转身又扑过来。王七用枪杆猛扎过去,老狼四爪一弹,腾空躲过,掉头又扑上来。就这样来来回回十几个回合,王七虽然没被狼扑着,可也没伤着狼。王七心里急躁起来,一枪紧起一枪,朝老狼扎去。老狼往后一跳,倚住一棵大树,象人一样直立起来。王七看这可是好机会,急忙用足力气,朝狼肚子狠狠扎去。说时迟那时快,枪尖眼看要扎上了,老狼却倒地一闪,这枪一下子扎进树身有半尺多深。王七急了用力拔枪,但已晚了,狼已扑了上来,咬住了他的喉第二天,王七被狼咬死的消息,在岭东岭西两个庄上传开了。人们又心疼又怪他太做,说:“唉,好个大枪王,斗不过岭上一条狼。”
+	老汉得知后,便来到岭上,拔下了扎在树上的长枪。一连在岭上守了好几天,终于等着了老狼。一见仇家,老汉就把手中的长枪一拧,扎了过去,老狼也不示弱,一窜一蹦地和老汉斗起来。老汉的枪法果然厉害,不出三五个回合,老狼就带了伤,老狼赶紧往树上一靠,又直立起来,还想用老办法骗老汉上当。 老汉一枪扎来,狼一闪,又扑上去。谁知老汉这一枪是个虚招,并没使足力气,他飞快将枪杆一转,乓一下,重重地击在老狼腰上,打得它趴在地上紧接着老汉飞步上前,“噗哧”一枪,把这只狡诈的野狼牢牢地钉在地上。老汉拖着死狼下了岭,岭东岭西两个庄的人纷纷赶来看,老汉对大伙说:“烦请各位父老告诉各位过往行人,对付山里凶残的野兽光凭武艺和气力不行,还要动脑子。王七不懂这一点,又骄傲轻敌,白白送了命,大家千万要记住这个教训。”从此,人们走到这里,无论是从东边来还是从西边来,两个庄的人都要用王七的事和老汉的活嘱咐行人。日子久了,人们就把东边的庄叫东嘱咐,把西边叫西嘱咐。后来演化为东西住佛村。"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer5" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="6"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_7f0xl")
+theme_override_font_sizes/font_size = 35
+text = "白马关和九女关的传说"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5" index="1"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_rti5h")
+theme_override_font_sizes/font_size = 16
+text = "	在蒙阴县南部县境横亘着百余里长的蒙山山脉，由东向西依次排列着紫荆关、九女关、白马关三个关口，将蒙阴县与南面的费县和西南面的平邑县分隔开来。紫荆关位于蒙山山脉主峰龟蒙顶东5公里处。沿龟蒙顶蜿蜒向西10公里，依次并列着九女关、白马关两个隘口。白马关和九女关之间相距5公里左右，分别紧紧地扼守着进出蒙阴县西南县境的南北、东西两条通道。出九女关向南，便进入平邑县境。出白马关向西，过平邑县境，可达泗水、兖州、曲阜、济宁…… 白马关和九女关都各自有着美丽的传说。
+	白马关，因附近有一巨石状似白马而得名。据当地老百姓传说，唐朝初年樊梨花征西期间，曾在白马关与守关总兵杨藩发生过激烈战斗，并最终在这里擒获杀死了杨藩。至今在白马关南侧有一个土丘，与周边的山体不一致，有着人工堆砌的特征，据说就是杨藩的坟墓。1983年春天，我当时是蒙阴县第一中学的高中学生，参加了学校文学社组织到曲阜孔府、孔庙、孔林的参观活动，在公共汽车上路过此处时，当时的历史老师冯德文先生曾讲过此事，可惜冯老师已经作古多年，具体情节无法再重现了。据当地老百姓讲，杨藩当时占据着白马关，其貌不扬，但是力大无穷，使一口金背大砍刀，有万夫不当之勇。因其父杨虎和樊梨花的父亲樊洪有交情，所以没出生前就和樊梨花指腹为婚，长大后樊梨花始终对他没有情意，宁死不嫁。后来樊梨花爱上了薛丁山，并嫁给薛丁山，后被薛丁山三次休回。杨藩一直深爱着樊梨花，而深恨薛家父子，认为他们和自己有夺妻之仇。后来，杨藩在白马关设计打败了薛丁山。薛丁山万般无奈之下，三请樊梨花出白马关破杨藩。杨藩摆下白虎阵，结果被樊梨花打破，自己也遭樊梨花生擒，后被樊梨花的义子薛应龙杀死。民间传说薛丁山、樊梨花本是天上玉帝身边的金童玉女，双双失手打碎天界器皿，玉帝大怒，欲杀二人，幸有南极老人求情，才改为贬到凡间，玉女含愧走出天宫，低头撞了五鬼星，便抱歉一笑，谁知五鬼星因此也随之下凡，纠缠玉女，五鬼星便是杨藩。
+	白马关村九女关，则是因为有九位女子曾在此安营扎寨占山为王而得名。有的传说，称这九位女子是玉皇大帝的九个女儿，因羡慕人间生活而偷偷下凡，经过九女关附近时，发现这里有九座山峰状若莲花，风景优美，民风淳朴，便留在九座山上，即九女山，守着九女关，保护着过往的客商和当地的村民。也有传说，称这九位女子都是附近苦大仇深的女子，被生活所迫，揭竿而起，拜在一个老先生门下个个练就了绝世的武艺，在九女山和九女关占山为王，劫富济贫，声势渐大。官兵多次久攻不下，便有人献了一个“美男计”，挑选了一个貌若潘安、精于心计、武艺超群的武将前往九女关破关。此人被“掳上”九女山后，极尽搬弄是非、挑拨离间之能，最终使九位女子人人心怀芥蒂、互相猜疑，该人又设毒计将九位女子逐一杀害，最后血洗了九女关和九女山。
+	九女关对于白马关和九女关的这些传说，我一直心怀疑义。但是，白马关和九女关历来是兵家必争之地却是一个不争的事实。从地理位置上看，春秋时期，此处即为鲁国、齐国、颛臾国（现在的平邑县境内）的交界之处。位于两关附近的王家村，上世纪八十年代曾在村南建有一个砖厂，取土烧砖的时候，曾多次挖出过箭镞、铠甲之物。抗日战争和解放战争时期，也曾在这里发生过多次战斗。据蒙阴县史料记载，1947年4月22日，泰蒙战役开始，华东人民解放军一部，于蒙山东麓紫荆关阻击北犯之敌军3个师，歼敌4000余人。另一部解放军扼守本县西南之九女关、白马关，阻击北犯增援泰安守军之国民党整编第七十一师，毙伤2000余人，胜利完成阻击任务。解放军某部四连荣获“白马关战斗连”光荣称号。在此次战斗中，战斗英雄魏来国一人就毙敌62人。"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SongName" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer/SongInfVBoxContainer" index="0"]
+text = "沂蒙红嫂"
+
+[node name="Music1HboxContainer2" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="8"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2" index="0"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="IconCenterContainer" type="CenterContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2" index="1"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2/IconCenterContainer" index="0"]
+material = SubResource("ShaderMaterial_p3m6p")
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+color = Color(0.905882, 0.666667, 0.482353, 1)
+
+[node name="MusicIconTextureRec" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2/IconCenterContainer" index="1"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = ExtResource("14_nnp6t")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SongInfVBoxContainer" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2" index="2"]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+
+[node name="SongName" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2/SongInfVBoxContainer" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "沂蒙山小调"
+
+[node name="Singer" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2/SongInfVBoxContainer" index="1"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("15_mhoj0")
+theme_override_font_sizes/font_size = 15
+
+[node name="Music2Button" type="Button" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2" index="3"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+size_flags_stretch_ratio = 1.5
+theme_override_styles/normal = SubResource("StyleBoxTexture_gbkm1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_n6s0t")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nkc1t")
+toggle_mode = true
+
+[node name="Music1HboxContainer3" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="9"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3" index="0"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="IconCenterContainer" type="CenterContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3" index="1"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3/IconCenterContainer" index="0"]
+material = SubResource("ShaderMaterial_p3m6p")
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+color = Color(0.905882, 0.666667, 0.482353, 1)
+
+[node name="MusicIconTextureRec" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3/IconCenterContainer" index="1"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = ExtResource("14_nnp6t")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SongInfVBoxContainer" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3" index="2"]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+
+[node name="SongName" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3/SongInfVBoxContainer" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "沂蒙小调逛逛天运大商城"
+
+[node name="Singer" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3/SongInfVBoxContainer" index="1"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("15_mhoj0")
+theme_override_font_sizes/font_size = 15
+
+[node name="Music3Button" type="Button" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3" index="3"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+size_flags_stretch_ratio = 1.5
+theme_override_styles/normal = SubResource("StyleBoxTexture_gbkm1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_n6s0t")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nkc1t")
+toggle_mode = true
+
+[node name="Music1HboxContainer4" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="10"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4" index="0"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="IconCenterContainer" type="CenterContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4" index="1"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4/IconCenterContainer" index="0"]
+material = SubResource("ShaderMaterial_p3m6p")
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+color = Color(0.905882, 0.666667, 0.482353, 1)
+
+[node name="MusicIconTextureRec" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4/IconCenterContainer" index="1"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = ExtResource("14_nnp6t")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SongInfVBoxContainer" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4" index="2"]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+
+[node name="SongName" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4/SongInfVBoxContainer" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "沂蒙小调王华买爹"
+
+[node name="Singer" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4/SongInfVBoxContainer" index="1"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("15_mhoj0")
+theme_override_font_sizes/font_size = 15
+
+[node name="Music4Button" type="Button" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4" index="3"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+size_flags_stretch_ratio = 1.5
+theme_override_styles/normal = SubResource("StyleBoxTexture_gbkm1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_n6s0t")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nkc1t")
+toggle_mode = true
+
+[node name="Music1HboxContainer5" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="11"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5" index="0"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="IconCenterContainer" type="CenterContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5" index="1"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5/IconCenterContainer" index="0"]
+material = SubResource("ShaderMaterial_p3m6p")
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+color = Color(0.905882, 0.666667, 0.482353, 1)
+
+[node name="MusicIconTextureRec" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5/IconCenterContainer" index="1"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = ExtResource("14_nnp6t")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SongInfVBoxContainer" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5" index="2"]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+
+[node name="SongName" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5/SongInfVBoxContainer" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "沂蒙小调王华买爹2"
+
+[node name="Singer" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5/SongInfVBoxContainer" index="1"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("15_mhoj0")
+theme_override_font_sizes/font_size = 15
+
+[node name="Music5Button" type="Button" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5" index="3"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+size_flags_stretch_ratio = 1.5
+theme_override_styles/normal = SubResource("StyleBoxTexture_gbkm1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_n6s0t")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nkc1t")
+toggle_mode = true
+
+[node name="Music1HboxContainer6" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="12"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer6" index="0"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="IconCenterContainer" type="CenterContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer6" index="1"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer6/IconCenterContainer" index="0"]
+material = SubResource("ShaderMaterial_p3m6p")
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+color = Color(0.905882, 0.666667, 0.482353, 1)
+
+[node name="MusicIconTextureRec" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer6/IconCenterContainer" index="1"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = ExtResource("14_nnp6t")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SongInfVBoxContainer" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer6" index="2"]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+
+[node name="SongName" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer6/SongInfVBoxContainer" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "愿亲人早日养好伤"
+
+[node name="Singer" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer6/SongInfVBoxContainer" index="1"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("15_mhoj0")
+theme_override_font_sizes/font_size = 15
+
+[node name="Music6Button" type="Button" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer6" index="3"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+size_flags_stretch_ratio = 1.5
+theme_override_styles/normal = SubResource("StyleBoxTexture_gbkm1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_n6s0t")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nkc1t")
+toggle_mode = true
+
+[node name="Audio1StreamPlayer" parent="Musics" index="0"]
+stream = ExtResource("18_xlnfc")
+
+[node name="Audio1StreamPlayer2" type="AudioStreamPlayer" parent="Musics" index="1"]
+stream = ExtResource("17_l6mhm")
+
+[node name="Audio1StreamPlayer3" type="AudioStreamPlayer" parent="Musics" index="2"]
+stream = ExtResource("16_l02r5")
+
+[node name="Audio1StreamPlayer4" type="AudioStreamPlayer" parent="Musics" index="3"]
+stream = ExtResource("15_iolxm")
+
+[node name="Audio1StreamPlayer5" type="AudioStreamPlayer" parent="Musics" index="4"]
+stream = ExtResource("14_dex08")
+
+[node name="Audio1StreamPlayer6" type="AudioStreamPlayer" parent="Musics" index="5"]
+stream = ExtResource("13_r370y")
+
+[connection signal="toggled" from="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer/Music1Button" to="." method="_on_music_1_button_toggled"]
+[connection signal="toggled" from="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2/Music2Button" to="." method="_on_music_2_button_toggled"]
+[connection signal="toggled" from="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3/Music3Button" to="." method="_on_music_3_button_toggled"]
+[connection signal="toggled" from="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4/Music4Button" to="." method="_on_music_4_button_toggled"]
+[connection signal="toggled" from="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5/Music5Button" to="." method="_on_music_5_button_toggled"]
+[connection signal="toggled" from="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer6/Music6Button" to="." method="_on_music_6_button_toggled"]

@@ -1,0 +1,1158 @@
+[gd_scene load_steps=46 format=3 uid="uid://dogsbkq8dxgut"]
+
+[ext_resource type="PackedScene" uid="uid://d3dikcgncjlkv" path="res://main/scene/DetailPage.tscn" id="1_m23v8"]
+[ext_resource type="Texture2D" uid="uid://dwk0g8fq5kq25" path="res://main/assets/texture/zaozhuang/台儿庄区/台儿庄古城照片/54d54a3b4fb72bff4ab78bc0cebd2613_t01b8b303c8c2cb5aea.png" id="2_ncq3s"]
+[ext_resource type="Script" path="res://main/scene/detail_zao_zhuang_shi.gd" id="2_r75f1"]
+[ext_resource type="Texture2D" uid="uid://b0hj3h3qwpcr8" path="res://main/assets/texture/zaozhuang/台儿庄区/台儿庄古城照片/42518aa6c95d778138ef1e6143c43094_t012ea76e1aeff2b3f3.jpg" id="3_y65vq"]
+[ext_resource type="Texture2D" uid="uid://cjf1tjqeuplhf" path="res://main/assets/texture/zaozhuang/山亭区/八路军抱犊崮抗日纪念园/7a899e510fb30f24025f21510dca3b44ac4b0306.webp.jpg" id="4_k4v0t"]
+[ext_resource type="Texture2D" uid="uid://csg602kwf8tb1" path="res://main/assets/texture/zaozhuang/山亭区/八路军抱犊崮抗日纪念园/t01ad92df2e1ab29517.jpg" id="5_vqmo4"]
+[ext_resource type="Texture2D" uid="uid://bvaq6xa3ii7xk" path="res://main/assets/texture/zaozhuang/市中区/市中区图片/6e6f7f2ef1b5865113c336f51fdaad4f_791f-f321fe02a9f24834f4c560c2579c3447.jpg" id="6_fucov"]
+[ext_resource type="Texture2D" uid="uid://dphlvd2gvw5xe" path="res://main/assets/texture/zaozhuang/市中区/著名红色景点图片及介绍/国际洋行旧址/9780b67b85cb5af45e8c36dfc68f92fc_t011d87834cd5a91d76.jpg" id="7_da332"]
+[ext_resource type="Texture2D" uid="uid://dr0sojxtoybkb" path="res://main/assets/texture/zaozhuang/市中区/著名红色景点图片及介绍/枣庄革命烈士陵园/b1bf208abb560d7ee1a44b33a67aae00_29725.jpg" id="8_aa2ya"]
+[ext_resource type="Texture2D" uid="uid://dt3furr14r4u4" path="res://main/assets/texture/zaozhuang/薛城区/d5d4755c08de3425d62589dbfcae7255_app=25&f=JPEG&fm=173&fmt=auto&u=3658580623%2C1901294497_w=640&h=395&s=CC343DD3D8EF5A8C662969E10300A030.jpg" id="9_4rn4a"]
+[ext_resource type="FontFile" uid="uid://xi2gj0edmhup" path="res://main/assets/font/TitleSTZHONGS.TTF" id="10_21mli"]
+[ext_resource type="FontFile" uid="uid://bik6b8g3jwe5i" path="res://main/assets/font/simhei.ttf" id="11_rll7m"]
+[ext_resource type="Texture2D" uid="uid://bwu2btn54b6up" path="res://main/assets/texture/zaozhuang/台儿庄区/李宗仁纪念馆1.png" id="12_gwkwe"]
+[ext_resource type="Texture2D" uid="uid://bi6fot0parc4l" path="res://main/assets/texture/zaozhuang/台儿庄区/李宗仁纪念馆2.png" id="13_t531q"]
+[ext_resource type="Texture2D" uid="uid://ckk21y3awdsq1" path="res://main/assets/texture/zaozhuang/台儿庄区/贺敬之文学馆1.png" id="14_io7dx"]
+[ext_resource type="Texture2D" uid="uid://bappjvfwrxdjc" path="res://main/assets/texture/zaozhuang/台儿庄区/台儿庄战史陈列馆01.png" id="15_qlyxg"]
+[ext_resource type="Texture2D" uid="uid://c1qsvc1y3vv16" path="res://main/assets/texture/zaozhuang/台儿庄区/台儿庄大战纪念馆01.png" id="16_mff5x"]
+[ext_resource type="Texture2D" uid="uid://dqubqttc5qdgq" path="res://main/assets/texture/zaozhuang/台儿庄区/台儿庄大战纪念馆02.png" id="17_mb8ls"]
+[ext_resource type="Texture2D" uid="uid://djqjamja3rbar" path="res://main/assets/texture/zaozhuang/台儿庄区/台儿庄大战纪念馆03.png" id="18_gx7un"]
+[ext_resource type="Texture2D" uid="uid://b5vysh7ykluij" path="res://main/assets/texture/zaozhuang/台儿庄区/台儿庄大战纪念馆04.png" id="19_3hp7p"]
+[ext_resource type="Texture2D" uid="uid://ntrtf5qo81ax" path="res://main/assets/texture/zaozhuang/台儿庄区/台儿庄大战纪念馆05.png" id="20_7y5jm"]
+[ext_resource type="Texture2D" uid="uid://bwdubih62fjrh" path="res://main/assets/texture/zaozhuang/台儿庄区/台儿庄大战纪念馆06.png" id="21_wdb1g"]
+[ext_resource type="Texture2D" uid="uid://dq3mrys23lyht" path="res://main/assets/texture/zaozhuang/台儿庄区/台儿庄大战纪念馆07.png" id="22_olwo7"]
+[ext_resource type="Texture2D" uid="uid://bkxftg0rc4bee" path="res://main/assets/texture/zaozhuang/台儿庄区/台儿庄大战纪念馆08.png" id="23_kjybp"]
+[ext_resource type="Texture2D" uid="uid://dmub0pq3oexki" path="res://main/assets/texture/zaozhuang/台儿庄区/台儿庄大战纪念馆09.png" id="24_ft4vb"]
+[ext_resource type="Texture2D" uid="uid://ck21pnpevsfls" path="res://main/assets/texture/zaozhuang/台儿庄区/台儿庄大战纪念馆10.png" id="25_wcps1"]
+[ext_resource type="Texture2D" uid="uid://co4c863onwumk" path="res://main/assets/texture/zaozhuang/台儿庄区/台儿庄大战纪念馆11.png" id="26_wee1j"]
+[ext_resource type="Texture2D" uid="uid://diq7t0j0nxqau" path="res://main/assets/texture/zaozhuang/台儿庄区/台儿庄大战纪念馆12.png" id="27_os4eb"]
+[ext_resource type="Texture2D" uid="uid://btxljqp2tppjn" path="res://main/assets/texture/zaozhuang/台儿庄区/台儿庄大战纪念馆13.png" id="28_7trs2"]
+[ext_resource type="Texture2D" uid="uid://bkwpw6bb3atqt" path="res://main/assets/texture/zaozhuang/台儿庄区/台儿庄大战纪念馆14.png" id="29_ilr8f"]
+[ext_resource type="Texture2D" uid="uid://bo7sg5ex2ubty" path="res://main/assets/texture/zaozhuang/台儿庄区/台儿庄大战纪念馆15.png" id="30_3e44u"]
+[ext_resource type="Shader" path="res://main/assets/shader/ColorCircleShader.gdshader" id="32_fcgys"]
+[ext_resource type="Texture2D" uid="uid://d3jwqpwdjwhx8" path="res://main/assets/texture/icon/音乐.png" id="33_mbj48"]
+[ext_resource type="FontFile" uid="uid://d2efdtbddu7o3" path="res://main/assets/font/STFANGSO.TTF" id="34_l058v"]
+[ext_resource type="Texture2D" uid="uid://ufl2v3qngqkn" path="res://main/assets/texture/icon/白播放2.png" id="35_481do"]
+[ext_resource type="Texture2D" uid="uid://dcrvggb3j13tq" path="res://main/assets/texture/icon/白暂停.png" id="36_cca64"]
+[ext_resource type="AudioStream" uid="uid://cwvrxaaem21kc" path="res://main/assets/sound/zaozhuang/台儿庄区/中央人民广播电台,中学生合唱团 - 牺牲已到最后关头(齐唱).mp3" id="37_kgtcj"]
+[ext_resource type="AudioStream" uid="uid://0yjlrwel0jo7" path="res://main/assets/sound/zaozhuang/台儿庄区/刘鸿 - 血战台儿庄 （纪念为抗日战争献出生命的勇士）.mp3" id="38_3qpdr"]
+[ext_resource type="AudioStream" uid="uid://dp8r5yuet5tkv" path="res://main/assets/sound/zaozhuang/台儿庄区/群星 - 美丽的台儿庄.mp3" id="39_vrilt"]
+[ext_resource type="AudioStream" uid="uid://ddkep00hp2a71" path="res://main/assets/sound/zaozhuang/山亭区/群星 - 弹起我心爱的土琵琶.mp3" id="40_8fovy"]
+[ext_resource type="AudioStream" uid="uid://l5e0b7c4fcqh" path="res://main/assets/sound/zaozhuang/薛城区/群星 - 游击队之歌.mp3" id="41_japis"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p3m6p"]
+shader = ExtResource("32_fcgys")
+shader_parameter/texture_size = Vector2(100, 100)
+shader_parameter/radius = 50.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gbkm1"]
+texture = ExtResource("35_481do")
+modulate_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n6s0t"]
+texture = ExtResource("35_481do")
+modulate_color = Color(0.282353, 0.282353, 0.282353, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nkc1t"]
+texture = ExtResource("36_cca64")
+modulate_color = Color(0, 0, 0, 1)
+
+[node name="DetailZaoZhuangShi" instance=ExtResource("1_m23v8")]
+script = ExtResource("2_r75f1")
+ID = "ZAOZHUANGSHI"
+
+[node name="TitleCanvasLayer" parent="." index="1"]
+layer = 2
+
+[node name="TitleLabel" parent="TitleCanvasLayer/TitleHBoxContainer/TitlePanel" index="0"]
+text = "枣庄市"
+
+[node name="ImgGridContainer" parent="ScrollContainer/WholeVBoxContainer/Imgs" index="0"]
+columns = 8
+
+[node name="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="0"]
+texture = ExtResource("2_ncq3s")
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_y65vq")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("4_k4v0t")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect4" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="3"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("5_vqmo4")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect5" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="4"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("6_fucov")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect6" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="5"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("7_da332")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect7" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="6"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("8_aa2ya")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect8" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="7"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("9_4rn4a")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PlaceName" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Title_ButtonHBoxContainer" index="1"]
+text = "枣庄市"
+
+[node name="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer" index="0"]
+text = "山亭区——八路军抱犊崮抗日纪念园"
+
+[node name="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer/HBoxContainer" index="1"]
+text = "		路军抱犊崮抗日纪念园s1位于位于山东省枣庄市山亭区北庄镇双山涧村，占地6000平方米，是一处以红色革命历史教育培训、弘扬爱国主义精神、党的群众路线教育实践活动为主题的教育性纪念园。
+		建设历史：抱犊崮巍峨险峻，雄踞要冲，易守难攻，在伟大的抗日战争中，这里是我党在山东敌后的重要根据地之一。是早在1934年，中共苏鲁豫皖边区特委的郭子化、张光中、李韶九等同志，就以开药铺、办学校、打烧饼、卖油条等职业为掩护，成立了鲁南山区第一个农村党支部-大北庄党支部，开辟了抱犊崮山区党的工作，为以后抗日根据地的建立打下了雄厚的群众基础。1938年2月，毛泽东同志以战略家的眼光，提出了八路军主力部队进入山东、依托鲁南向徐海地区发展的设想。他决定:\"第115师全部向东出动\"，\"转入山东境内，并以鲁南山地为指挥根据地，发展至徐海南北\"。1938年冬，鲁南军分区司令员张光中派洪振海、王志胜出山到敌占区枣庄建立抗日武装，开展抗日斗争，洪振海、王志胜经过艰苦斗争于1940组建了铁道游击队。1939年6月毛泽东、党中央、中央军委及八路军总部指示:\"在敌人扫荡后，鲁南局面混乱，我应趁此机会将115师师部、686团及肖华-部开进鲁南，巩固根据地，并建立我党领导下的抗日民主政权\"。于是115师开始进入鲁南山区，罗荣桓、陈光同志于9月率八路军115师师部、686团到达抱犊崮山下的大炉，并把师部设在此地，11月20日成立了鲁南第一个县级红色政权--峄县抗日民主政府，县政府机关应驻在抱犊崮西侧的北庄镇南泉村，115师民运部长潘振武任第一任县长。
+在此，罗荣桓元帅确立了\"以抱犊崮为中心，向北向西连接大块山区，向南向东南发展大块平原\"的战略思想并顺利实施;成为鲁南第一个县级红色政权诞生地、八路军第115师司令部所在地、著名的\"翻边战术\"孕育地、指导山东抗战\"六字方针\" 的制定地、华中至太行山以致延安的唯一红色通道，是敌人闻风丧胆的铁道游击队的大后方和指挥部;她是插在日本侵略者脊梁上的一把钢刀，是华北连接华中根据地的枢纽，是胶东通往中央的秘密通道，号称山东的\"小延安\"。
+		1940年，鲁南人民代表大会在山亭的九子峪材隆重开幕，诞生了红色革命政权--鲁南专员公署。1943年8月，罗荣桓同志提出了打到敌人后方去的\"翻边战术\"。我军主动出击，先是击溃进犯鲁南的国民党91军，攻克柱子，全歼了惯匪刘黑七部，继之又打开阎村，击毙匪首申宪武，扫除了敌人盘踞在抱犊崮山区的大大小小的据点，使根据地党政军各项工作得到了顺利的开展。1945年解放滕县，终于取得了鲁南抗战的全面胜利。为了纪念八路军第115师的丰功伟绩，打造经典的爱国主义教育基地，八路军115师抗战纪念园的建成不仅是缅怀革命先烈、追忆抗战历史的纪念场所，还是开展群众路线教育实践活动和爱国主义教育的重要载体。
+		建筑布局：该园规划面积为300亩，总投资2000万元，计划分两期建设。一期工程于2013年9月开工建设，2014年8月1日正式开园，已投资约800万元，建筑面积近4600平方米，共建有八路军第115师纪念馆、115师政治部、115师司令部、王麓水纪念馆、鲁南区党委、鲁南行署、鲁南军区等七个历史展馆，主要展示八路军115师在鲁南的光辉历程和鲁南军民的抗日革命历史，重点展示八路军在鲁南践行群众路线，军民鱼水一家亲的血肉联系，军民同仇敌忾，战胜困难最后取得抗战胜利的丰功伟绩;还建有抱犊崮剧社、八路军抗日夜校、八路军被服厂、枪械所、八路军食堂、八路军军粮作坊等六个功能性场馆，主要具有文艺演出、影像播放、体验当年生产生活和营业性经营等功能。同时纪念园在节点上有机融入石碾、石磨等石器和粮囤、鏊子、农耕用品等鲁南民俗文化元素，达到了既展示抗战历史，又展现民俗文化的效果。根据自然地形，巧借山势，将山泉引入园区，形成了曲径通幽、水路同行、奇石遍布、浑然天成的自然泉石景观。另建设了八路军抱犊崮抗日纪念广场、哨所(碉堡)一处、大小亭子十余个、雕塑三组，并配备了游客服务中心及供水、供电等服务设施。
+		二期投资1200万元，建筑面积约6000平方米，主要建设八路军115师抗战根据地纪念碑、纪念广场和主题纪念馆等纪念场所，建设练兵场、打靶场、跑马场、涉水军事训练等体验活动区，修建吊桥、拦水坝、石桥、亭子等基础辅助设施。
+		地理位置：八路军抱犊崮抗日纪念园位于位于山东省枣庄市山亭区北庄镇双山涧村。
+		所获荣誉
+1、2011年4月，被国家发改委、中宣部、财政部等14部委列为全国百家红色旅游经典景区;
+2、2013年11月，被山东省科协、山东省财政厅评为三星级科普教育基地;
+3、2014年12月，被国家旅游局评定为国家3A级旅游景区;
+4、2014年12月，被山东省人民政府列为省级国防教育基地;
+5、2014年12月，被山东省文明委评为省级文明单位，正在积极申报国家级爱主义教育基地;
+6、2014年12月，被山东行政学院确定为\"教学科研基地\"。
+7、2015年8月24日，入选第二批100处国家级抗战纪念设施、遗址名录。
+"
+
+[node name="DetailVBoxContainer2" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="3"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_21mli")
+theme_override_font_sizes/font_size = 35
+text = "市中区简介"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2" index="1"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_rll7m")
+theme_override_font_sizes/font_size = 16
+text = "		市中区,隶属中国山东省枣庄市所辖的一个市辖区,坐立于枣庄市中部偏东其地理坐标为东经117°27'34”-117°4518”北纬34°4616”-34°57'59”北邻山亭区东靠兰陵县,西接薛城区南毗同峰城区。市中区下辖6个街道、5个镇,总面积280平方公里,截止到2016年总人口为55.96万人"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer3" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="4"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_21mli")
+theme_override_font_sizes/font_size = 35
+text = "市中区——国际洋行旧址"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3" index="1"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_rll7m")
+theme_override_font_sizes/font_size = 16
+text = "		“国际洋行”原名为“正泰洋行”，又城枣庄国际公司。他是1939年初日本侵略军占领枣庄后设的一家商行，以经营五金、布匹等日用百货为幌子，实际上是日本侵略军以退役军官为掩护而暗设的情报点，秘密从事间谍活动的大本营。
+		1938 年下半年，苏鲁人民抗日义勇总队东撤临沂、大炉地带，为及时掌握侵略枣日军情形，总队决定选派少数精干队员打入敌人心脏，进行抗日活动。三大队三中队排长洪振海、王志胜奉总队长张光中的指示，于 1938 年 10 月 5 日在枣庄火车站旁的陈庄设立了枣庄情报站。为了震摄侵枣日军，洪振海、王志胜决定趁敌人麻痹之际，将他们除掉。于是，在 1939 年 8 月的一天夜里，洪振海 3 人悄悄摸进洋行，开枪袭击正在熟睡的 3 名日本掌柜。这次夜袭洋行，将大掌柜、二掌柜击毙，三掌柜击伤，缴获长短枪各一支。
+		1940 年 1 月，苏鲁支队决定成立鲁南铁道游击队，由杜季伟任政委，洪振海为队长，王志胜为副队长。为了给侵枣日军以沉重的打击，他们决定再打洋行。1940 年 8 月下旬的一 夜里，洪振海、王志胜带领 32 名队员复袭洋行，击毙日军 13 名，翻译 1 名，缴获长短枪 6 支和物资一宗。鲁南铁道游击队夜袭国际洋行后声威大振，群众拍手称快，日本侵略军胆颤心惊。\"夜袭洋行\"的战斗故事，至今在人民群众中仍广为流传。
+		2006年，国际洋行旧址被公布为省级文物保护单位。
+"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer4" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="5"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_21mli")
+theme_override_font_sizes/font_size = 35
+text = "市中区——铁道游击队旧址"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4" index="1"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_rll7m")
+theme_override_font_sizes/font_size = 16
+text = "		铁道游击队旧址位于枣庄市市中区龙山街道办事处。年代为抗日战争时期。 2006年12月7日，铁道游击队旧址被山东省人民政府公布为山东省第三批省级文物保护单位。"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer5" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="6"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_21mli")
+theme_override_font_sizes/font_size = 35
+text = "市中区——枣庄革命烈士陵园"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5" index="1"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_rll7m")
+theme_override_font_sizes/font_size = 16
+text = "		为纪念各个历史时期为枣庄革命斗争和解放枣庄英勇献身的革命烈士，缅怀先烈业绩，教育子孙后代，加强社会主义精神文明建设，经中共枣庄市委、市人民政府批准，枣庄市革命烈士陵园于一九八七年九月筹建，一九八九年三月建成。
+		陵园座落在市区光明广场南侧，占地四十一点五亩，建筑面积九百多平方米。大门为仿古式建筑，恢弘雄伟，与纪念碑相映成辉，“枣庄革命烈士陵园”由著名诗人、原中宣部代部长、文化部部长贺敬之题词。陵园规划有序，环境幽雅，空气清新，经过近年来的绿化和建设，已初具规模。
+		陵园内建有“运河支队抗日烈士纪念碑”亭(怀烈亭)，占地九百平方米，碑亭为木制结构，仿古式建筑，亭高十0二米，周长一百一十米，纪念碑为青色花岗岩制作，庄重，古朴，深沉，体现了烈士的革命信念和革命意志。亭子四周地面和围栏由白色花岗岩砌成，寓意着烈士为了民族的解放事业无私无谓的高尚气节。碑亭四周有松柏和花桃，寓意着革命先烈的精神万古长青。大门东侧建有烈士事迹宣传栏，展示了枣庄各个历史时期的英模事迹及历史资料。
+		陵园南部为墓区，建有景点式公墓，安葬着“官地惨案”,解放枣庄战斗中及鲁南战役攻克枣庄战斗中牺牲的二百六十二名烈士遗骨;陵园东部先后投资五十余万元建有烈士碑廊，长30米，宽5米，并树有“青年战斗英雄”安保全、“爆破英雄”马立训等著名烈士墓碑，碑廊周围苍松翠柏，绿树常青，表达了人民对先烈的怀念之情。
+		广场南部耸立着由原全国政协主席李先念同志题词的卧式革命烈士纪念碑，碑长十五米，高0五米，外形壮观，气势雄伟。纪念碑寄托着人们对革命先烈无限的哀思和景仰之情;更可告慰先烈英灵，人们定会继承先烈遗志，完成先烈未竟事业。
+		自陵园建立以来，每年都有数万人民群众前往瞻仰，悼念，全力做好清明节祭扫及烈士纪念日活动，它既是枣庄人民缅怀先烈的场所，又是对后人进行爱国主义教育和革命传统教育的阵地，受到广大人民群众和各界人士的称赞。枣庄革命烈士陵园在各级领导和广大人民群众的关心支持下,坚持“褒扬先烈，教育后人”为宗旨，努力使陵园成为褒扬先烈的圣坛，人们游览的胜地。"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer6" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="7"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer6" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_21mli")
+theme_override_font_sizes/font_size = 35
+text = "台儿庄区——枣庄李宗仁纪念馆"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer6" index="1"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer6/HBoxContainer2" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("12_gwkwe")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer6/HBoxContainer2" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("13_t531q")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer6" index="2"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer6/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer6/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_rll7m")
+theme_override_font_sizes/font_size = 16
+text = "		枣庄李宗仁史料馆为国家AA级旅游景区。
+		李宗仁史料馆建在台儿庄老火车站旧址上，三面环水、风光秀丽、建筑风格独特，是座哥特式建筑，为当地的一大旅游景点。李宗仁史料馆由四个展室和一个影视厅组成。该馆以李宗仁先生一生“青春戎马，晚节奠花”和他指挥的著名台儿庄大战这一重大历史事件为主线，以大量翔实、珍贵的历史资料，全面介绍了李宗仁先生的一生，特别是挥师抗战御倭和回归祖国前后的爱国壮举。
+		馆内藏有李宗仁先生的各个历史时期的照片200余幅，文史资料1000余份，遗物和文物60余件，珍贵录相带一盘。所展示的这些内容具有极高的历史文物价值。均由李宗仁先生的第三夫人胡友松女士捐赠，属海内外首次展出的精品李宗仁史料馆是台儿庄大战遗址参观线的重要组成部分，是开展爱国主义教育，增进民族自信心的又一教育基地，是积极推进祖国和平统一大业，促进海峡两岸交流，团结全国人民的一部具体教材。
+地址：枣庄市台儿庄区康宁路8号（火车站遗址）
+用时参考：1小时
+交通：
+外部交通
+		1、在枣庄站有高铁与北京南站、上海虹桥、天津西站、南京南站、济南西站、青岛站、杭州站、徐州东站之间通行,上述地区的游客可以选择京沪高铁方便来往。枣庄西站有山东省内与省外主要省会城市的列车经过
+		2、枣庄市没有机场,可借道山东临沂机场、徐州观音机场、连云港白塔埠机场。从机场出来再转乘其他交通工具到台儿庄。有条件的游客还可自驾游
+内部交通
+		台儿庄本地公交票价一元，无人售票
+门票：10元
+开放时间：08:00-18:00
+		李宗仁（1891-1969）广西临桂人，汉族。字德邻。黄埔军校南宁分校总负责人。国民党高级将领，军事家，抗日名将，爱国人士。曾任中华民国副总统、代总统。1965年（74岁）从美国返回中国大陆。1969年逝世于北京。
+		宗仁和白崇禧人称「李白」。二人是国民党内最具实力的地方军事势力–桂系的中心，多年来一直合作无间。最初二人一同加入孙中山在广州的革命阵营，又联合一起驱赶广西的旧军阀。北伐时，率广西军队攻至山海关。北伐成功后，和蒋介石及其他地方势力多次开战；八年抗战爆发后，二人动员广西的军队抗击日军，合作指挥多场大战，并屡有胜果。
+		李宗仁早期概述早年就读于临桂县立两等小学，后入桂林省立纺织习艺厂当学徒。1908年 考入广西陆军小学第三期。1910年10月 加入同盟会。1912年考入广西陆军速成学堂。1913年秋毕业后，到南宁将校讲习所任准尉见习官、少尉、中尉队附。1916年 5月 任滇军第四师第三十四团排长。后转入桂系陆荣廷部，任护-第二军第五旅排、连，1917年秋提升营长。参加过护国战争、0战争和粤桂战争。
+		1921年 任少营长的李宗仁争取十多个连队和他一起退到六万大山的玉林地区，整军经武，伺机而动。他先后将所部改称“粤桂边防军第三路”、“广西自治军第二军”，并自任司令，防区逐步扩大到七个县。1923年 与广州孙中山大元帅府建立联系。10月 经李济深、陈铭枢介绍加入国民党。
+		1924年 联合黄绍竑、白崇禧等部，成立“定桂讨贼联军”，任总指挥。
+		9月 击败桂系军阀陆荣廷部。
+		11月 被孙中山任命为广西省绥靖督办公署督办兼广西陆军第一军军长。
+		1925年7月 又击败沈鸿英，完成统一广西的任务，成为新的国民党桂系军阀首脑。
+		统一广西后，任国民党广西省党务特派员和广西省第一届省党部监察委员。
+		1926年 1月 在国民党第二次全国代表大会上，当选为中央监察委员会候补委员。
+		3月 广西军队正式改编为国民革命军第七军，任军长，黄绍竑任-表。根据国民政府军事委员会的决定，负责筹办中央军事政治学校第一分校（即黄埔军校南宁分校）。
+		5月 南宁分校正式成立，派所部第七军第二旅旅长俞作柏兼任校长。
+北伐时期
+		1945年2月李宗仁将军于重庆1926年 7月 率第七军二万多人参加北伐战争，转战湘、鄂、赣、皖等省，立下战功。在北伐时期，还兼任过左翼军指挥官、江左军总指挥、国民党湖北省临时政治会议委员、安徽省政府主席、国民政府委员和国民政府军事委员会委员等职。
+		1927年 4月 支持蒋介石发动“四一二政变”，实行“-清党”。
+		5月 被蒋介石任命为第三路军总指挥，统辖五个军又一个独立师。
+		8月 和白崇禧、何应钦等实力派逼迫蒋介石通电下野，并由他们三人担任国民政府军事委员会党务委员。接着，指挥龙潭战役，消灭北洋军阀之一的孙传芳主力部队。
+		10月 任西征军总指挥兼第三路军总指挥，率部西征武汉，击败唐生智。
+		1928年 1月 蒋介石第二次上台后，被任命为中央陆军军官学校校务委员会委员、国民党中央政治会议武汉分会主席和第四集团军总司令，参加蒋介石举行的第二期北伐。
+蒋桂战争
+		1929年 3月 以李宗仁、白崇禧为首的桂系军阀与蒋介石之间爆发蒋桂战争。结果桂系战败，逃回广西。蒋介石以“叛乱-”的罪名，开除李宗仁党籍，免除本兼各职。
+		1929年 秋 李宗仁返回广西南宁，组建护党救-，自任总司令，白崇禧为前敌总指挥，下辖第三、八两路军，此后，长期盘踞广西，与蒋介石对抗。
+1930年 4月 参加冯玉祥、阎锡山反蒋，被推为中华民国陆军副总司令（总司令阎锡山）兼第一方面军总司令，由广西进军湖南，支援阎锡山、冯玉祥在中原同蒋介石作战。
+		7月 被蒋军击败，退回广西。
+		1931年 5月 李宗仁又联合粤系军阀陈济棠反蒋，任第四集团军总司令。
+“九·一八”事变后
+		“九一八事变”后，宁粤合流。在1931年11月召开的国民党第四次全国代表大会，当选为中央监察委员会委员。
+		1932年 4月 李宗仁任广西绥靖主任，推行“自治、自卫、自给”的三自政策，维持广西的半独立局面。
+		1935年 4月 被国民政府授予陆军一级上将军衔。
+		11月 继续当选为国民党五届中央监察委员会委员。
+		1936年 6月 李宗仁、陈济棠发动反蒋事变，成立抗日救-第一军团，任副总司令（总司令陈济棠），出兵湖南，要求北上抗日。
+		7月 桂系军队被蒋介石改编为第五路军，李宗仁被任命为总指挥。
+抗战时期
+		1937年 7月 抗日战争爆发。
+		10月 被任命为第五战区司令长官，驻节徐州。
+		1938年 2月至5月 指挥徐海会战。其中3月至4月的台儿庄战役，取得歼灭日军二万余人的重大胜利。1938年2月，兼任安徽省政府主席。5月，徐州失守后，率部入鄂，在桐柏山、大洪山创立游击基地，坚持抗战。
+		6月10月 率部参加武汉会战。
+		1939年 4月至5月 参加随枣会战。
+		1941年 1月至2月 参加豫南会战。
+		1943年 9月 调离第五战区，升任国民政府军事委员会委员长（蒋介石）汉中行营主任，负责指挥第一、第五、第十等三个战区。
+		1945年 5月 在国民党第六次全国代表大会上，继续当选为中央监察委员会委员。
+解放战争时期
+		1948年6月李宗仁和白崇禧将军(军装)解放战争时期，李宗仁担任国民政府军事委员会北平行营主任（后改称国民政府主席北平行辕主任），支持蒋介石发动全国规模的-反人民内战，参与对解放区的军事进攻。
+		1948年 4月 李宗仁当选为中华民国副总统（总统蒋介石）。辽沈战役、淮海战役、平津战役三大战役之后，国民党精锐主力部队大部被歼，国民党统治面临覆灭命运，蒋介石-于1949年1月21日宣布下野。
+		1949年 1月22 就任中华民国代总统。幻想通过“和谈”，阻止人民解放军渡过长江，派代表团到北平谈判，但最后又拒绝在中国共产党提出的和平条件《国内和平协定》上签字。
+		4月21日 毛泽东、朱德下达全国进军的命令，人民解放军百万大军横渡长江。
+		4月23日 人民解放军攻占南京，国民党反动统治被推翻。此后，先后退到桂林、广州，继续组织国民党军队进行顽抗。
+		11月 白崇禧指挥的桂系部队大部被歼，李在政治上赖以生存的条件被摧毁。
+晚年
+		11月20日 以就医为名，从南宁乘专机飞往香港。
+		12月 飞往美国。此后，在美国度过了十六年-生涯。
+		1950年 3月 蒋介石在台湾恢复“总统”职务。
+		1954年 3月，蒋介石正式罢免李宗仁“副总统”职务。
+		1956年 4月到1965年6月 十年间，先后五次派程思远到北京，晋谒周恩来总理，为回归祖国大陆作准备。
+		1965年7月 冲破重重险阻，偕妻回到祖国大陆。7月20日从美国回到北京，在机场发表声明，决定为完成国家最后统一做出贡献。回国后，受到毛泽东、刘少奇、周恩来、朱德等党和国家领导人接见。
+		1969年 1月30日 因肺炎在北京逝世。
+		李宗仁故居坐落在距桂林市约30公里的临桂县两江镇浪头村。
+		李宗仁史料馆建在台儿庄老火车站旧址上。
+"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer6/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer7" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="8"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer7" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_21mli")
+theme_override_font_sizes/font_size = 35
+text = "台儿庄区——贺敬之文学馆"
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer7" index="1"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+texture = ExtResource("14_io7dx")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer7" index="2"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer7/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer7/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_rll7m")
+theme_override_font_sizes/font_size = 16
+text = "		中国当代著名诗人、剧作家、原中宣部副部长、文化部代部长贺敬之同志祖籍为台儿庄贺窑村人，半个多世纪以来，辉煌的文学成就和始终如一的艺术主张，以及在我国新时期意识形态领域的卓越建树，有口皆碑，蜚声世界。
+		贺敬之柯岩文学馆坐落于风景秀丽的台儿庄古运河畔，整个建筑风格独特，古朴典雅。2015年扩建改造后展厅面积为1200平方米，分为贺敬之展厅和柯岩展厅，设有展览厅、影视厅、书库、书画厅、讲习所、资料室、贵宾室等。馆内全面介绍了贺敬之及其夫人柯岩的人生历程和辉煌的文学成就，生动再现了一代诗人、作家、戏剧家、文艺理论家的风范。馆内陈列了贺敬之、柯岩藏书一万余册，实物展品300余件，珍贵图片200余幅，并展出了200余幅名人墨宝真迹。是一个资料前面、内容充实、为文学研究提供服务方便，在全国具有权威性的文学研究基地，是宣传党的文艺思想、路线方针，宣传革命文艺的优良传统民族精神和时代精神的一扇窗口，也是培养文学新秀，创作新秀作品的一个良好阵地。
+		我国当代著名诗人、剧作家贺敬之，原籍台儿庄区贺窑村，在其半个多世纪的革命生涯中，创作了大量优秀的诗歌、剧本等文学作品，鼓舞和激励了一代又一代青少年的健康成长，并且他在我国新时期意识形态领域的卓越建树也有口皆碑、蜚声世界。
+		为回顾贺敬之同志的成长和创作道路，研究和发扬他的文艺思想、文学作品和艺术主张，弘扬民族文化的优良传统，坚持先进文化的前进方向，用先进文化占领社会文化阵地，打造地方特色文化品牌，为中小学生提供爱国主义教育场所，台儿庄区委、区政府于1996年10月投资300万元，兴建了贺敬之文学馆。
+占地4800平方米的贺敬之文学馆是国家AA级旅游单位，也是枣庄二日游景点的重要组成部分，其座落在风景秀丽的古运河畔，东与台儿庄大战纪念馆毗邻，西与大战遗址----火车站隔河相望，是台儿庄大战旅游文化风景线的一部分。面积1800平方米的仿古建筑，风格独特，古朴典雅，与厚重的古运河文化相得益彰。绿化面积达3000平方米，四季常绿，三季花香。文学馆设有展览厅、影视厅、书画厅、起居室、白毛女剧场等。以文字塑型、图书绘画及实物收藏、名家书画、影视录像等为表现手法，点面结合，动静相宜，全面生动直观地介绍了贺敬之同志的人生历程及辉煌的文学成就。馆内陈列着1200余幅图片资料，近百件贺窑生产的优质陶器和其他珍贵实物，藏书6000余册，各地名砚29方，反映贺敬之同志的成长过程及对中国现代文学做出巨大贡献的珍贵录像资料500余分钟，书画厅展出了张爱萍、-、王学仲、臧克家等中央领导和文化名人的墨宝真迹400余幅。是贺敬之文学的展览中心、史料中心和研究中心，同时也是厚重的运河文化之非物质文化领域的研究中心。
+		作为社会主义精神文明建设阵地的贺敬之文学馆，高举社会主义先进文化的大旗，坚决贯彻落实科学发展观，始终坚持文学培养培训与加强景点建设并重并举的发展策略，在景点建设中积极探索规模化、行业化等前瞻性发展之路。在坚持先进文化前进方向的实践中充分发挥文学馆窗口宣传与阵地教育作用；扩大与文艺团体、大中专院校的联系和交流，利用自身资料全面、宽阔的文艺联系网络，以及独有的文学艺术氛围，充分发挥平台与桥梁的纽带作用，致力于社会主义文学艺术的大繁荣，大发展。2009年1月份被市委、市政府命名为全市唯一的一处“文学艺术创作实践基地”，并于2009年7月份被辟为“大中小学生社会实践基地”。
+		古朴的运河风情、优美的自然景观以及其独有的革命性、时代性和艺术性相统一的贺敬之文学馆，是台儿庄区贯彻落实“-”重要思想和精神文明建设的重要阵地。也是对广大青少年学生进行爱国主义教育和革命传统教育的重要基地。其独特的文化韵味也为台儿庄增添了新的风景，成为古运河畔一座独具魅力的文化旅游场所。
+地址：山东省枣庄市台儿庄区沿河南路‎
+电话：0632-6620251
+开放时间：
+8:30-17:00
+门票
+免费景点，凭个人身份证进入
+交通
+外部交通
+		1、在枣庄站有高铁与北京南站、上海虹桥、天津西站、南京南站、济南西站、青岛站、杭州站、徐州东站之间通行,上述地区的游客可以选择京沪高铁方便来往。枣庄西站有山东省内与省外主要省会城市的列车经过
+		2、枣庄市没有机场,可借道山东临沂机场、徐州观音机场、连云港白塔埠机场。从机场出来再转乘其他交通工具到台儿庄。有条件的游客还可自驾游内部交通
+台儿庄本地公交票价一元，无人售票"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer7/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer8" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="9"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer8" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_21mli")
+theme_override_font_sizes/font_size = 35
+text = "台儿庄区——战史陈列馆"
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer8" index="1"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+texture = ExtResource("15_qlyxg")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer8" index="2"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer8/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer8/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_rll7m")
+theme_override_font_sizes/font_size = 16
+text = "		台儿庄战史陈列馆依托台儿庄革命烈士陵园，为兰陵县人民政府于1951年兴建，座落在台儿庄区文化路中段，区驻地中心。现已成为鲁南苏北地区建筑规模较大、陈展内容较为丰富、设施较为完备的爱国主义、革命传统教育和国防教育基地。
+		多年来，台儿庄战史陈列馆(台儿庄革命烈士陵园)充分发挥爱国主义教育基地作用，在褒扬烈士、教育群众方面作出了积极贡献。先后与周边50多家机关、企事业单位、部队、学校签订了共建协议，全区入党入团入队等仪式在这里举行，每年接待本地及苏鲁豫皖等周边地区前来瞻仰、参观的青年学生、机关干部和社会群众达10余万人次。2001年，被省政府定为省级烈士纪念建筑物保护单位；2006年，被省委宣传部确定为省级爱国主义教育基地；2007年，被省委组织部确定为全省党员教育基地；2009年被评为枣庄市“三八红旗集体”；2010年11月被评为枣庄市关心下一代爱国主义教育基地；2007年至2012年连续六年被评为枣庄市“青年文明号”单位；2013年被区委、区政府确定为“双拥教育基地”。
+		整个战史陈列馆占地100亩，分英雄广场、战史陈列厅、国防教育园、壮国园、影视厅五部分。
+英雄广场占地1500平方米，主要是为游人聚集、团体活动而建，广场中央建有革命烈士纪念碑，碑高31.8米，碑正面“革命烈士永垂不朽”八个大字采用毛泽东同志手写体，背面刻有中央军委原副主席张震将军撰写的碑文。
+		英雄广场北面是台儿庄战史陈列馆的主体建筑战史陈列厅，台儿庄战史陈列厅分为三个展厅，第一展厅为古代和近代时期在台儿庄发生的战事，第二展厅陈展的是抗日战争和解放战争时期在台儿庄地区所发生的战事，第三展厅为英雄人物厅。
+国防教育园，占地20亩，主要建筑有大型武器展台和兵器展室。在大型武器展台上陈列的是我军战争年代使用过的飞机、大炮、坦克等大型武器。兵器展室建筑面积300平方米，展厅内建有形象逼真的海、陆、空军事沙盘，其间陈列着“钢铁堡垒”坦克、“海上巨无霸”战舰、“蓝天雄鹰”飞机、“现代战争宠儿”导弹等等。
+		壮国园主要由长城微缩景观、互动项目、英烈纪念碑、改建碑、护城河等组成。长城微缩景观，长240米、高6米，仿八达岭长城建造，形象逼真，巍然壮观，象征着中国的强大和国防的雄壮。
+		影视厅，通过播放珍贵的战地纪实录像和参战将士的访谈录，向游客系统地介绍台儿庄的战争历史和今日台儿庄的繁荣景象。同时馆内建有互动项目，让你亲手操作，亲身体会战斗的无穷乐趣。
+		现在台儿庄战史陈列馆，建筑雄伟，风格独特，松柏苍翠，百花争妍，环境优雅，风景宜人，是融瞻仰、教育、游览于一体的最佳场所，她将作为先烈们英雄业绩和高风亮节的形象，将彪炳千秋，永传后世。
+用时参考：1小时
+交通
+外部交通
+		1、在枣庄站有高铁与北京南站、上海虹桥、天津西站、南京南站、济南西站、青岛站、杭州站、徐州东站之间通行,上述地区的游客可以选择京沪高铁方便来往。枣庄西站有山东省内与省外主要省会城市的列车经过
+		2、枣庄市没有机场,可借道山东临沂机场、徐州观音机场、连云港白塔埠机场。从机场出来再转乘其他交通工具到台儿庄。有条件的游客还可自驾游
+内部交通：台儿庄本地公交票价一元，无人售票
+开放时间：09:00-17:00
+景点位置：山东省枣庄市台儿庄区台儿庄战史陈列馆"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer8/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer9" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="10"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer9" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_21mli")
+theme_override_font_sizes/font_size = 35
+text = "台儿庄区——台儿庄大战纪念馆"
+
+[node name="ImgHBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer9" index="1"]
+clip_contents = true
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer9/ImgHBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("16_mff5x")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer9/ImgHBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("17_mb8ls")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer9/ImgHBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("18_gx7un")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ImgHBoxContainer2" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer9" index="2"]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer9/ImgHBoxContainer2" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("19_3hp7p")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer9/ImgHBoxContainer2" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("20_7y5jm")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer9/ImgHBoxContainer2" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("21_wdb1g")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ImgHBoxContainer3" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer9" index="3"]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer9/ImgHBoxContainer3" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("22_olwo7")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer9/ImgHBoxContainer3" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("23_kjybp")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer9/ImgHBoxContainer3" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("24_ft4vb")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ImgHBoxContainer4" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer9" index="4"]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer9/ImgHBoxContainer4" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("25_wcps1")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer9/ImgHBoxContainer4" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("26_wee1j")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer9/ImgHBoxContainer4" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("27_os4eb")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ImgHBoxContainer5" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer9" index="5"]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer9/ImgHBoxContainer5" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("28_7trs2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer9/ImgHBoxContainer5" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("29_ilr8f")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer9/ImgHBoxContainer5" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("30_3e44u")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer9" index="6"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer9/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer9/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_rll7m")
+theme_override_font_sizes/font_size = 16
+text = "		台儿庄大战纪念馆坐落在山东省枣庄市台儿庄城区西南郊，是为了纪念抗日战争初期著名的台儿庄战役而修建，于1992年由台儿庄区人民政府筹资建成，1993年4月8日正式对外开放，占地面积34000平方米，建筑面积6000平方米，融展览馆、影视馆、全景画馆于一体。
+		一九三八年春，中国军队重创日本侵略军两个精锐师团，歼敌万余人，取得了抗日战争初期继平型关大捷后的又一重大胜利，这就是震惊中外的台儿庄大战。时隔半个多世纪，英雄的台儿庄人民没有忘记血与火的历史，没有忘记为保卫这块土地而牺牲的千万将士。
+		为了弘扬民族精神，对子孙后代进行爱国主义传统教育，经中宣部批准，台儿庄人民政府于一九九二年十月十二日，投资1900万元兴建了台儿庄大战纪念馆。台儿庄大战纪念馆坐落在风景秀丽的古运河畔，占地面积34000平方米，建筑面积6000平方米，集展览馆、影视馆和全景画馆于一体，气势宏伟庄严。展览馆内陈列着台儿庄大战时中日双方资料、实物6000余件；影视馆主要播放当年外国战地记者拍摄的战役实况，使人对台儿庄大战有进一步的了解。
+		馆前三十八级台阶意味着一九三八年发生了震惊中外的中日台儿庄大战；二十四根立柱支撑着白色天棚，象征着中华民族顶天立地，永远屹立于世界民族之林；纪念馆馆名由著名书法家启功先生题写；主体建筑物前方矗立着台儿庄大战纪念碑，碑名由原国防部部长张爱萍将军题写，碑文由全国人大常委会副委员长程思远撰文、著名书法家权希军书写。
+		全景画馆是一个十八边形的筒式建筑，高二十八米，直径四十三米，建筑面积3100平方米，是国内反映战争题材的三大全景画馆之一。全景画馆包括绘画、地面塑形、实物、灯光、音响等五个部分，艺术地再现了中-队在台儿庄从阵地战到巷战痛击日军，取得胜利的历史过程。大北门激战、清真寺拉据战、西北门争夺战等典型战斗场景，作为表现重点。整个画面高十六点五米，周长一百二十四点一米，画面首尾相连。巨幅画面与逼真的塑型有机结合，配有特殊的灯光、立体音响，战斗气氛极为浓烈，给人以身临其境之感。
+		2004年8月24日，台儿庄大战纪念馆被国务院公布为第一批80处国家级抗战纪念设施、遗址名录
+用时参考：1-2小时
+交通
+公共交通
+		1、台儿庄长途汽车站下车后，乘公交车即可抵达纪念馆
+		2、枣庄市区内乘枣庄-台儿庄专线也可到达
+开放时间：8:00-18:00
+景点位置：山东枣庄市台儿庄区沿河南路6号
+"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer9/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer10" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="11"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer10" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_21mli")
+theme_override_font_sizes/font_size = 35
+text = "台儿庄区——台儿庄古城"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer10" index="1"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer10/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer10/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_rll7m")
+theme_override_font_sizes/font_size = 16
+text = "		运河古城坐落于枣庄市辖区台儿庄区，既是民族精神的象征、历史的丰碑，也是运河文化的承载体，至今仍保留有不少的遗存，被世界旅游组织誉为“活着的运河”、“京杭运河仅存的遗产村庄”。重建台儿庄古城，是几代台儿庄人民的梦想，古河道，古码头，一座可以舟楫摇曳、遍游全城的东方水城，中国第一座二战纪念城市，重建后的台儿庄古城，将成为世界上继华沙、庞贝、丽江之后，第四座重建的古城，世界第三座二战城市，全国唯一海峡两岸交流基地。江北水乡·运河古城，目前已经成为煤城枣庄的新城市名片。国家AAAA级景区。
+		历史上的台儿庄是一座商旅所萃、居民饶给的运河名城，它形成于汉，发展于元，繁盛于明清，据《峄县志》记载：“台(儿)庄跨漕渠，当南北孔道，商旅所萃，居民饶给，村镇之大，甲于一邑，被乾隆皇帝称为‘天下第一庄’”，呈现出“商贾迤逦，一河渔火，歌声十里，夜不罢市”的繁荣景象。但是这座美丽的古城却毁于1938年台儿庄大战的炮火。
+		一九三八年春发生的台儿庄大战，使这座古城化为废墟。台儿庄大战胜利后，国民政府在《中央日报》头版头条曾宣布要重建台儿庄古城，但是由于种种原因，最终成了镜花水月。新中国建立后，台儿庄古城区一直是兰陵县和台儿庄区政权所在地，党和人民把主要精力，投入到改山治水、战天斗地的运河治理、农田改造等社会主义建设中去，直到改革开放时期，台儿庄的经济社会发生了巨大改变，城市建设逐步向西部新区发展转移，旧城的老居
+民区依然保持着古朴自然的陈旧落后面貌，顺河社区居委会3000名尚未完全脱离土地的农民，依旧居住在环境恶劣的棚户区。开发重建台儿庄古城，成了台儿庄几代人民的梦想。
+		2008年4月8日，在纪念台儿庄大战胜利七十周年的活动上，枣庄市正式宣布，启动台儿庄古城重建工作，着力把台儿庄古城打造成为中国第一座二战纪念城市，打造成为沿运独有、国内乃至世界知名的文化旅游品牌。
+		2010年5月1日正式开城，5月4日-民党荣誉主席-先生来台儿庄古城为泰兴楼奠基。
+古城简介：
+		台儿庄古城，占地2平方公里，11个功能分区、8大景区和29个景点。八种建筑风格融为一体，七十二座庙宇汇于一城，南北交融、中西合璧，是运河文化的活化石；拥有京杭运河仅存的最后3公里古运河，被世界旅游组织称为“活着的运河”，是京杭运河最后一段活着的运河；城内拥有18个汪塘和7公里的水街水巷，可以舟楫摇曳、遍游全城，是名副其实的东方古水城。同时这里也是国台办批准的全国首家海峡两岸交流基地，是两岸交流的重要平台。
+台儿庄古城面积2平方公里，53处战争遗迹保存完好，重建后的台儿庄古城，成为世界上继华沙、庞贝、丽江之后，第四座重建的古城，世界第三座二战城市，全国唯一海峡两岸交流基地。
+		台儿庄古城景区在文化展示上，围绕大战文化、运河文化和鲁南文化，规划建设运河奏折展馆、兰祺书寓等具有国内外一流水平的博物馆，逐步将整个古城打造成为一本大百科全书；在经营业态上，主要以国内高端品牌的酒吧、茶楼、客栈和运河沿线及山东非物质文化遗产展示为主，用“创态”的理念，丰富业态的主题文化内涵；在景区运营管理上，叫响“天下第一庄”著名品牌，打造精品旅游品质，按照国家AAAAA级景区标准进行运营管理，在经营体制、商业特色、管理服务上，达到国内外一流水平。把台儿庄古城打造成为集“运河文化”和“大战文化”为一城，融“齐鲁豪情”和“江南韵致”为一域，极具人文魅力的旅游目的地，成为沿运独有、世界知名的旅游休闲度假区，成为世界文化遗产中的一颗明珠、一块瑰宝。
+交通
+外部交通
+		1、在枣庄站有高铁与北京南站、上海虹桥、天津西站、南京南站、济南西站、青岛站、杭州站、徐州东站之间通行,上述地区的游客可以选择京沪高铁方便来往。枣庄西站有山东省内与省外主要省会城市的列车经过
+		2、枣庄市没有机场,可借道山东临沂机场、徐州观音机场、连云港白塔埠机场。从机场出来再转乘其他交通工具到台儿庄。有条件的游客还可自驾游
+外部交通：台儿庄本地公交票价一元
+门票
+		1、散客门票160元/人，三日有效。（送客服中心至景区往返大巴车小交通）；
+		2、网络：三日有效（需至少提前一天预订）。
+		（1）成人150元/人（送客服中心至西门往返大巴车小交通）；
+		（2）成人165元/人（送客服中心至西门往返画舫船小交通）;
+		（3）学生75元/人（送客服中心至西门往返大巴车小交通）；
+		（4）学生85元/人（送客服中心至西门往返画舫船小交通）。
+		3、半票优惠对象：（仅限挂牌价门票）
+		（1）60周岁-69周岁（含69周岁）老年人（凭老年证、身份证）。
+		（2）身高1.2-1.4米之间（含1.4米）的儿童。
+		（3）7周岁-17周岁（含17周岁）未成年人（凭学生证或户口本、身份证）、24周岁以下全日制大学生（凭学生证和身份证）。
+		（4）三至四级残疾人（凭新版《中华人民共和国残疾证》）。
+		4、免票优惠对象：（仅限挂牌价门票）
+		（1）本地居民65周岁以上（含65周岁），外地居民70周岁以上（含70周岁）老人（凭老年证、身份证）。
+		（2）6周岁以下（含6周岁）儿童（凭户口本或身份证）、身高1.2米以下（含1.2米）的儿童。
+（3）一至二级残疾人（凭新版《中华人民共和国残疾证》）。
+（4）本地居民凭本人新版残疾证（不分级别）。
+（5）残疾人凭本人新版军残证或者新版残疾警察证（不分级别）。
+（6）现役军人凭士兵证或军官证和军校学员证免费入园。
+（7）离退休军人凭军人离退休证免费入园。
+（8）持国家旅游局颁发的国导证（IC卡）的导游人员。
+（9）团队大巴车司机凭驾驶证A证、B1证（须配合当日带团证明使用）。
+（10）记者凭国家新闻出版-颁发并通过年检的记者证免费入园。
+（11）持有省级以上（含省级）摄影家协会所颁发会员证的人员免费入园。
+开放时间
+全天开放
+景点位置
+山东枣庄市台儿庄区华兴路东段
+"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer10/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer11" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="12"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer11" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_21mli")
+theme_override_font_sizes/font_size = 35
+text = "台儿庄区——台儿庄革命烈士陵园"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer11" index="1"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer11/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer11/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_rll7m")
+theme_override_font_sizes/font_size = 16
+text = "		台儿庄革命烈士陵园位于枣庄市台儿庄区运河街道，年代为1951至2004年。
+		2015年6月23日，台儿庄革命烈士陵园被山东省人民政府公布为山东省第五批省级文物保护单位。"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer11/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer12" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="13"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer12" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_21mli")
+theme_override_font_sizes/font_size = 35
+text = "薛城区——铁道游击队纪念馆"
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer12" index="1"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("9_4rn4a")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer12" index="2"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer12/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer12/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_rll7m")
+theme_override_font_sizes/font_size = 16
+text = "		位置介绍：铁道游击队纪念园位于中国山东省枣庄市薛城区临山路东首，是为了纪念由中国共产党领导的、英雄的抗日武装力量，隶属于八路军“一一五师苏鲁支队”。该队以薛城为中心，挥戈于百里铁道线上，出没于万顷微山湖中，依靠群众，开展游击战术，与日本侵略者展开浴血奋战，奏响了民族救亡的最强音。
+		铁道游击队纪念园是以铁道游击队为主基调，集教育、游览、娱乐为一体的国家AAAA级旅游景区。
+		2020年2月，为致敬奋斗在抗“疫”一线的医护工作者，景区从2020年开园之日起至2020年12月31日，对全国医务工作者免票。 [1]
+		2020年5月28日，枣庄铁道游击队景区创建国家4A级景区工作动员会在枣庄市薛城区召开。会议全面安排部署创建4A级景区工作任务，确保在2020年6月15日 前向省级景区评定委员会递交申请。
+		铁道游击队介绍：铁道游击队他们截军列、打洋行、扒火车、炸桥梁，打得日伪军魂飞胆丧，使鲁南抗日根据地得以不断巩固和扩展。他们开辟了华中、山东赴延安的通道，在枪林弹雨、风险万千的情势下，护送刘少奇、陈毅、罗荣桓、肖华等首长和千余名指战员安全过境到达延安。风雨历险、历时七年，他们始终站在抗击日本侵略者的最前线，具有传奇般色彩的英雄们以及惊天地、泣鬼神的业绩，是薛城历史上最丰富、最壮丽的人文资源。
+		红色歌曲：电视剧《铁道游击队》主题曲《弹起我心爱的土琵琶》芦芝、何彬词，吕其明曲。
+		西边的太阳快要落山了，微山湖上静悄悄。弹起我心爱的土琵琶,唱起那动人的歌谣。
+		爬上飞快的火车,像骑上奔驰的骏马。车站和铁道线上,是我们杀敌的好战场。
+		我们爬飞车那个搞机枪,闯火车那个炸桥梁，就像钢刀插入敌胸膛,打得鬼子魂飞胆丧。
+		西边的太阳就要落山了,鬼子的末日就要来到。弹起我心爱的土琵琶,唱起那动人的歌谣。
+		哎嗨……"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer12/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer13" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="14"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer13" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_21mli")
+theme_override_font_sizes/font_size = 35
+text = "峄城区——国共谈判旧址"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer13" index="1"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer13/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer13/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_rll7m")
+theme_override_font_sizes/font_size = 16
+text = "		枣庄国共谈判旧址位于枣庄市峄城区。年代为1946年。 2006年12月7日，枣庄国共谈判旧址被山东省人民政府公布为山东省第三批省级文物保护单位。"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer13/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SongName" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer/SongInfVBoxContainer" index="0"]
+text = "牺牲已到最后关头"
+
+[node name="Singer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer/SongInfVBoxContainer" index="1"]
+text = "中央人民广播电台，中学生合唱团齐唱"
+
+[node name="Music1HboxContainer2" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="16"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2" index="0"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="IconCenterContainer" type="CenterContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2" index="1"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2/IconCenterContainer" index="0"]
+material = SubResource("ShaderMaterial_p3m6p")
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+color = Color(0.905882, 0.666667, 0.482353, 1)
+
+[node name="MusicIconTextureRec" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2/IconCenterContainer" index="1"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = ExtResource("33_mbj48")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SongInfVBoxContainer" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2" index="2"]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+
+[node name="SongName" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2/SongInfVBoxContainer" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "血战台儿庄"
+
+[node name="Singer" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2/SongInfVBoxContainer" index="1"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("34_l058v")
+theme_override_font_sizes/font_size = 15
+text = "刘鸿（纪念为抗日战争牺牲的勇士）"
+
+[node name="Music2Button" type="Button" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2" index="3"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+size_flags_stretch_ratio = 1.5
+theme_override_styles/normal = SubResource("StyleBoxTexture_gbkm1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_n6s0t")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nkc1t")
+toggle_mode = true
+
+[node name="Music1HboxContainer3" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="17"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3" index="0"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="IconCenterContainer" type="CenterContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3" index="1"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3/IconCenterContainer" index="0"]
+material = SubResource("ShaderMaterial_p3m6p")
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+color = Color(0.905882, 0.666667, 0.482353, 1)
+
+[node name="MusicIconTextureRec" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3/IconCenterContainer" index="1"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = ExtResource("33_mbj48")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SongInfVBoxContainer" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3" index="2"]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+
+[node name="SongName" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3/SongInfVBoxContainer" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "美丽的台儿庄"
+
+[node name="Singer" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3/SongInfVBoxContainer" index="1"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("34_l058v")
+theme_override_font_sizes/font_size = 15
+text = "群星"
+
+[node name="Music3Button" type="Button" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3" index="3"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+size_flags_stretch_ratio = 1.5
+theme_override_styles/normal = SubResource("StyleBoxTexture_gbkm1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_n6s0t")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nkc1t")
+toggle_mode = true
+
+[node name="Music1HboxContainer4" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="18"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4" index="0"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="IconCenterContainer" type="CenterContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4" index="1"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4/IconCenterContainer" index="0"]
+material = SubResource("ShaderMaterial_p3m6p")
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+color = Color(0.905882, 0.666667, 0.482353, 1)
+
+[node name="MusicIconTextureRec" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4/IconCenterContainer" index="1"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = ExtResource("33_mbj48")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SongInfVBoxContainer" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4" index="2"]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+
+[node name="SongName" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4/SongInfVBoxContainer" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "弹起我心爱的土琵琶"
+
+[node name="Singer" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4/SongInfVBoxContainer" index="1"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("34_l058v")
+theme_override_font_sizes/font_size = 15
+text = "群星"
+
+[node name="Music4Button" type="Button" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4" index="3"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+size_flags_stretch_ratio = 1.5
+theme_override_styles/normal = SubResource("StyleBoxTexture_gbkm1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_n6s0t")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nkc1t")
+toggle_mode = true
+
+[node name="Music1HboxContainer5" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="19"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5" index="0"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="IconCenterContainer" type="CenterContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5" index="1"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5/IconCenterContainer" index="0"]
+material = SubResource("ShaderMaterial_p3m6p")
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+color = Color(0.905882, 0.666667, 0.482353, 1)
+
+[node name="MusicIconTextureRec" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5/IconCenterContainer" index="1"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = ExtResource("33_mbj48")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SongInfVBoxContainer" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5" index="2"]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+
+[node name="SongName" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5/SongInfVBoxContainer" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "游击队之歌"
+
+[node name="Singer" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5/SongInfVBoxContainer" index="1"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("34_l058v")
+theme_override_font_sizes/font_size = 15
+text = "群星"
+
+[node name="Music5Button" type="Button" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5" index="3"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+size_flags_stretch_ratio = 1.5
+theme_override_styles/normal = SubResource("StyleBoxTexture_gbkm1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_n6s0t")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nkc1t")
+toggle_mode = true
+
+[node name="Audio1StreamPlayer" parent="Musics" index="0"]
+stream = ExtResource("37_kgtcj")
+
+[node name="Audio1StreamPlayer2" type="AudioStreamPlayer" parent="Musics" index="1"]
+stream = ExtResource("38_3qpdr")
+
+[node name="Audio1StreamPlayer3" type="AudioStreamPlayer" parent="Musics" index="2"]
+stream = ExtResource("39_vrilt")
+
+[node name="Audio1StreamPlayer4" type="AudioStreamPlayer" parent="Musics" index="3"]
+stream = ExtResource("40_8fovy")
+
+[node name="Audio1StreamPlayer5" type="AudioStreamPlayer" parent="Musics" index="4"]
+stream = ExtResource("41_japis")
+
+[connection signal="toggled" from="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer/Music1Button" to="." method="_on_music_1_button_toggled"]
+[connection signal="toggled" from="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2/Music2Button" to="." method="_on_music_2_button_toggled"]
+[connection signal="toggled" from="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3/Music3Button" to="." method="_on_music_3_button_toggled"]
+[connection signal="toggled" from="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4/Music4Button" to="." method="_on_music_4_button_toggled"]
+[connection signal="toggled" from="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5/Music5Button" to="." method="_on_music_5_button_toggled"]

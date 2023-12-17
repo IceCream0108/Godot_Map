@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=3 uid="uid://cs4viidroahm4"]
+
+[ext_resource type="PackedScene" uid="uid://d3dikcgncjlkv" path="res://main/scene/DetailPage.tscn" id="1_p2f1l"]
+[ext_resource type="Texture2D" uid="uid://bn50lxsrs20rh" path="res://main/assets/texture/rizhao/与会人员合影（前排右一为罗荣桓）.png" id="2_m7hlm"]
+[ext_resource type="Texture2D" uid="uid://bhruahvl26l3r" path="res://main/assets/texture/rizhao/山东军区军事工作会议旧址纪念碑.png" id="3_tdj4q"]
+
+[node name="DetailRiZhaoShi" instance=ExtResource("1_p2f1l")]
+ID = "RIZHAOSHI"
+
+[node name="TitleLabel" parent="TitleCanvasLayer/TitleHBoxContainer/TitlePanel" index="0"]
+text = "日照市"
+
+[node name="ImgGridContainer" parent="ScrollContainer/WholeVBoxContainer/Imgs" index="0"]
+columns = 2
+
+[node name="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="0"]
+texture = ExtResource("2_m7hlm")
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_tdj4q")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PlaceName" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Title_ButtonHBoxContainer" index="1"]
+text = "日照市"
+
+[node name="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer" index="0"]
+text = "日照市革命历史简介"
+
+[node name="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer/HBoxContainer" index="1"]
+text = "		日照红色文化资源丰富，是山东省建立中共地方党组织较早的地区之一，是沂蒙革命老区的重要组成部分，是滨海战略区的中心，也是沂蒙精神的重要发源地。在山海天两城安哲故居，辉煌的革命征程依然历历在目；在山东军区军事工作会议旧址，数次重要决策在这里成型；甲子山上，抗日战争时期的红色故事在这里薪火传承；招贤镇里，革命的燎原之火依然让后来者热血沸腾。
+		1、安哲故居：安哲，原名安丰铎，字建亭，中共日照党组织主要创始人之一，日照县委第一任书记。出身本是富绅家庭的安哲，却有着深深的为民情怀。1926年春，安哲正式加入了中国共产党，并奔赴武汉参加北伐战争，考入中央军事政治学校，成长为一名共产主义斗士。1928年，他带着满腔热情回到故乡，也将革命的火种带到了这片拥有厚重历史的土地上。1932年，为支援中央苏区第四次反“围剿”，安哲率领北路起义队伍，焚烧地契，赈济乡亲，发动了日照暴动，是当时山东省规模最大，坚持时间最长的一次农民武装暴动。暴动失败后，安哲到奉天继续从事地下工作，因叛徒出卖被捕入狱。身陷囹圄的安哲饱受酷刑折磨，却丝毫没有吐露党的秘密，而是把对共产主义的坚定信仰化成黑暗中引领光明的灯火，开展殊死抗争。残酷刑讯的折磨，身心的极大摧残，他，不幸于1934年冬牺牲，时年28岁。这位伟大的共产主义战士，生命被定格在人生最美好的年华。
+		2、山东军区军事工作会议旧址及罗荣恒故居：山东军区军事工作会议旧址位于岚山区碑廓镇碑廓二村。该地曾是抗日战争、解放战争时期的重要革命根据地，罗荣桓、肖华、谷牧等老一辈无产阶级革命家在碑廓这片热土上带领山东军民英勇抗战，留下了无数可歌可泣的英雄事迹。
+　　1942年至1944年，罗荣桓率领一一五师在滨海地区指挥抗日战争期间，在岚山区碑廓镇碑廓二村居住三年之久，曾在此指挥过甲子山战役等，召开过山东军区政治工作会议及军事工作会议，对山东地区的抗日战争具有重要意义。罗荣桓元帅工作、生活、战斗过的地方，至今仍成为广大干部群众缅怀瞻仰的圣地。
+　　2005年8月15日，政协岚山区委、岚山区武装部在碑廓镇组织召开了纪念抗日战争胜利60周年暨山东军区军事工作会议召开61周年座谈会，山东军区军事工作会议旧址被日照市委宣传部授予市级爱国主义教育基地；2006年6月，被日照市关心下一代工作委员会、日照市精神文明建设委员会、共青团日照市委确定为“日照市关心下一代教育基地”。
+　　为弘扬先辈革命精神，碑廓镇党委多次研究，精心设计修复旧址的规划方案，根据实际情况，坚持近期规划和远期规划相结合、旧址建设和旧城改造相结合的原则，实现革命教育、红色旅游等设施开发建设同步进行，主要分二期进行建设。第一期先行修复军事会议旧址。罗荣桓、肖华、谷牧等人的故居，建设以明、清古建筑风格齐全的抗日战争滨海军区事迹展览馆。第二期建设以罗荣桓率领一一五师在山东军区进行抗日战争的史料为背景的和平文化广场。该规划建成后将成为当地爱国主义教育的重要阵地。
+　　目前，碑廓镇已投资30余万元，初步完成山东军区会议旧址修复，罗荣桓、谷牧、肖华故居正在加紧修复保护。为加快建设滨海和平广场，碑廓镇党委、政府正在着手组织广场内住户搬迁安置和镇驻地18米大街开发建设工作。
+下一步，碑廓镇将按照《华东军区军事会议旧址的修复及滨海和平广场开发建设规划图》要求，逐一落实开发任务，进一步完善会议旧址及罗荣桓、谷牧、肖华等革命家故居修复保护工作，加快建设滨海和平广场，早日建成爱国主义教育基地。
+		3、甲子山：甲子山海拔480米，山势险峻。山顶两峰，耸立如角，故名角子山。在日照方言中，“角”与“甲”近音，后演化为甲子山。幽深奇丽的甲子山，为世代与山为邻的村民提供着丰富的资源，在战争年代，祖祖辈辈居住于此的村民，手持武器，以血肉之躯，守护哺育他们的土地。走进甲子山战役纪念馆，我们跟随一幅幅历史照片、一件件历史遗物溯源而上，追寻那段血与火的慷慨悲歌。
+时间回到1942年，那是滨海战区对敌战争最为艰苦的一年。那年的8月3日，国民党军第五十七军第一一一师脱离国民党顽固派，接受共产党领导，2700余名官兵回归人民怀抱。然而，原该师第331旅旅长孙焕彩，在八路军部队换防尚未赶到时，纠集所属余部，抢占了甲子山区。他们在那里抢修工事，加固堡垒，妄图长期与抗日军民为敌。为了收复这片重要的战略重地，巩固滨海抗日根据地，发展抗日救国力量，中共山东分局和山东省军区领导驻滨海区八路军，连续发起了三次甲子山反顽战役。
+		在甲子山脚下，占地1700平方米的甲子山战役纪念馆里，厚重的历史随着一件件藏品铺展开。近千幅文字图片，200余件抗战文物，十二处多媒体展示，让那段战争岁月重现于大众视野，让尘封已久的历史，变得可观、可听、可感。因此，甲子山战役纪念馆成为了全市重要的爱国主义教育、革命传统教育和党性教育基地"

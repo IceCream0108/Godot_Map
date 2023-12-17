@@ -1,0 +1,399 @@
+[gd_scene load_steps=13 format=3 uid="uid://dsp7j2qw47nq6"]
+
+[ext_resource type="PackedScene" uid="uid://d3dikcgncjlkv" path="res://main/scene/DetailPage.tscn" id="1_urdal"]
+[ext_resource type="Texture2D" uid="uid://cuijcua4u8pxq" path="res://main/assets/texture/linyi/兰山区1.png" id="2_de3sc"]
+[ext_resource type="Texture2D" uid="uid://c80scour03lnm" path="res://main/assets/texture/linyi/兰山区2.png" id="3_op5ja"]
+[ext_resource type="Texture2D" uid="uid://d3roadfvhndwb" path="res://main/assets/texture/linyi/兰山区3.png" id="4_s4tks"]
+[ext_resource type="Texture2D" uid="uid://u4xpoa6q4tso" path="res://main/assets/texture/linyi/兰山区4.png" id="5_yifq2"]
+[ext_resource type="Texture2D" uid="uid://byxptifkny3cy" path="res://main/assets/texture/linyi/兰山区5.png" id="6_qf0up"]
+[ext_resource type="Texture2D" uid="uid://bpuhrvppibxp3" path="res://main/assets/texture/linyi/河东区1.png" id="7_sffge"]
+[ext_resource type="Texture2D" uid="uid://dlsiiqqa1785x" path="res://main/assets/texture/linyi/河东区2.png" id="8_aveay"]
+[ext_resource type="Texture2D" uid="uid://dnaxml63cxnvo" path="res://main/assets/texture/linyi/罗庄区1.png" id="9_g7okx"]
+[ext_resource type="Texture2D" uid="uid://cm1m6qde3ebn5" path="res://main/assets/texture/linyi/罗庄区2.png" id="10_d1u0v"]
+[ext_resource type="FontFile" uid="uid://xi2gj0edmhup" path="res://main/assets/font/TitleSTZHONGS.TTF" id="11_wisgb"]
+[ext_resource type="FontFile" uid="uid://bik6b8g3jwe5i" path="res://main/assets/font/simhei.ttf" id="12_w1vf3"]
+
+[node name="DetailLinYiShi" instance=ExtResource("1_urdal")]
+ID = "LINYISHI"
+
+[node name="TitleLabel" parent="TitleCanvasLayer/TitleHBoxContainer/TitlePanel" index="0"]
+text = "临沂市"
+
+[node name="ImgGridContainer" parent="ScrollContainer/WholeVBoxContainer/Imgs" index="0"]
+columns = 9
+
+[node name="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="0"]
+texture = ExtResource("2_de3sc")
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_op5ja")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("4_s4tks")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect4" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="3"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("5_yifq2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect5" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="4"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("6_qf0up")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect6" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="5"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("7_sffge")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect7" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="6"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("8_aveay")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect8" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="7"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("9_g7okx")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect9" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="8"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("10_d1u0v")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PlaceName" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Title_ButtonHBoxContainer" index="1"]
+text = "临沂市"
+
+[node name="DetailVBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="2"]
+visible = false
+
+[node name="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer" index="0"]
+text = "临沂三区历史背景"
+
+[node name="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer/HBoxContainer" index="1"]
+text = "		临沂市三区包括兰山区、河东区、罗庄区，临沂是全国著名的革命老区。1926年，这里就建立了中共党组织。在中共党组织领导下，一代代沂蒙儿女，艰苦奋斗，开拓进取，创造辉煌，在中国新民主主义革命斗争史上写下了光照千秋的篇章。在长期的革命和建设实践中形成的以“爱党爱军、开拓奋进、艰苦创业、无私奉献”为主要内容的沂蒙精神，成为中华民族精神的重要组成部分，是党和国家的宝贵财富。抗日战争全面爆发后，这里是著名的沂蒙革命根据地，是全省统一的行政权力机关——山东省战时工作推行委员会的诞生地。刘少奇、罗荣桓、徐向前、陈毅等老一辈无产阶级革命家都曾在这里战斗作过。赵镈、罗炳辉、刘炎、陈明、李竹如、常恩多、汉斯·希伯等著名革命烈士都在这块土地上献出了生命。在血与火的年代，临沂人民在中国共产党的领导下积极参军参战，支援前线，十载征劳如一日，英雄百战无倦容，涌现出无数可歌可泣的动人事迹。10多万优秀儿女为革命献出了生命。在中国革命胜利的征途上，深深地印下了临沂人民支前车轮的辙印。这里的人民为夺取革命战争胜利，为新中国的建立做出了巨大贡献。"
+
+[node name="DetailVBoxContainer2" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="3"]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_wisgb")
+theme_override_font_sizes/font_size = 35
+text = "临沂大捷"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2" index="1"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_w1vf3")
+theme_override_font_sizes/font_size = 16
+text = "		1938年3月3日，临沂阻击战打响，历时49天。这是在中国共产党倡导的、以国共合作为基础的抗日民族统一战线形成后，全国军民同仇敌忾、誓死抗击日本帝国主义侵略的历史背景下爆发的，是抗战初期国民党正面战场的一次重要胜利，临沂作为扼守鲁南苏北的咽喉要地，战略位置十分重要，如果日军占领临沂，向南可威胁陇海铁路及连云港，向西则可直抵枣庄、峄县、台儿庄，直接威胁苏北重镇徐州。此次战争为台儿庄战役取得大捷作出了不可磨灭的贡献，勾勒出了沂蒙人民威武不屈抗争精神。"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer3" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="4"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_wisgb")
+theme_override_font_sizes/font_size = 35
+text = "兰山区——华东革命烈士陵园"
+
+[node name="ImgContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3" index="1"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3/ImgContainer" index="0"]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("2_de3sc")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3/ImgContainer" index="1"]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_op5ja")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3/ImgContainer" index="2"]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("4_s4tks")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3" index="2"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_w1vf3")
+theme_override_font_sizes/font_size = 16
+text = "		华东革命烈士陵园座落在山东省临沂市兰山区，是为纪念自第一次大革命时期至解放战争时期，华东地区牺牲的革命先烈而修建的大型纪念性建筑群和纪念园林。
+		该陵园始建于1949年4月，由梁思成先生主持设计。占地19.2万平方米，有塔、堂、馆、亭、墓、廊等大型纪念建筑物19座。整体布局为中轴对称式，风格为仿古建筑，南北大门与主体建筑革命烈士纪念塔、革命烈士纪念堂居于一条中轴线上，粟裕、罗炳辉、汉斯·希伯等著名烈士墓和石像亭等建筑物对称布列于东西两侧。 1986年10月，被国务院列为第一批“全国重点烈士纪念建筑物保护单位”。2006年6月被国家旅游局公布为国家AAA级旅游景区。2014年8月，被国务院命名为第一批“国家级抗战纪念设施、遗址”。 "
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer4" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="5"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_wisgb")
+theme_override_font_sizes/font_size = 35
+text = "兰山区——沂蒙革命纪念馆"
+
+[node name="ImgContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4" index="1"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4/ImgContainer" index="0"]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("5_yifq2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4/ImgContainer" index="1"]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("6_qf0up")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4" index="2"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_w1vf3")
+theme_override_font_sizes/font_size = 16
+text = "		沂蒙革命纪念馆位于山东省临沂市兰山区银雀山路与沂州路交会处东南角，东邻华东革命烈士陵园， 是由中共中央办公厅、国务院办公厅批准建设的综合性革命历史纪念馆。 纪念馆占地面积3.4万平方米，总建筑面积5万平方米，革命文物458件。规划设计为地下二层，地上三层。其中，地上三层建筑主要用于沂蒙革命精神展示、红色影视教育、党史陈列、沂蒙革命精神研究、群众路线展示等；地下两层空间主要用于人防工程、停车场等用途。2020年6月5日，被评为山东省退役军人思想政治教育基地。"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer5" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="6"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_wisgb")
+theme_override_font_sizes/font_size = 35
+text = "河东区——新四军军部旧址纪念馆"
+
+[node name="ImgContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5" index="1"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5/ImgContainer" index="0"]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("7_sffge")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5/ImgContainer" index="1"]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("8_aveay")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5" index="2"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_w1vf3")
+theme_override_font_sizes/font_size = 16
+text = "		沂蒙新四军军部旧址纪念馆全称新四军军部旧址暨华东军区华东野战军诞生地纪念馆，位于山东省临沂市河东区九曲街道前河湾村，紧靠滨河大道。
+1937年10月12日南方八省红军游击队改编为新四军，直到1947年1月23日新四军番号撤销，近10年时间里，先后在湖北、江西、安徽、江苏、山东等地建立过军部，临沂市前河湾村新四军军部旧址是新四军历史上“最后一个军部”驻地，是华东军区、华东野战军诞生地，在中国革命战争史上具有重大的历史价值。"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer6" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="7"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer6" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_wisgb")
+theme_override_font_sizes/font_size = 35
+text = "罗庄区——鲁南战役指挥部旧址"
+
+[node name="ImgContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer6" index="1"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer6/ImgContainer" index="0"]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("9_g7okx")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer6" index="2"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer6/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer6/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_w1vf3")
+theme_override_font_sizes/font_size = 16
+text = "		鲁南战役指挥部旧址位于临沂市罗庄区褚墩镇碑住村，2001年10月被临沂市郯城县人民政府公布为县级文物保护单位。1947年1月，山东野战军司令员陈毅、华中野战军司令员粟裕曾在这里运筹帷幄，指挥了著名的鲁南战役。
+		鲁南战役是解放战争时期山东战场上著名的战役之一，它是继宿北战役之后，山东野战军与华中野战军会合进行的第二个大歼灭战。1947年1月1日拂晓，华东各参战部队秘密进入集结地域，野战军指挥部也于1月2日晚全部进入碑柱一带驻地，国民党军队对人民军队的行动毫无察觉，参战部队于2日晚22时向国民党军队发起全线攻击，打响了鲁南战役。鲁南战役历时19天，歼灭国民党军整编第26、第51师师部、4个旅及1个快速纵队，共5．3万余人，缴获美制坦克24辆，榴弹炮、野炮、山炮89门，汽车474辆，首创华东战场一次歼灭国民党军2个整编师的纪录，沉重地打击了进犯的国民党军的气焰，粉碎了其进攻山东解放区首府临沂的计划，同时也使我华中、山东野战军取得了对敌机械化部队作战的经验，并为尔后组建自己的特种兵纵队提供了最初的物质基础。
+		鲁南战役指挥部旧址现已成为革命传统教育和爱国主义教育基地。2019年11月21日罗庄区人民政府为鲁南战役指挥部旧址立了文物保护标志碑。2020年1月2日《红色沂蒙365》对鲁南战役指挥部设在褚墩碑柱的史实予以专题宣传并载入革命史。"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer6/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer7" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="8"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer7" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_wisgb")
+theme_override_font_sizes/font_size = 35
+text = "罗庄区——临郯青年救国团成立旧址"
+
+[node name="ImgContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer7" index="1"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer7/ImgContainer" index="0"]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("10_d1u0v")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer7" index="2"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer7/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer7/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("12_w1vf3")
+theme_override_font_sizes/font_size = 16
+text = "		临郯青年救国团成立旧址位于临沂市罗庄区傅庄街道办事处大丁庄村，2015年1月被临沂市人民政府公布为“临沂市第一批重点抗日战争遗址”。临郯青年救国团是中国共产党公开组织的抗日救亡群众团体，1938年5月在大丁庄成立。该旧址现已成为抗战教育和爱国教育的基地。
+		1937年“七七事变”至1941年春，鲁南地区组织并发展了“临郯青年救国团”。“临郯青年救国团”是一个以爱国青年为主体的抗日群众组织，对于宣传、发动和组织鲁南各阶层人士积极开展抗日斗争，促进民主政权的建立，发展抗日武装等方面发挥了十分重要的作用。1938年5月初，中共临沂特别支部扩建为中共临郯县委。临郯县委决定立即成立临郯青年救国团县团部。5月上旬，县团部成立大会在大丁庄小学举行，会议宣布建立临郯青年救国团县团部，公推丁梦孙、马培卿、李占五、郑仃云等近20人为执行委员会委员，丁梦孙为常务委员（即主要负责人），马培卿负责组织工作，郑仃云、李占五负责宣传工作。在大丁庄小学召开的第二次会议上，宣布孙明光任青年救国团组织部长、刘贯廷任宣传部长、石世良任军事部长、贾丰任军事部副部长、马培卿任总务部长。1939年8月，各青救分团按所在区建立了青年救国团区团部，所属乡、村相继建立相应的组织。县团部除了以突击方式整理了80多个村团部外，在力求正规化的口号下，加强了对青年抗敌自卫团的政治、军事教育，并将自卫团扩大为青年营。八路军第115师部分部队进驻沙埠、涌泉一带后，青年救国团积极配合主力部队，解放了沂河以西大片地区。"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer7/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3

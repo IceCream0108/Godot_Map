@@ -1,0 +1,62 @@
+[gd_scene load_steps=7 format=3 uid="uid://bq2bnvthdnglx"]
+
+[ext_resource type="PackedScene" uid="uid://d3dikcgncjlkv" path="res://main/scene/DetailPage.tscn" id="1_el123"]
+[ext_resource type="Texture2D" uid="uid://3pg6ulv7vc7h" path="res://main/assets/texture/yancheng/图片1.png" id="2_e6xv2"]
+[ext_resource type="Texture2D" uid="uid://bhmm34w8p0rxh" path="res://main/assets/texture/yancheng/图片2.png" id="3_nkopw"]
+[ext_resource type="Texture2D" uid="uid://dc4hm310rk655" path="res://main/assets/texture/yancheng/图片3.png" id="4_6xkx8"]
+[ext_resource type="Texture2D" uid="uid://fuuxmkrpq0q2" path="res://main/assets/texture/yancheng/图片4.png" id="5_yaadm"]
+[ext_resource type="Texture2D" uid="uid://cgteabfkhg5uj" path="res://main/assets/texture/yancheng/图片5.png" id="6_85fgh"]
+
+[node name="DetailYanChengXian" instance=ExtResource("1_el123")]
+ID = "YANCHENGXIAN"
+
+[node name="TitleLabel" parent="TitleCanvasLayer/TitleHBoxContainer/TitlePanel" index="0"]
+text = "郯城县"
+
+[node name="ImgGridContainer" parent="ScrollContainer/WholeVBoxContainer/Imgs" index="0"]
+columns = 5
+
+[node name="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="0"]
+texture = ExtResource("2_e6xv2")
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_nkopw")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("4_6xkx8")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect4" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="3"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("5_yaadm")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect5" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="4"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("6_85fgh")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PlaceName" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Title_ButtonHBoxContainer" index="1"]
+text = "郯城县"
+
+[node name="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer" index="0"]
+text = "郯城县"
+
+[node name="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer/HBoxContainer" index="1"]
+text = "		郯城县历史悠久、文化灿烂。古为“东夷”之地，夏时为徐国，徐姓始祖发源于此，春秋称为郯国。“鹿乳奉亲”、“昭子问官”的典故即处于此；“孔子师郯子”世代流传，“齐魏马陵之战”扬名天下；元代著名戏剧家关汉卿的杂剧《窦娥冤》中窦娥的原型即为汉代东海孝妇。汉相于定国，儒学大家王朗，南朝无神论者、天文学家何承天，杰出诗人徐陵、鲍照、何逊等，都为古郯文化谱写
+了瑰丽篇章。鲁南地区中共早期创始人刘之言的革命活动揭开了新的历史篇章。"

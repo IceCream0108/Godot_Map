@@ -1,0 +1,282 @@
+[gd_scene load_steps=20 format=3 uid="uid://d3dikcgncjlkv"]
+
+[ext_resource type="Script" path="res://main/scene/DetailPage.gd" id="1_rwcf1"]
+[ext_resource type="Texture2D" uid="uid://cci1hiea1b4j2" path="res://main/assets/texture/icon/paper.jpg" id="2_0sfpj"]
+[ext_resource type="Shader" path="res://main/assets/shader/ColorCircleShader.gdshader" id="2_47c12"]
+[ext_resource type="Texture2D" uid="uid://d3jwqpwdjwhx8" path="res://main/assets/texture/icon/音乐.png" id="2_akuby"]
+[ext_resource type="FontFile" uid="uid://xi2gj0edmhup" path="res://main/assets/font/TitleSTZHONGS.TTF" id="2_g4gvt"]
+[ext_resource type="Texture2D" uid="uid://cmnwo2208rb5v" path="res://main/assets/texture/icon/白地图-地标.png" id="4_3277f"]
+[ext_resource type="FontFile" uid="uid://d2efdtbddu7o3" path="res://main/assets/font/STFANGSO.TTF" id="4_mevt4"]
+[ext_resource type="FontFile" uid="uid://bik6b8g3jwe5i" path="res://main/assets/font/simhei.ttf" id="5_qmxwh"]
+[ext_resource type="Texture2D" uid="uid://ufl2v3qngqkn" path="res://main/assets/texture/icon/白播放2.png" id="8_o5pcf"]
+[ext_resource type="Texture2D" uid="uid://dcrvggb3j13tq" path="res://main/assets/texture/icon/白暂停.png" id="9_0ucaa"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0algi"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m4kes"]
+bg_color = Color(0.313726, 0, 0.803922, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.709804, 0.8, 1, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gifgu"]
+bg_color = Color(0.458824, 0.321569, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.698039, 0.792157, 1, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wvyif"]
+bg_color = Color(0.215686, 0, 0.576471, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.403922, 0.572549, 1, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_djleo"]
+bg_color = Color(0.305882, 0.509804, 0.921569, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p3m6p"]
+shader = ExtResource("2_47c12")
+shader_parameter/texture_size = Vector2(100, 100)
+shader_parameter/radius = 50.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gbkm1"]
+texture = ExtResource("8_o5pcf")
+modulate_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n6s0t"]
+texture = ExtResource("8_o5pcf")
+modulate_color = Color(0.282353, 0.282353, 0.282353, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nkc1t"]
+texture = ExtResource("9_0ucaa")
+modulate_color = Color(0, 0, 0, 1)
+
+[node name="DetailPage" type="CanvasLayer"]
+layer = 3
+script = ExtResource("1_rwcf1")
+
+[node name="BackGroundCanvasLayer" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="BackGroundCanvasLayer"]
+texture = ExtResource("2_0sfpj")
+centered = false
+
+[node name="TitleCanvasLayer" type="CanvasLayer" parent="."]
+layer = 100
+
+[node name="TitleHBoxContainer" type="HBoxContainer" parent="TitleCanvasLayer"]
+custom_minimum_size = Vector2(0, 70)
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 40.0
+grow_horizontal = 2
+
+[node name="TitlePanel" type="Panel" parent="TitleCanvasLayer/TitleHBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_0algi")
+
+[node name="TitleLabel" type="Label" parent="TitleCanvasLayer/TitleHBoxContainer/TitlePanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_g4gvt")
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="WholeVBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Imgs" type="Panel" parent="ScrollContainer/WholeVBoxContainer"]
+custom_minimum_size = Vector2(0, 600)
+layout_mode = 2
+
+[node name="ImgGridContainer" type="GridContainer" parent="ScrollContainer/WholeVBoxContainer/Imgs"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Det_MusicsVBoxContainer" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Title_ButtonHBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Title_ButtonHBoxContainer"]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+
+[node name="PlaceName" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Title_ButtonHBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DetachButton" type="Button" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Title_ButtonHBoxContainer"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_m4kes")
+theme_override_styles/hover = SubResource("StyleBoxFlat_gifgu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wvyif")
+text = "         查看地图   "
+
+[node name="Sprite2D" type="Sprite2D" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Title_ButtonHBoxContainer/DetachButton"]
+position = Vector2(36, 31)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("4_3277f")
+
+[node name="VSplitContainer" type="VSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Panel" type="Panel" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/VSplitContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_djleo")
+
+[node name="DetailVBoxContainer" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_g4gvt")
+theme_override_font_sizes/font_size = 50
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_qmxwh")
+theme_override_font_sizes/font_size = 30
+editable = false
+drag_and_drop_selection_enabled = false
+virtual_keyboard_enabled = false
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Music1HboxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="IconCenterContainer" type="CenterContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer/IconCenterContainer"]
+material = SubResource("ShaderMaterial_p3m6p")
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+color = Color(0.905882, 0.666667, 0.482353, 1)
+
+[node name="MusicIconTextureRec" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer/IconCenterContainer"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = ExtResource("2_akuby")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SongInfVBoxContainer" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer"]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+
+[node name="SongName" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer/SongInfVBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+
+[node name="Singer" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer/SongInfVBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_mevt4")
+theme_override_font_sizes/font_size = 15
+
+[node name="Music1Button" type="Button" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+size_flags_stretch_ratio = 1.5
+theme_override_styles/normal = SubResource("StyleBoxTexture_gbkm1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_n6s0t")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nkc1t")
+toggle_mode = true
+
+[node name="Musics" type="Node" parent="."]
+
+[node name="Audio1StreamPlayer" type="AudioStreamPlayer" parent="Musics"]
+
+[connection signal="mouse_entered" from="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" to="." method="_on_img_grid_container_mouse_entered"]
+[connection signal="mouse_exited" from="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" to="." method="_on_img_grid_container_mouse_exited"]
+[connection signal="pressed" from="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Title_ButtonHBoxContainer/DetachButton" to="." method="_on_detach_button_pressed"]

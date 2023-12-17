@@ -1,0 +1,1091 @@
+[gd_scene load_steps=51 format=3 uid="uid://c2oxkasmp4tfm"]
+
+[ext_resource type="Script" path="res://main/scene/main.gd" id="1_1y22k"]
+[ext_resource type="Script" path="res://main/component/StateMachine.gd" id="1_j7y64"]
+[ext_resource type="Texture2D" uid="uid://bc7ebmpl78dwg" path="res://main/assets/texture/map.jpg" id="1_r1nt1"]
+[ext_resource type="PackedScene" uid="uid://bx75vf2bavy6g" path="res://main/scene/trigger.tscn" id="3_0rqv2"]
+[ext_resource type="PackedScene" uid="uid://dbqaa6b17gwea" path="res://main/scene/iteract_area.tscn" id="3_guhc7"]
+[ext_resource type="Texture2D" uid="uid://7080fe77fhwd" path="res://main/assets/texture/line.png" id="4_3abe3"]
+[ext_resource type="Texture2D" uid="uid://dw14cb72283b8" path="res://main/assets/texture/feixian/景点图片/大青山胜利突围纪念馆2.jpeg" id="4_7ndou"]
+[ext_resource type="Shader" path="res://main/assets/shader/Circle.gdshader" id="7_1niyg"]
+[ext_resource type="Texture2D" uid="uid://bjomjtjjmyq5c" path="res://main/assets/texture/icon/_详情.png" id="7_i5fiu"]
+[ext_resource type="FontFile" uid="uid://xi2gj0edmhup" path="res://main/assets/font/TitleSTZHONGS.TTF" id="8_w6cv4"]
+[ext_resource type="FontFile" uid="uid://cgukakrf46tb0" path="res://main/assets/font/SIMYOU.TTF" id="9_4bd6l"]
+[ext_resource type="FontFile" uid="uid://bik6b8g3jwe5i" path="res://main/assets/font/simhei.ttf" id="9_qal47"]
+[ext_resource type="Texture2D" uid="uid://ccmrmefe5dk2c" path="res://main/assets/texture/lvnan/图片1.png" id="10_b2kon"]
+[ext_resource type="FontFile" uid="uid://h08f8f1jh2io" path="res://main/assets/font/STXIHEI.TTF" id="10_mys7i"]
+[ext_resource type="Texture2D" uid="uid://ldwfqcoh2iyf" path="res://main/assets/texture/lanlin/图片2.png" id="10_n7gfg"]
+[ext_resource type="Texture2D" uid="uid://nffxoo6h0pc1" path="res://main/assets/texture/linchu/苍马山·冠山旅游区.png" id="11_7ge5b"]
+[ext_resource type="Texture2D" uid="uid://7p7qodiajgkr" path="res://main/assets/texture/mengyin/蒙阴景点图片/微信图片_202310261309023.jpg" id="11_g7t02"]
+[ext_resource type="Texture2D" uid="uid://bf4emebmowspy" path="res://main/assets/texture/pingyi/平邑景点图片/微信图片_202310261335462.jpg" id="12_gikvu"]
+[ext_resource type="Texture2D" uid="uid://bhruahvl26l3r" path="res://main/assets/texture/rizhao/山东军区军事工作会议旧址纪念碑.png" id="14_kjgqw"]
+[ext_resource type="Texture2D" uid="uid://xlcjehl6d34g" path="res://main/assets/texture/sishui/景点图片/微信图片_20231029165214.jpg" id="15_w30eg"]
+[ext_resource type="Texture2D" uid="uid://3pg6ulv7vc7h" path="res://main/assets/texture/yancheng/图片1.png" id="16_vpb2o"]
+[ext_resource type="Texture2D" uid="uid://dxe177h72inny" path="res://main/assets/texture/yishui/风景图片/三河口新貌.jpg" id="17_hawg7"]
+[ext_resource type="Texture2D" uid="uid://b0hj3h3qwpcr8" path="res://main/assets/texture/zaozhuang/台儿庄区/台儿庄古城照片/42518aa6c95d778138ef1e6143c43094_t012ea76e1aeff2b3f3.jpg" id="18_rfi8j"]
+[ext_resource type="Texture2D" uid="uid://cuijcua4u8pxq" path="res://main/assets/texture/linyi/兰山区1.png" id="19_047gk"]
+[ext_resource type="Texture2D" uid="uid://bsxua6cf2dh74" path="res://main/assets/texture/yinan/红色景点4.png" id="20_4dr0h"]
+[ext_resource type="PackedScene" uid="uid://bajuxlgv3kf2r" path="res://main/scene/detail_fei_xian.tscn" id="25_qds0j"]
+[ext_resource type="PackedScene" uid="uid://cmd5nepup73od" path="res://main/scene/detail_ju_nan_xian.tscn" id="26_yjoio"]
+[ext_resource type="PackedScene" uid="uid://lphl0vd2ldby" path="res://main/scene/detail_lan_lin_xian.tscn" id="27_inkfn"]
+[ext_resource type="PackedScene" uid="uid://bcqdr6oxp4eng" path="res://main/scene/detail_lin_shu_xian.tscn" id="28_kpaq7"]
+[ext_resource type="PackedScene" uid="uid://dsp7j2qw47nq6" path="res://main/scene/detail_lin_yi_shi.tscn" id="29_te5kj"]
+[ext_resource type="PackedScene" uid="uid://tdguk2fr8fgd" path="res://main/scene/detail_meng_yin_xian.tscn" id="30_dgltw"]
+[ext_resource type="PackedScene" uid="uid://bj832l4qj560c" path="res://main/scene/detail_page_si_shui_xian.tscn" id="31_horqc"]
+[ext_resource type="PackedScene" uid="uid://cjy2cl0vaoqld" path="res://main/scene/detail_ping_yi_xian.tscn" id="32_fnowm"]
+[ext_resource type="PackedScene" uid="uid://cs4viidroahm4" path="res://main/scene/detail_ri_zhao_shi.tscn" id="33_rfsgw"]
+[ext_resource type="PackedScene" uid="uid://bq2bnvthdnglx" path="res://main/scene/detail_yan_cheng_xian.tscn" id="34_2luaq"]
+[ext_resource type="PackedScene" uid="uid://d1wyeuvwrdv3c" path="res://main/scene/detail_yi_nan_xian.tscn" id="35_urhdg"]
+[ext_resource type="PackedScene" uid="uid://dvwj15ioj0qw0" path="res://main/scene/detail_yi_shui_xian.tscn" id="36_gdkap"]
+[ext_resource type="PackedScene" uid="uid://dogsbkq8dxgut" path="res://main/scene/detail_zao_zhuang_shi.tscn" id="37_l5kv0"]
+
+[sub_resource type="Animation" id="Animation_s31gg"]
+resource_name = "feixian"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_df8p4"]
+_data = {
+"feixian": SubResource("Animation_s31gg")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5jn01"]
+size = Vector2(53.6193, 94.8072)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s845i"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6rowh"]
+size = Vector2(28.7872, 7.70073)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f60um"]
+bg_color = Color(0.74902, 0.796078, 1, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_g681e"]
+shader = ExtResource("7_1niyg")
+shader_parameter/texture_size = Vector2(150, 150)
+shader_parameter/radius = 75.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7j7fd"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tuwhp"]
+shader = ExtResource("7_1niyg")
+shader_parameter/texture_size = Vector2(150, 150)
+shader_parameter/radius = 75.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4jw0j"]
+bg_color = Color(0.313726, 0, 0.803922, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.709804, 0.8, 1, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_byu3j"]
+bg_color = Color(0.54902, 0.494118, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.709804, 0.8, 1, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0fum1"]
+bg_color = Color(0.247059, 0, 0.65098, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.709804, 0.8, 1, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_1y22k")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_df8p4")
+}
+
+[node name="Map" type="Sprite2D" parent="."]
+z_index = -10
+z_as_relative = false
+texture = ExtResource("1_r1nt1")
+
+[node name="MapIteractArea" parent="Map" instance=ExtResource("3_guhc7")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map/MapIteractArea"]
+position = Vector2(-1.99998, -0.999969)
+rotation = -3.14159
+scale = Vector2(21.7086, -14.8723)
+shape = SubResource("RectangleShape2D_5jn01")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+
+[node name="ListCanvasLayer" type="CanvasLayer" parent="."]
+offset = Vector2(0, 896)
+transform = Transform2D(1, 0, 0, 1, 0, 896)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ListCanvasLayer"]
+z_index = -5
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HeadLine" type="Panel" parent="ListCanvasLayer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 128)
+layout_mode = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_s845i")
+
+[node name="HeadLineIteractArea" parent="ListCanvasLayer/VBoxContainer/HeadLine" instance=ExtResource("3_guhc7")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ListCanvasLayer/VBoxContainer/HeadLine/HeadLineIteractArea"]
+position = Vector2(287, 66.5)
+scale = Vector2(20.2173, 18.0502)
+shape = SubResource("RectangleShape2D_6rowh")
+debug_color = Color(0.85098, 0.290196, 0.6, 0.419608)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ListCanvasLayer/VBoxContainer/HeadLine"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VSplitContainer" type="VSplitContainer" parent="ListCanvasLayer/VBoxContainer/HeadLine/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TextureRect" type="TextureRect" parent="ListCanvasLayer/VBoxContainer/HeadLine/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("4_3abe3")
+expand_mode = 2
+stretch_mode = 3
+
+[node name="Label" type="Label" parent="ListCanvasLayer/VBoxContainer/HeadLine/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "景点列表"
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="ListCanvasLayer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="费县" type="Panel" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(0, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_f60um")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/费县"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/费县/HBoxContainer"]
+material = SubResource("ShaderMaterial_g681e")
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = ExtResource("4_7ndou")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/费县/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="Label" type="Label" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/费县/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_w6cv4")
+theme_override_font_sizes/font_size = 30
+text = "  费  县——红歌石都"
+
+[node name="TextEdit" type="TextEdit" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/费县/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+mouse_default_cursor_shape = 0
+theme_override_colors/background_color = Color(0.74902, 0.796078, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_4bd6l")
+text = "	历史厚重，人文荟萃，自然风光与红色文化交相辉映。赏亿年石林，登巍峨蒙山，探古城遗迹，品颜公文化，聆听沂蒙山小调，感受红色革命精神。费县，邀您共赴一场文化与自然的盛宴。"
+selecting_enabled = false
+wrap_mode = 1
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/费县/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="莒南县" type="Panel" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(0, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_f60um")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/莒南县"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/莒南县/HBoxContainer"]
+material = SubResource("ShaderMaterial_g681e")
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = ExtResource("10_b2kon")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/莒南县/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="Label" type="Label" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/莒南县/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_w6cv4")
+theme_override_font_sizes/font_size = 30
+text = "  莒南县——莒南之春"
+
+[node name="TextEdit" type="TextEdit" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/莒南县/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+mouse_default_cursor_shape = 0
+theme_override_colors/background_color = Color(0.74902, 0.796078, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_4bd6l")
+text = "	拥有丰富的历史文化和壮丽的自然风光。这里春意盎然，万物复苏，您可以欣赏奇石、品尝美食，还是感受红色文化、聆听传统民歌。让我们一起走进“莒南之春”，感受这片土地的独特魅力。"
+selecting_enabled = false
+wrap_mode = 1
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/莒南县/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="蒙阴" type="Panel" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(0, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_f60um")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/蒙阴"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/蒙阴/HBoxContainer"]
+material = SubResource("ShaderMaterial_g681e")
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = ExtResource("11_g7t02")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/蒙阴/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="Label" type="Label" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/蒙阴/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_w6cv4")
+theme_override_font_sizes/font_size = 30
+text = "  蒙阴县——绿意蒙阴"
+
+[node name="TextEdit" type="TextEdit" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/蒙阴/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+mouse_default_cursor_shape = 0
+theme_override_colors/background_color = Color(0.74902, 0.796078, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_4bd6l")
+text = "	蒙阴县，绿意盎然，生态天堂。红色文化深厚，自然风光无限。走进蒙阴，感受沂蒙精神的传承，探寻大自然的奥秘。一步一景，一呼一吸皆清新。蒙阴，等你来发现！"
+selecting_enabled = false
+wrap_mode = 1
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/蒙阴/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="平邑县" type="Panel" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(0, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_f60um")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/平邑县"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/平邑县/HBoxContainer"]
+material = SubResource("ShaderMaterial_g681e")
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = ExtResource("12_gikvu")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/平邑县/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="Label" type="Label" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/平邑县/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_w6cv4")
+theme_override_font_sizes/font_size = 30
+text = "  平邑县——硒泉平邑"
+
+[node name="TextEdit" type="TextEdit" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/平邑县/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+mouse_default_cursor_shape = 0
+theme_override_colors/background_color = Color(0.74902, 0.796078, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_4bd6l")
+text = "	硒泉之乡，历史文化富集。秀美风景，丰饶物产。在平邑，强烈的归属感与自豪感交织。活力四溢，探寻无限。每步皆史，每口皆甘，每眼皆景。来平邑，不一样的风情等你体验。"
+selecting_enabled = false
+wrap_mode = 1
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/平邑县/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="兰陵县" type="Panel" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(0, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_f60um")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/兰陵县"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/兰陵县/HBoxContainer"]
+material = SubResource("ShaderMaterial_g681e")
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = ExtResource("10_n7gfg")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/兰陵县/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="Label" type="Label" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/兰陵县/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_w6cv4")
+theme_override_font_sizes/font_size = 30
+text = "兰陵县——兰陵画境"
+
+[node name="TextEdit" type="TextEdit" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/兰陵县/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+mouse_default_cursor_shape = 0
+theme_override_colors/background_color = Color(0.74902, 0.796078, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_4bd6l")
+text = "兰陵，山东的绿色明珠，自然与文化交融。这里有美丽的田园风光，古老的古镇风情，丰富的美食文化。来兰陵，体验历史，感受自然，品尝美食，让心灵沉浸在这片美丽的土地上。"
+selecting_enabled = false
+wrap_mode = 1
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/兰陵县/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="临沭县" type="Panel" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(0, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_f60um")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/临沭县"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/临沭县/HBoxContainer"]
+material = SubResource("ShaderMaterial_g681e")
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = ExtResource("11_7ge5b")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/临沭县/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="Label" type="Label" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/临沭县/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_w6cv4")
+theme_override_font_sizes/font_size = 30
+text = "临沭县——临沭韵味"
+
+[node name="TextEdit" type="TextEdit" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/临沭县/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+mouse_default_cursor_shape = 0
+theme_override_colors/background_color = Color(0.74902, 0.796078, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_4bd6l")
+text = "临沭，山东的自然与文化瑰宝。这里风光壮丽，历史悠久，美食独特。来临沭，感受大自然的魅力，品味深厚的历史文化，享受美食的盛宴，让旅行成为一次难忘的体验。"
+selecting_enabled = false
+wrap_mode = 1
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/临沭县/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="日照市" type="Panel" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(0, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_f60um")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/日照市"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/日照市/HBoxContainer"]
+material = SubResource("ShaderMaterial_g681e")
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = ExtResource("14_kjgqw")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/日照市/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="Label" type="Label" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/日照市/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_w6cv4")
+theme_override_font_sizes/font_size = 30
+text = "日照市——日照金滩"
+
+[node name="TextEdit" type="TextEdit" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/日照市/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+mouse_default_cursor_shape = 0
+theme_override_colors/background_color = Color(0.74902, 0.796078, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_4bd6l")
+text = "日照，山东的一座海滨城市，拥有美丽的海滩和丰富的海洋资源。日照金滩，以其金色的沙滩和清澈的海水而闻名，是游客们向往的旅游胜地。在这里，你可以尽情享受阳光、沙滩和海浪的乐趣，感受大海的宽广与美丽。"
+selecting_enabled = false
+wrap_mode = 1
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/日照市/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="泗水县" type="Panel" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(0, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_f60um")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/泗水县"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/泗水县/HBoxContainer"]
+material = SubResource("ShaderMaterial_g681e")
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = ExtResource("15_w30eg")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/泗水县/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="Label" type="Label" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/泗水县/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_w6cv4")
+theme_override_font_sizes/font_size = 30
+text = "泗水县——泗水古韵"
+
+[node name="TextEdit" type="TextEdit" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/泗水县/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+mouse_default_cursor_shape = 0
+theme_override_colors/background_color = Color(0.74902, 0.796078, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_4bd6l")
+text = "山东的一座历史文化名城，拥有悠久的历史和丰富的文化遗产。泗水古韵，以其深厚的文化底蕴和独特的民俗风情而闻名。在这里，你可以感受到浓郁的历史氛围，欣赏到精美的古代建筑和文化遗产，体验到独特的民俗文化。"
+selecting_enabled = false
+wrap_mode = 1
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/泗水县/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="郯城县" type="Panel" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(0, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_f60um")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/郯城县"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/郯城县/HBoxContainer"]
+material = SubResource("ShaderMaterial_g681e")
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = ExtResource("16_vpb2o")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/郯城县/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="Label" type="Label" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/郯城县/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_w6cv4")
+theme_override_font_sizes/font_size = 30
+text = "郯城县——郯城风韵"
+
+[node name="TextEdit" type="TextEdit" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/郯城县/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+mouse_default_cursor_shape = 0
+theme_override_colors/background_color = Color(0.74902, 0.796078, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_4bd6l")
+text = "作为山东的一座历史名城，拥有悠久的历史和丰富的文化遗产。郯城以其深厚的文化底蕴和独特的民俗风情而闻名。同时，郯城还有美丽的自然风光和丰富的旅游资源，如马陵山、沭河等，为游客提供了一个难忘的旅行体验。"
+selecting_enabled = false
+wrap_mode = 1
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/郯城县/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="沂水县" type="Panel" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(0, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_f60um")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/沂水县"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/沂水县/HBoxContainer"]
+material = SubResource("ShaderMaterial_g681e")
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = ExtResource("17_hawg7")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/沂水县/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="Label" type="Label" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/沂水县/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_w6cv4")
+theme_override_font_sizes/font_size = 30
+text = "沂水县——沂水绿谷"
+
+[node name="TextEdit" type="TextEdit" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/沂水县/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+mouse_default_cursor_shape = 0
+theme_override_colors/background_color = Color(0.74902, 0.796078, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_4bd6l")
+text = "沂水，山东的一座山水之城，以绿意盎然的自然环境和丰富的生态资源而著称。沂水绿谷，体现了这座城市独特的自然魅力。无论你喜欢户外探险、自然风光还是美食品味，沂水都会给你带来一次难忘的旅行体验。"
+selecting_enabled = false
+wrap_mode = 1
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/沂水县/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="枣庄市" type="Panel" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(0, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_f60um")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/枣庄市"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/枣庄市/HBoxContainer"]
+material = SubResource("ShaderMaterial_g681e")
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = ExtResource("18_rfi8j")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/枣庄市/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="Label" type="Label" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/枣庄市/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_w6cv4")
+theme_override_font_sizes/font_size = 30
+text = "枣庄市"
+
+[node name="TextEdit" type="TextEdit" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/枣庄市/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+mouse_default_cursor_shape = 0
+theme_override_colors/background_color = Color(0.74902, 0.796078, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_4bd6l")
+selecting_enabled = false
+wrap_mode = 1
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/枣庄市/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="临沂市" type="Panel" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(0, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_f60um")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/临沂市"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/临沂市/HBoxContainer"]
+material = SubResource("ShaderMaterial_g681e")
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = ExtResource("19_047gk")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/临沂市/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="Label" type="Label" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/临沂市/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_w6cv4")
+theme_override_font_sizes/font_size = 30
+text = "临沂市"
+
+[node name="TextEdit" type="TextEdit" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/临沂市/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+mouse_default_cursor_shape = 0
+theme_override_colors/background_color = Color(0.74902, 0.796078, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_4bd6l")
+selecting_enabled = false
+wrap_mode = 1
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/临沂市/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="沂南县" type="Panel" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(0, 180)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_f60um")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/沂南县"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/沂南县/HBoxContainer"]
+material = SubResource("ShaderMaterial_g681e")
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = ExtResource("20_4dr0h")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/沂南县/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="Label" type="Label" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/沂南县/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_w6cv4")
+theme_override_font_sizes/font_size = 30
+text = "沂南县"
+
+[node name="TextEdit" type="TextEdit" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/沂南县/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+mouse_default_cursor_shape = 0
+theme_override_colors/background_color = Color(0.74902, 0.796078, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_4bd6l")
+selecting_enabled = false
+wrap_mode = 1
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/沂南县/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="IntroCanvasLayer" type="CanvasLayer" parent="."]
+layer = 0
+offset = Vector2(0, 1024)
+transform = Transform2D(1, 0, 0, 1, 0, 1024)
+
+[node name="IntroPanel" type="Panel" parent="IntroCanvasLayer"]
+z_index = -10
+z_as_relative = false
+custom_minimum_size = Vector2(0, 160)
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_7j7fd")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="IntroCanvasLayer/IntroPanel"]
+custom_minimum_size = Vector2(576, 160)
+layout_mode = 0
+size_flags_vertical = 3
+
+[node name="HSplitContainer" type="HSplitContainer" parent="IntroCanvasLayer/IntroPanel/HBoxContainer"]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="IntroCanvasLayer/IntroPanel/HBoxContainer"]
+material = SubResource("ShaderMaterial_tuwhp")
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+size_flags_stretch_ratio = 2.0
+texture = ExtResource("4_7ndou")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="IntroCanvasLayer/IntroPanel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_stretch_ratio = 2.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_qal47")
+theme_override_font_sizes/font_size = 40
+text = "费 县  "
+
+[node name="IntroButton" type="Button" parent="IntroCanvasLayer/IntroPanel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+size_flags_stretch_ratio = 2.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("10_mys7i")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_4jw0j")
+theme_override_styles/hover = SubResource("StyleBoxFlat_byu3j")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_0fum1")
+text = "       详 情   "
+
+[node name="Sprite2D" type="Sprite2D" parent="IntroCanvasLayer/IntroPanel/HBoxContainer/IntroButton"]
+position = Vector2(33, 23)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("7_i5fiu")
+
+[node name="StateMachine" type="Node" parent="."]
+script = ExtResource("1_j7y64")
+
+[node name="ClickWaitTimer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
+[node name="Details" type="Node" parent="."]
+
+[node name="DetailFeiXian" parent="Details" instance=ExtResource("25_qds0j")]
+
+[node name="DetailJuNanXian" parent="Details" instance=ExtResource("26_yjoio")]
+
+[node name="DetailMengYinXian" parent="Details" instance=ExtResource("30_dgltw")]
+
+[node name="DetailPingYiXian" parent="Details" instance=ExtResource("32_fnowm")]
+
+[node name="DetailLanLinXian" parent="Details" instance=ExtResource("27_inkfn")]
+
+[node name="DetailLinShuXian" parent="Details" instance=ExtResource("28_kpaq7")]
+
+[node name="DetailRiZhaoShi" parent="Details" instance=ExtResource("33_rfsgw")]
+
+[node name="DetailPageSiShuiXian" parent="Details" instance=ExtResource("31_horqc")]
+
+[node name="DetailYanChengXian" parent="Details" instance=ExtResource("34_2luaq")]
+
+[node name="DetailYiShuiXian" parent="Details" instance=ExtResource("36_gdkap")]
+
+[node name="DetailZaoZhuangShi" parent="Details" instance=ExtResource("37_l5kv0")]
+
+[node name="DetailLinYiShi" parent="Details" instance=ExtResource("29_te5kj")]
+
+[node name="DetailYiNanXian" parent="Details" instance=ExtResource("35_urhdg")]
+
+[node name="Triggers" type="Node" parent="."]
+
+[node name="TriggerFeiXian" parent="Triggers" instance=ExtResource("3_0rqv2")]
+position = Vector2(-109, -43)
+
+[node name="TriggerJuNanXian" parent="Triggers" instance=ExtResource("3_0rqv2")]
+position = Vector2(247, 16)
+
+[node name="TriggerMengYinXian" parent="Triggers" instance=ExtResource("3_0rqv2")]
+position = Vector2(-105, -275)
+
+[node name="TriggerPingYiXian" parent="Triggers" instance=ExtResource("3_0rqv2")]
+position = Vector2(-231, -174)
+
+[node name="TriggerLanLingXian" parent="Triggers" instance=ExtResource("3_0rqv2")]
+position = Vector2(-78, 182)
+
+[node name="TriggerLinShuXian" parent="Triggers" instance=ExtResource("3_0rqv2")]
+position = Vector2(185, 138)
+
+[node name="TriggerRiZhaoXian" parent="Triggers" instance=ExtResource("3_0rqv2")]
+position = Vector2(527, -117)
+
+[node name="TriggerSiShuiXian" parent="Triggers" instance=ExtResource("3_0rqv2")]
+position = Vector2(-382, -245)
+
+[node name="TriggerYanChengXian" parent="Triggers" instance=ExtResource("3_0rqv2")]
+position = Vector2(47, 301)
+
+[node name="TriggerYiShuiXian" parent="Triggers" instance=ExtResource("3_0rqv2")]
+position = Vector2(164, -289)
+
+[node name="TriggerZaoZhuangShi" parent="Triggers" instance=ExtResource("3_0rqv2")]
+position = Vector2(-373, 182)
+
+[node name="TriggerLinYiShi" parent="Triggers" instance=ExtResource("3_0rqv2")]
+position = Vector2(41, 63)
+
+[node name="TriggerYiNanXian" parent="Triggers" instance=ExtResource("3_0rqv2")]
+position = Vector2(97, -177)
+
+[connection signal="Mouse_Enter" from="Map/MapIteractArea" to="." method="_on_map_iteract_area_mouse_enter"]
+[connection signal="Mouse_Exit" from="Map/MapIteractArea" to="." method="_on_map_iteract_area_mouse_exit"]
+[connection signal="mouse_entered" from="ListCanvasLayer/VBoxContainer" to="." method="_on_v_box_container_mouse_entered"]
+[connection signal="mouse_exited" from="ListCanvasLayer/VBoxContainer" to="." method="_on_v_box_container_mouse_exited"]
+[connection signal="Mouse_Enter" from="ListCanvasLayer/VBoxContainer/HeadLine/HeadLineIteractArea" to="." method="_on_head_line_iteract_area_mouse_enter"]
+[connection signal="Mouse_Exit" from="ListCanvasLayer/VBoxContainer/HeadLine/HeadLineIteractArea" to="." method="_on_head_line_iteract_area_mouse_exit"]
+[connection signal="mouse_entered" from="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/费县" to="." method="_on_费县_mouse_entered"]
+[connection signal="mouse_entered" from="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/莒南县" to="." method="_on_莒南县_mouse_entered"]
+[connection signal="mouse_entered" from="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/蒙阴" to="." method="_on_蒙阴_mouse_entered"]
+[connection signal="mouse_entered" from="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/平邑县" to="." method="_on_平邑县_mouse_entered"]
+[connection signal="mouse_entered" from="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/兰陵县" to="." method="_on_兰陵县_mouse_entered"]
+[connection signal="mouse_entered" from="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/临沭县" to="." method="_on_临沭县_mouse_entered"]
+[connection signal="mouse_entered" from="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/日照市" to="." method="_on_日照市_mouse_entered"]
+[connection signal="mouse_entered" from="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/泗水县" to="." method="_on_泗水县_mouse_entered"]
+[connection signal="mouse_entered" from="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/郯城县" to="." method="_on_郯城县_mouse_entered"]
+[connection signal="mouse_entered" from="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/沂水县" to="." method="_on_沂水县_mouse_entered"]
+[connection signal="mouse_entered" from="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/枣庄市" to="." method="_on_枣庄市_mouse_entered"]
+[connection signal="mouse_entered" from="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/临沂市" to="." method="_on_临沂市_mouse_entered"]
+[connection signal="mouse_entered" from="ListCanvasLayer/VBoxContainer/ScrollContainer/VBoxContainer/沂南县" to="." method="_on_沂南县_mouse_entered"]
+[connection signal="mouse_entered" from="IntroCanvasLayer/IntroPanel" to="." method="_on_intro_panel_mouse_entered"]
+[connection signal="mouse_exited" from="IntroCanvasLayer/IntroPanel" to="." method="_on_intro_panel_mouse_exited"]
+[connection signal="button_down" from="IntroCanvasLayer/IntroPanel/HBoxContainer/IntroButton" to="." method="_on_intro_button_button_down"]
+[connection signal="detach" from="Details/DetailFeiXian" to="." method="_on_detail_fei_xian_detach"]
+[connection signal="detach" from="Details/DetailJuNanXian" to="." method="_on_detail_ju_nan_xian_detach"]
+[connection signal="detach" from="Details/DetailMengYinXian" to="." method="_on_detail_meng_yin_xian_detach"]
+[connection signal="detach" from="Details/DetailPingYiXian" to="." method="_on_detail_ping_yi_xian_detach"]
+[connection signal="detach" from="Details/DetailLanLinXian" to="." method="_on_detail_lan_lin_xian_detach"]
+[connection signal="detach" from="Details/DetailLinShuXian" to="." method="_on_detail_lin_shu_xian_detach"]
+[connection signal="detach" from="Details/DetailRiZhaoShi" to="." method="_on_detail_ri_zhao_shi_detach"]
+[connection signal="detach" from="Details/DetailPageSiShuiXian" to="." method="_on_detail_page_si_shui_xian_detach"]
+[connection signal="detach" from="Details/DetailYanChengXian" to="." method="_on_detail_yan_cheng_xian_detach"]
+[connection signal="detach" from="Details/DetailYiShuiXian" to="." method="_on_detail_yi_shui_xian_detach"]
+[connection signal="detach" from="Details/DetailZaoZhuangShi" to="." method="_on_detail_zao_zhuang_shi_detach"]
+[connection signal="detach" from="Details/DetailLinYiShi" to="." method="_on_detail_lin_yi_shi_detach"]
+[connection signal="detach" from="Details/DetailYiNanXian" to="." method="_on_detail_yi_nan_xian_detach"]
+[connection signal="Mouse_Enter" from="Triggers/TriggerFeiXian" to="." method="_on_trigger_fei_xian_mouse_enter"]
+[connection signal="Mouse_Exit" from="Triggers/TriggerFeiXian" to="." method="_on_trigger_fei_xian_mouse_exit"]
+[connection signal="Mouse_Enter" from="Triggers/TriggerJuNanXian" to="." method="_on_trigger_ju_nan_xian_mouse_enter"]
+[connection signal="Mouse_Exit" from="Triggers/TriggerJuNanXian" to="." method="_on_trigger_ju_nan_xian_mouse_exit"]
+[connection signal="Mouse_Enter" from="Triggers/TriggerMengYinXian" to="." method="_on_trigger_meng_yin_xian_mouse_enter"]
+[connection signal="Mouse_Exit" from="Triggers/TriggerMengYinXian" to="." method="_on_trigger_meng_yin_xian_mouse_exit"]
+[connection signal="Mouse_Enter" from="Triggers/TriggerPingYiXian" to="." method="_on_trigger_ping_yi_xian_mouse_enter"]
+[connection signal="Mouse_Exit" from="Triggers/TriggerPingYiXian" to="." method="_on_trigger_ping_yi_xian_mouse_exit"]
+[connection signal="Mouse_Enter" from="Triggers/TriggerLanLingXian" to="." method="_on_trigger_lan_ling_xian_mouse_enter"]
+[connection signal="Mouse_Exit" from="Triggers/TriggerLanLingXian" to="." method="_on_trigger_lan_ling_xian_mouse_exit"]
+[connection signal="Mouse_Enter" from="Triggers/TriggerLinShuXian" to="." method="_on_trigger_lin_shui_xian_mouse_enter"]
+[connection signal="Mouse_Exit" from="Triggers/TriggerLinShuXian" to="." method="_on_trigger_lin_shui_xian_mouse_exit"]
+[connection signal="Mouse_Enter" from="Triggers/TriggerRiZhaoXian" to="." method="_on_trigger_ri_zhao_xian_mouse_enter"]
+[connection signal="Mouse_Exit" from="Triggers/TriggerRiZhaoXian" to="." method="_on_trigger_ri_zhao_xian_mouse_exit"]
+[connection signal="Mouse_Enter" from="Triggers/TriggerSiShuiXian" to="." method="_on_trigger_si_shui_xian_mouse_enter"]
+[connection signal="Mouse_Exit" from="Triggers/TriggerSiShuiXian" to="." method="_on_trigger_si_shui_xian_mouse_exit"]
+[connection signal="Mouse_Enter" from="Triggers/TriggerYanChengXian" to="." method="_on_trigger_yan_cheng_xian_mouse_enter"]
+[connection signal="Mouse_Exit" from="Triggers/TriggerYanChengXian" to="." method="_on_trigger_yan_cheng_xian_mouse_exit"]
+[connection signal="Mouse_Enter" from="Triggers/TriggerYiShuiXian" to="." method="_on_trigger_yi_shui_xian_mouse_enter"]
+[connection signal="Mouse_Exit" from="Triggers/TriggerYiShuiXian" to="." method="_on_trigger_yi_shui_xian_mouse_exit"]
+[connection signal="Mouse_Enter" from="Triggers/TriggerZaoZhuangShi" to="." method="_on_trigger_zao_zhuang_shi_mouse_enter"]
+[connection signal="Mouse_Exit" from="Triggers/TriggerZaoZhuangShi" to="." method="_on_trigger_zao_zhuang_shi_mouse_exit"]
+[connection signal="Mouse_Enter" from="Triggers/TriggerLinYiShi" to="." method="_on_trigger_lin_yi_shi_mouse_enter"]
+[connection signal="Mouse_Exit" from="Triggers/TriggerLinYiShi" to="." method="_on_trigger_lin_yi_shi_mouse_exit"]
+[connection signal="Mouse_Enter" from="Triggers/TriggerYiNanXian" to="." method="_on_trigger_yi_nan_xian_mouse_enter"]
+[connection signal="Mouse_Exit" from="Triggers/TriggerYiNanXian" to="." method="_on_trigger_yi_nan_xian_mouse_exit"]

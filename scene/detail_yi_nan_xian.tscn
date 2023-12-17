@@ -1,0 +1,338 @@
+[gd_scene load_steps=12 format=3 uid="uid://d1wyeuvwrdv3c"]
+
+[ext_resource type="PackedScene" uid="uid://d3dikcgncjlkv" path="res://main/scene/DetailPage.tscn" id="1_efgd8"]
+[ext_resource type="Texture2D" uid="uid://3v5482pi1ktq" path="res://main/assets/texture/yinan/红色经典1.png" id="2_011ja"]
+[ext_resource type="Texture2D" uid="uid://bqej88u2xd18e" path="res://main/assets/texture/yinan/红色景点2.png" id="3_j26on"]
+[ext_resource type="Texture2D" uid="uid://cr6gflc21y0v8" path="res://main/assets/texture/yinan/红色景点3.png" id="4_4u774"]
+[ext_resource type="Texture2D" uid="uid://bsxua6cf2dh74" path="res://main/assets/texture/yinan/红色景点4.png" id="5_pneod"]
+[ext_resource type="Texture2D" uid="uid://cdstruv41m1sr" path="res://main/assets/texture/yinan/红色景点5.png" id="6_8q8e2"]
+[ext_resource type="Texture2D" uid="uid://b46784tmqag2n" path="res://main/assets/texture/yinan/红色景点6.png" id="7_ik5lf"]
+[ext_resource type="Texture2D" uid="uid://drfx5ej1gf48m" path="res://main/assets/texture/yinan/红色景点7.png" id="8_x14uc"]
+[ext_resource type="Texture2D" uid="uid://mbpd3c6qmyod" path="res://main/assets/texture/yinan/红色景点8.png" id="9_u5qsv"]
+[ext_resource type="FontFile" uid="uid://xi2gj0edmhup" path="res://main/assets/font/TitleSTZHONGS.TTF" id="10_4hj4x"]
+[ext_resource type="FontFile" uid="uid://bik6b8g3jwe5i" path="res://main/assets/font/simhei.ttf" id="11_bksc2"]
+
+[node name="DetailYiNanXian" instance=ExtResource("1_efgd8")]
+ID = "YINANXIAN"
+
+[node name="TitleLabel" parent="TitleCanvasLayer/TitleHBoxContainer/TitlePanel" index="0"]
+text = "沂南县"
+
+[node name="ImgGridContainer" parent="ScrollContainer/WholeVBoxContainer/Imgs" index="0"]
+columns = 8
+
+[node name="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="0"]
+texture = ExtResource("2_011ja")
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_j26on")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("4_4u774")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect4" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="3"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("5_pneod")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect5" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="4"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("6_8q8e2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect6" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="5"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("7_ik5lf")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect7" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="6"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("8_x14uc")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect8" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="7"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("9_u5qsv")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PlaceName" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Title_ButtonHBoxContainer" index="1"]
+text = "沂南县"
+
+[node name="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer" index="0"]
+text = "沂南县历史背景"
+
+[node name="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer/HBoxContainer" index="1"]
+text = "		沂南县是沂蒙革命根据地的中心、沂蒙精神的重要发源地，是红嫂精神和歌曲《跟着共产党走》的诞生地，被誉为“山东小延安”。境内红色资源丰富，已查明并登记革命遗迹182处，其中国家级红色革命重点文物保护单位1处、省级4处、市级3处、县级20处。革命战争年代，我党领导的第一个省级民主政权——“山东省战时工作推行委员会”1940年8月在沂南青驼寺成立。苏鲁边区省委、八路军一一五师、山东纵队、抗大一分校、山东抗日军政干部学校曾长期驻扎沂南。老一辈无产阶级革命家陈毅、罗荣桓、徐向前、粟裕等200多位将帅都曾在沂南战斗和工作过，是孟良崮战役的主战场。全县先后有30余万人次参军支前，牺牲1万余人，涌现出了“沂蒙红嫂”明德英、“沂蒙母亲”王换于、沂蒙大姐李桂芳等一大批可歌可泣的英模人物，是“全省双拥模范县”。
+		为发扬传承好沂蒙精神财富，先后打造沂蒙红色影视基地、沂蒙红嫂纪念馆、山东抗日民主政权纪念馆、鲁中抗日纪念馆、山东战邮纪念馆、山东北海银行纪念馆、《跟着共产党走》歌曲诞生地等红色纪念馆，其中，沂蒙红嫂纪念馆是国内唯一全面系统介绍“红嫂”的专题纪念馆，是国家国防教育示范基地、全国妇女爱国主义教育基地、山东省爱国主义教育基地、山东沂蒙党性教育基地。大青山突围战遗址是国家级重点文物保护单位，大青山革命烈士陵园入选“国家级抗战纪念设施遗址名录”。"
+
+[node name="DetailVBoxContainer2" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="3"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_4hj4x")
+theme_override_font_sizes/font_size = 35
+text = "张庄镇红色历史"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2" index="1"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_bksc2")
+theme_override_font_sizes/font_size = 16
+text = "		张庄是红色革命热土。在革命战争年代，抗日英雄刘震东从张庄走出，抗日救国，血洒疆场，壮烈殉国，成为一代名将，将军故居，将军修建的双龙桥依旧保存完整，诠释着将军爱国爱民的伟大风范。在抗日战争最艰苦的年代，罗荣桓元帅驰骋在张庄大地，指挥了名震全国的“留田突围”战役，揭开了整个山东抗日战场的新篇章。钮家沟罗荣桓战时指挥所，留田突围遗址均保存完好，见证着元帅不朽的功勋。解放战争和庄三角山阻击战确保了孟良崮战役的胜利，“爱国拥军好妈妈”胡玉萍也出自张庄这块热土。被誉为“全国计划生育战线上一面旗帜”的和庄村也在张庄这块热土上，“和庄经验”誉满天下。"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer3" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="4"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_4hj4x")
+theme_override_font_sizes/font_size = 35
+text = "红嫂故里马牧池"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3" index="1"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_bksc2")
+theme_override_font_sizes/font_size = 16
+text = "		沂南县是沂蒙红嫂的故乡，在长期的抗日战争和解放战争中，无私无畏的沂南人民前仆后继、艰苦奋斗，为新中国的成立和建设做出了巨大的牺牲和贡献，特别是以乳汁救伤员的明德英为代表的众多沂蒙红嫂爱党爱军、吃苦耐劳、无私奉献、模范支前的事迹影响深远，被人民广为传颂。“爱党爱军、开拓奋进、艰苦创业、无私奉献”的沂蒙精神。在血与火的年代，英雄的沂蒙儿女以“一口饭、做军粮、一块布、做军鞋、最后一个儿子、送战场”的豪情壮志将革命一程又一程地推向胜利。谱写了军民血肉相连共同奋战的光辉乐章。
+		革命战争年代，山东抗日党政军领导机关长期转战在沂南，沂南是当时山东政治、军事中心，而“沂蒙红嫂”明德英、“沂蒙母亲”王换于的家乡——马牧池乡常山村，则是这个中心的中心。1941年以常山命名的常山区是战时的一个行政区，直至1958年改为马牧池乡为止，长达18年。常山区是抗日战争时期山东党政军机关领导全省开展抗战活动的中心区域。一直在沂蒙根据地战斗工作的中共山东省委原书记高克亭曾经说过：“抗战时期，山东的中心在沂蒙，沂蒙的中心在沂南，沂南的中心在常山。”精辟地说明了常山区在历史上的位置和作用。
+		马牧池乡是一个典型的红嫂之乡，有数不清的红色景点，讲不完的革命故事。众多沂蒙红嫂的模范事迹塑就了沂南县丰厚的红色文化底蕴，丰富的红色历史遗存为该区域系统开发旅游业提供了宝贵的资源，这里因无私奉献的沂蒙精神和红嫂精神而享有红土地的美誉。"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer4" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="5"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_4hj4x")
+theme_override_font_sizes/font_size = 35
+text = "红色景点——沂蒙红嫂纪念馆"
+
+[node name="ImgContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4" index="1"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4/ImgContainer" index="0"]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("2_011ja")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4/ImgContainer" index="1"]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_j26on")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4" index="2"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_bksc2")
+theme_override_font_sizes/font_size = 16
+text = "		“沂蒙红嫂纪念馆”，是山东沂蒙党性教育基地，位于沂南县马牧池乡常山庄村，占地面积100余亩。是由山东省委组织部、临沂市委、沂南县委共同打造的、面向全国各级党员领导干部开展马克思主义群众观教育和党的群众路线教育的省级干部教育培训基地，由沂南县委组织部党性教育基地工作办公室直属管理。是国内迄今全面、系统介绍“红嫂”的专题纪念馆，也是中国一处以普通群众为主题的革命纪念馆。设置有红嫂主体展馆展区、红嫂生活体验展区和沂蒙红色遗迹展区。该馆以沂蒙红嫂的感人事迹展现了“最后一口粮当军粮，最后一块布做军装，最后一个儿子送战场”为核心内容的红嫂精神。"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer5" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="6"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_4hj4x")
+theme_override_font_sizes/font_size = 35
+text = "红色景点——沂蒙红色影视基地"
+
+[node name="ImgContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5" index="1"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5/ImgContainer" index="0"]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("4_4u774")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5/ImgContainer" index="1"]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("5_pneod")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5/ImgContainer" index="2"]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("6_8q8e2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5" index="2"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_bksc2")
+theme_override_font_sizes/font_size = 16
+text = "		沂蒙红色影视基地，位于山东省临沂市沂南县马牧池乡常山庄，兴建于2009年，是以影视拍摄服务为主，兼具红色旅游、红色写生、爱国主义教育、休闲娱乐等功能的综合性旅游区。
+		沂蒙红色影视基地主要景点由沂州城、常山古村落、爱国主义教育基地、影视服务中心、沂蒙红色写生基地等多余处景观组成，占地面积133万平方米，是以20世纪20-30年代沂蒙红色文化为背景的仿古建筑群。
+		沂蒙红色影视基为国家AAAA级旅游景区。在沂蒙红色影视基地取景的有电视剧《沂蒙》《永不磨灭的番号》、电影《铁道飞虎》等作品。"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer5/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer6" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="7"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer6" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_4hj4x")
+theme_override_font_sizes/font_size = 35
+text = "红色景点——沂蒙山孟良崮战役遗址"
+
+[node name="ImgContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer6" index="1"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer6/ImgContainer" index="0"]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("7_ik5lf")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer6/ImgContainer" index="1"]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("8_x14uc")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer6/ImgContainer" index="2"]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("9_u5qsv")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer6" index="2"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer6/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer6/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_bksc2")
+theme_override_font_sizes/font_size = 16
+text = "		孟良崮战役遗址，位于蒙阴县城东南28公里的蒙阴、沂南两县交界处。孟良崮山势峻峭，主峰与大崮顶、芦山大顶成鼎足之势，突兀于群山之上。1947年5月，为粉碎国民党对山东解放区之重点进攻，我华东野战军根据中共中央的指示，集中主力，猛攻敌中部突击部队，于14日将国民党整编第七十四师分割包围在孟良崮山区。激战两天三夜，全歼敌之“五大主力”之一装备精良的整编七十四师及援军一部，共32000余人，击毙敌中将师长张灵甫。这一胜利，使国民党进攻山东的计划遭到严重挫折，对扭转华东战局起了重大作用。现战役指挥所、防空洞、击毙张灵甫处等旧址犹存。1954年，国务院拨款修建了孟良崮烈士陵园。后在陵园中部修建了乳白色的厅式建筑“孟良崮战役烈士纪念馆”。纪念馆包括正厅、展厅及辅助建筑，陈列孟良崮战役的文物史料。"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer6/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
