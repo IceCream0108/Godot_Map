@@ -1,0 +1,84 @@
+[gd_scene load_steps=7 format=3 uid="uid://lphl0vd2ldby"]
+
+[ext_resource type="PackedScene" uid="uid://d3dikcgncjlkv" path="res://main/scene/DetailPage.tscn" id="1_nieu8"]
+[ext_resource type="Texture2D" uid="uid://ds8w5ji21riig" path="res://main/assets/texture/lanlin/图片1.png" id="2_hkg8e"]
+[ext_resource type="Texture2D" uid="uid://ldwfqcoh2iyf" path="res://main/assets/texture/lanlin/图片2.png" id="3_3au6s"]
+[ext_resource type="Texture2D" uid="uid://sxof46mthrgs" path="res://main/assets/texture/lanlin/图片3.png" id="4_3gi2l"]
+[ext_resource type="FontFile" uid="uid://xi2gj0edmhup" path="res://main/assets/font/TitleSTZHONGS.TTF" id="5_570oi"]
+[ext_resource type="FontFile" uid="uid://bik6b8g3jwe5i" path="res://main/assets/font/simhei.ttf" id="6_abs5q"]
+
+[node name="DetailLanLinXian" instance=ExtResource("1_nieu8")]
+ID = "LANLINXIAN"
+
+[node name="TitleLabel" parent="TitleCanvasLayer/TitleHBoxContainer/TitlePanel" index="0"]
+text = "兰陵县"
+
+[node name="ImgGridContainer" parent="ScrollContainer/WholeVBoxContainer/Imgs" index="0"]
+columns = 3
+
+[node name="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="0"]
+texture = ExtResource("2_hkg8e")
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_3au6s")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("4_3gi2l")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PlaceName" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Title_ButtonHBoxContainer" index="1"]
+text = "兰陵县"
+
+[node name="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer" index="0"]
+text = "兰陵县简介"
+
+[node name="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer/HBoxContainer" index="1"]
+text = "为纪念1933年中共领导的“苍山暴动”，取名苍山县。2013年12月27日，国务院予以批准；2014年1月8日，民政部同意并批复苍山县更名为兰陵县。1月21日，正式重新更名为兰陵县。"
+
+[node name="DetailVBoxContainer2" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="3"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_570oi")
+theme_override_font_sizes/font_size = 50
+text = "文峰山简介"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2" index="1"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_abs5q")
+theme_override_font_sizes/font_size = 30
+text = "位于兰陵县城西部，地处苏鲁交界，东靠临沂，西临枣庄，南接徐州，北望泰山。京沪、京福高速公路纵贯南北，临枣高速、临枣铁路、206国道横贯东西。
+文峰山原名神峰山，因鲁国执政大臣季文子设兰陵为次室邑，在此执政期间，清正廉洁，勤政为民，去世后葬于文峰山，后人为纪念他，把“神峰山”改为“文峰山”，山上有“季文子墓”“三清宫”“泰山殿”“泉源寺”“千佛崖”等遗址。
+文峰山同时是重要的革命纪念地，是抗日战争、解放战争时期重要的根据地和主战场，是山东红色旅游发展中的重要区域。山上有银厂惨案烈士纪念碑、中共鲁南区委书记赵镈烈士墓、山东军区八师政治部主任曾明桃烈士墓和“苍山暴动”领导人郭云舫烈士墓。鲁南革命烈士陵园就坐落在山南脚下，烈士陵园占地3.41公顷。四周筑有2米左右的院墙，西式门楼坐北朝南，坡地而立，左侧扁立柱镌有“烈士陵园”4个金色大字，4间门房衬附门楼两侧，两头各有一间小楼耸立对峙。园内建有鲁南革命历史纪念馆，馆后为烈士墓林，墓林后建有革命烈士纪念碑一座。"
+editable = false
+drag_and_drop_selection_enabled = false
+virtual_keyboard_enabled = false
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3

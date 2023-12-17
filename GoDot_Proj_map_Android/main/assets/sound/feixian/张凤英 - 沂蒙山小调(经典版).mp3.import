@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://2dnr6sqq3kar"
+path="res://.godot/imported/张凤英 - 沂蒙山小调(经典版).mp3-df1ebefd41d0274ea0bea7ac1abc1491.mp3str"
+
+[deps]
+
+source_file="res://main/assets/sound/feixian/张凤英 - 沂蒙山小调(经典版).mp3"
+dest_files=["res://.godot/imported/张凤英 - 沂蒙山小调(经典版).mp3-df1ebefd41d0274ea0bea7ac1abc1491.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

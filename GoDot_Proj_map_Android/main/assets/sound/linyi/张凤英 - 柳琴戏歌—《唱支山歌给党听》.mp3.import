@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://chh7uuc2hemro"
+path="res://.godot/imported/张凤英 - 柳琴戏歌—《唱支山歌给党听》.mp3-224d787291f2d9ce992cb76c43d6e428.mp3str"
+
+[deps]
+
+source_file="res://main/assets/sound/linyi/张凤英 - 柳琴戏歌—《唱支山歌给党听》.mp3"
+dest_files=["res://.godot/imported/张凤英 - 柳琴戏歌—《唱支山歌给党听》.mp3-224d787291f2d9ce992cb76c43d6e428.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

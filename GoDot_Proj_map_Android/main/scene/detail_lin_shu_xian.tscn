@@ -1,0 +1,61 @@
+[gd_scene load_steps=7 format=3 uid="uid://bcqdr6oxp4eng"]
+
+[ext_resource type="PackedScene" uid="uid://d3dikcgncjlkv" path="res://main/scene/DetailPage.tscn" id="1_52sli"]
+[ext_resource type="Texture2D" uid="uid://ii7xibqkkuei" path="res://main/assets/texture/linchu/沭河古道景区.png" id="2_xiifp"]
+[ext_resource type="Texture2D" uid="uid://cvsh0l1xav1q3" path="res://main/assets/texture/linchu/滨海红色文化纪念园.png" id="3_0e2xb"]
+[ext_resource type="Texture2D" uid="uid://bbtpr0mqrmmtq" path="res://main/assets/texture/linchu/玉圣园景区.png" id="4_w0ioo"]
+[ext_resource type="Texture2D" uid="uid://nffxoo6h0pc1" path="res://main/assets/texture/linchu/苍马山·冠山旅游区.png" id="5_j3eeh"]
+[ext_resource type="Texture2D" uid="uid://bfjso2iu1sxx8" path="res://main/assets/texture/linchu/钟华山景区.png" id="6_o3i3g"]
+
+[node name="DetailLinShuXian" instance=ExtResource("1_52sli")]
+ID = "LINSHUXIAN"
+
+[node name="TitleLabel" parent="TitleCanvasLayer/TitleHBoxContainer/TitlePanel" index="0"]
+text = "临沭县"
+
+[node name="ImgGridContainer" parent="ScrollContainer/WholeVBoxContainer/Imgs" index="0"]
+columns = 5
+
+[node name="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="0"]
+texture = ExtResource("2_xiifp")
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_0e2xb")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("4_w0ioo")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect4" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="3"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("5_j3eeh")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect5" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="4"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("6_o3i3g")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PlaceName" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Title_ButtonHBoxContainer" index="1"]
+text = "临沭县"
+
+[node name="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer" index="0"]
+text = "滨海红色文化纪念园"
+
+[node name="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer/HBoxContainer" index="1"]
+text = "滨海红色文化纪念园位于苍马山脚下 ，包括滨海革命纪念馆、刘少奇在山东纪念馆、新华社山东分社诞生地纪念园、滨南红色文化纪念园、朱村抗日战斗纪念馆、夹古关风景旅游区等。"

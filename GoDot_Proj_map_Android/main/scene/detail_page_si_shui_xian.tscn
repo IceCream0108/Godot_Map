@@ -1,0 +1,414 @@
+[gd_scene load_steps=29 format=3 uid="uid://bj832l4qj560c"]
+
+[ext_resource type="PackedScene" uid="uid://d3dikcgncjlkv" path="res://main/scene/DetailPage.tscn" id="1_4rkpb"]
+[ext_resource type="Script" path="res://main/scene/detail_page_si_shui_xian.gd" id="2_fualn"]
+[ext_resource type="Texture2D" uid="uid://xlcjehl6d34g" path="res://main/assets/texture/sishui/景点图片/微信图片_20231029165214.jpg" id="2_fvjnv"]
+[ext_resource type="Texture2D" uid="uid://c4hus86ee1lr6" path="res://main/assets/texture/sishui/景点图片/微信图片_202310291652141.jpg" id="3_vmpno"]
+[ext_resource type="Texture2D" uid="uid://bmsgn2pujw1vn" path="res://main/assets/texture/sishui/景点图片/微信图片_202310291652142.jpg" id="4_6dm5q"]
+[ext_resource type="Texture2D" uid="uid://xkulwjwsfsdf" path="res://main/assets/texture/sishui/景点图片/微信图片_202310291652143.jpg" id="5_cs07i"]
+[ext_resource type="Texture2D" uid="uid://dpfgdlx4ro0mx" path="res://main/assets/texture/sishui/景点图片/微信图片_202310291652144.jpg" id="6_vjf6a"]
+[ext_resource type="Texture2D" uid="uid://dkgwhsy46kfkw" path="res://main/assets/texture/sishui/景点图片/微信图片_202310291652145.jpg" id="7_ys8ho"]
+[ext_resource type="Texture2D" uid="uid://mvs5irb74hcv" path="res://main/assets/texture/sishui/景点图片/微信图片_202310291652146.jpg" id="8_kap8r"]
+[ext_resource type="Texture2D" uid="uid://bucle4hnm3mr2" path="res://main/assets/texture/sishui/景点图片/微信图片_202310291652147.jpg" id="9_5x34l"]
+[ext_resource type="Texture2D" uid="uid://cydemkij3u813" path="res://main/assets/texture/sishui/景点图片/微信图片_202310291652148.jpg" id="10_ssubd"]
+[ext_resource type="Texture2D" uid="uid://bavoa3h77qsri" path="res://main/assets/texture/sishui/景点图片/微信图片_202310291652149.jpg" id="11_wcm6c"]
+[ext_resource type="Texture2D" uid="uid://oldt6b6sqtj1" path="res://main/assets/texture/sishui/景点图片/微信图片_2023102916521410.jpg" id="12_ciih5"]
+[ext_resource type="FontFile" uid="uid://xi2gj0edmhup" path="res://main/assets/font/TitleSTZHONGS.TTF" id="13_m4w7x"]
+[ext_resource type="FontFile" uid="uid://bik6b8g3jwe5i" path="res://main/assets/font/simhei.ttf" id="14_dsla5"]
+[ext_resource type="Shader" path="res://main/assets/shader/ColorCircleShader.gdshader" id="15_15rcp"]
+[ext_resource type="Texture2D" uid="uid://d3jwqpwdjwhx8" path="res://main/assets/texture/icon/音乐.png" id="16_q3scr"]
+[ext_resource type="FontFile" uid="uid://d2efdtbddu7o3" path="res://main/assets/font/STFANGSO.TTF" id="17_bjvpb"]
+[ext_resource type="Texture2D" uid="uid://ufl2v3qngqkn" path="res://main/assets/texture/icon/白播放2.png" id="18_22f0k"]
+[ext_resource type="Texture2D" uid="uid://dcrvggb3j13tq" path="res://main/assets/texture/icon/白暂停.png" id="19_1xmcb"]
+[ext_resource type="AudioStream" uid="uid://oag6ubl6c1mh" path="res://main/assets/sound/sishui/歌唱泗水.mp3" id="21_fq3mg"]
+[ext_resource type="AudioStream" uid="uid://b1u52lhh01det" path="res://main/assets/sound/sishui/泗水.mp3" id="22_2jpig"]
+[ext_resource type="AudioStream" uid="uid://bqfjss8qhai71" path="res://main/assets/sound/sishui/泗水之歌.mp3" id="23_l0qtv"]
+[ext_resource type="AudioStream" uid="uid://bauqujchfa2ra" path="res://main/assets/sound/sishui/泗水民歌大辫子甩三甩.mp3" id="24_s3ebv"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p3m6p"]
+shader = ExtResource("15_15rcp")
+shader_parameter/texture_size = Vector2(100, 100)
+shader_parameter/radius = 50.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gbkm1"]
+texture = ExtResource("18_22f0k")
+modulate_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n6s0t"]
+texture = ExtResource("18_22f0k")
+modulate_color = Color(0.282353, 0.282353, 0.282353, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nkc1t"]
+texture = ExtResource("19_1xmcb")
+modulate_color = Color(0, 0, 0, 1)
+
+[node name="DetailPageSiShuiXian" instance=ExtResource("1_4rkpb")]
+script = ExtResource("2_fualn")
+ID = "SISHUIXIAN"
+
+[node name="TitleLabel" parent="TitleCanvasLayer/TitleHBoxContainer/TitlePanel" index="0"]
+text = "泗水县"
+
+[node name="ImgGridContainer" parent="ScrollContainer/WholeVBoxContainer/Imgs" index="0"]
+columns = 11
+
+[node name="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="0"]
+texture = ExtResource("2_fvjnv")
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_vmpno")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("4_6dm5q")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect4" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="3"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("5_cs07i")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect5" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="4"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("6_vjf6a")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect6" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="5"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("7_ys8ho")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect7" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="6"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("8_kap8r")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect8" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="7"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("9_5x34l")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect9" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="8"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("10_ssubd")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect10" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="9"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("11_wcm6c")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect11" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="10"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("12_ciih5")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PlaceName" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Title_ButtonHBoxContainer" index="1"]
+text = "泗水县"
+
+[node name="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer" index="0"]
+text = "回忆泗水(城)战斗
+"
+
+[node name="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer/HBoxContainer" index="1"]
+text = "		一九四五年二月二日，我鲁南军区主力三团，在鲁中三分区和各地方部队、民兵的配合下，一举攻克泗水城，全歼伪和平救国军第十军军长荣子恒以下两千余人，为我军大反攻取得了攻城的经验，打下了攻坚战的基础。二月十一日，山东军区首长罗荣桓、黎玉、肖华等同志通令嘉奖参战部队，指出：“泗水的光复，为我创造了极其有利的条件，鲁南、鲁中部队均有崇高功绩。”我当时在三团任参谋长，这场战斗虽已时隔三十六年，但当年战斗的情景，仍记忆犹新，现在把它写出来，作为对在这次战斗中牺牲的同志，对我们的三团团长王吉文同志的怀念。
+		(一)消灭汉奸荣子恒，是我们在鲁南军区统一指挥下，继歼灭蒋介石的嫡系九二军一四二师钮春霖部和惯匪刘桂棠的三十六师以后又一次漂亮的歼灭战。荣子恒是原东北军阀张作霖的总参谋长荣臻的儿子。他是个不学无术，吃喝玩乐的花花公子。“九·一八”事变后，荣臻在东北当了汉奸。荣子恒靠了他老子的地位和影响，先在东北军一一二师混了个副师长，继之又当了该师的三三四旅旅长，掌握了带兵的实权。父行子效，就在抗日战争进入最残酷的阶段，这个毫无民族气节，一身媚骨，有奶就是娘的败类，挑起“曲线救国”这块遮羞布，像他父亲一样，率部投降了日寇，被编成和平救国军第十军，他当上了伪十军军长。荣逆来到鲁南，极受日寇器重，把他视为鲁南的伪军支柱，妄图靠他来伪化整个鲁南地区。荣逆受宠若惊，盘踞鲁南崮口山区，为虎作伥，烧杀掳掠，奸淫妇女，压榨群众，剿杀抗日力量，干尽了坏事。群众恨之入骨，纷纷要求剪除此害。同时，崮口山区是我鲁南重要山区，与天宝山、抱犊崮互为犄角，敌伪控制该地，严重地威胁我中心根据地的安全。可是，在一九四四年以前，由于敌我力量对比悬殊，消灭荣伪的条件尚不成熟。经过一九四二年底至一九四四年初这段极其艰难困苦的斗争时间，我鲁南军区部队和人民，歼灭号称混世魔王的刘桂棠(刘黑七)的三十六师，拔除了很多敌伪据点，改变了过去那种“东西十余里，南北一线牵，一枪穿透的根据地”的局面。我们的根据地扩大了，我军的装备也随着抗战的节节胜利，大大加强了。就拿我们三团来说，每个营都编了个重机枪排，团里还编了迫击炮连。
+		鲁南军民，在这抗日战争胜利的前夜，满怀信心，开始向敌占区主动出击。一九四五年二月一日夜，鲁南军区集中了主力三团、五团全部和部分地方独立营，区中队、民兵，乘飓风大作的有利时机，向荣逆驻地崮口山区及桃花庄，东西天井旺远程奔袭。我们迂回敌后，秘密楔入敌纵深，一举全歼伪十军第二师，击毙师长刘国贞。此战斗极为激烈，我团伤亡亦较重，我与一营营长张朝忠同志均负重伤。随后我部又乘胜歼灭了伪一师苏富玉部驻柳行头之二团主力。荣逆遭此重创，慌忙率部钻入费县城固守。荣子恒似惊弓之鸟，在费县城仍感过于孤立，有全军覆没的危险，终日如坐针毡，慌恐不安。此时，日寇也由于兵源不足，各点守备兵力分散，为了达到“重点守备，要点控制”的目的，一九四四年十一月，调荣伪残部由费县移驻泗水城，妄图使其凭借泗水城的坚固，与靠近津浦路的滋阳(兖州)、曲阜两据点遥相呼应，互为支撑，以苟延残喘。
+		(二)在敌立脚未稳，发起攻势，是军事上经常采用的一个战术。我们三团领导，在荣子恒刚窜到泗水城不久，即向鲁南军区提出了攻克泗水城，消灭荣子恒的建议。军区批准了我们的建议。泗水城在山东省泰山的南面，因泗河发源于此故而得名。它在孔夫子的故乡曲阜以东约三十公里处，春秋战国时期，同属鲁国孔子的七十二贤之一仲子路，就出生在泗水城东的卞桥。泗水城，是从津浦路上的战略要地兖州通往临沂公路上的一个重要据点，也是连接鲁南、鲁中地下交通的要道。泗水县南北两面，是绵延起伏的山峦，两山中间夹着一块狭长的平地，泗河就在泗城以北自东向西源源流过，滋润着一片沃野。这里涝收山，旱收川，农产品比较丰富，是我山区主力和游击队物资供应的一个重要地区。我们鲁南三团，当时驻防在泗水城东南约五十公里的平邑县丰阳、唐村、朱家村一带山区。当我们接受攻打泗水城，消灭荣子恒的任务时，我们刚刚结束冬季大练兵，指战员的战斗素质大大提高，求战心情非常迫切，这为胜利攻取泗水城奠定了基础。我团是原山东纵队一旅三团，后与津浦支队合编改为沂蒙支队，后又改为三团的。三团建立后，经常活动在鲁南、鲁中交界的滋(兖州)临(临沂)公路两侧，不断给日寇汉奸以沉重打击。我团的特长之一是攻坚战斗。特别是用炸药进行突破更为拿手。这是因为从三团一成立就有像邢波文、马立训同志那样一批井下采煤的优秀矿工。他们在井下采煤实践中，熟悉了炸药的性能，掌握了使用炸药进行爆破的一套技术。当他们提出在战斗中对敌人的碉堡进行外部爆破的建议时，立即受到支持，果然首爆成功，显示了巨大的威力。这一技术，随着以后的战斗实践，不断总结提高，技术越来越熟，用法越来越巧妙，创造了偷爆、空爆、飞爆、连环爆等许多爆破方法。马立训同志是我团的第一名爆破手。由于他在多次的战斗中，爆破敌人的碉堡、城楼、圩墙，出色地完成任务，战功卓著，成为鲁南和山东部队有名的爆破英雄。马立训等同志创造的爆破技术，以后在山东部队中广泛被推广使用，对提高部队的攻坚技术和战斗力起了重要作用，我们三团也因此打了很多漂亮的攻坚战斗，使敌人闻风丧胆，群众亲切地称我们叫“老三团”。提起“老三团”，自然要联想到团长王吉文同志。三团的成长和发展与王吉文同志以身作则，身先士卒，刚毅顽强，多谋善断的带兵作风是分不开的。他是湖北省黄安县人，幼年给地主放牛，风霜劳苦铸成了他那坚强朴实的性格。他爱憎分明，疾恶如仇，很早就参加了革命。当过战士、警卫员、侦察员和基层指挥员，经过二万五千里长征，久经战阵，身负数伤。在他的大腿骨里一直残留着一粒子弹，每逢下雨阴天疼得他坐卧不安，难以入眠，可是一有战情他会把疼痛忘得一干二净。他机智聪明，善于学习，对新事物特别敏感，就是他首先发现并积极支持马立训同志，把爆破技术运用到战斗中去的。他那时才三十四、五岁，但频繁的战斗生活已把他磨炼成经验丰富的战斗指挥员了。他不仅善于判断敌情，分析战况，而且处事果敢、坚决，绝不因战斗的艰难残酷而犹豫动摇。因此，在我团，他受到了全团干部、战士的真诚爱戴、信任和尊敬。在王吉文团长的指挥下，我们三团逐渐形成了善于攻坚战斗，各级指挥员每战必须亲自实地侦察，指挥员在战斗中身先士卒带领战士冲锋陷阵的三大特点。特别是指挥员亲自实地侦察，这个优良的战斗作风，在以后的滕县攻坚战斗中，曾为陈毅元帅所表扬，并要求华东战场上的部队，学习这种好作风。这些好的作风，同样在攻克泗水城，消灭荣子恒的这次战斗中充分体现出来。
+		(三)为了稳操胜券，减少伤亡，我们在接受攻城任务之后，首先通过泗水县委和我团在泗水城的内线关系，对敌情组织了周密的侦察。经查，知道泗水城内守敌除日寇六人外，其余为荣逆司令部八大处的直属部队，约计一千多人，另有伪县大队一百八十余人。其主力驻于城北故县、城东之杨家庄、城南之南关及韩家庄，总兵力达两千余人。泗城西门面向兖州、曲阜，有公路相通，敌人自以为保险，在防守上较为薄弱，疏忽。泗城乃古城，城墙较高，也比较整齐，城外有护城壕一道，西门两侧筑有独立地堡，无其他防御设施，工事不强，城内兵力多用于城楼及制高点上，司令部设在城里之文庙内。我们根据各方侦察的情况，经过分析研究，认为驻守城内荣逆直属机关和县大队战斗力不强，如我们突然攻入城内，将其指挥机关消灭，敌人失去指挥，易于被我各个击破，并可乘胜争取外围之敌向我投降。因此，在战术上采取了迅速歼灭城内之敌，再歼外围之敌的打法。按照我团的传统，在泗水战斗发起之前，照例组织各级指挥员对泗城进行了实地侦察。一九四五年一月三十一日，我带领团营连三级干部，换成便衣，带上短枪和望远镜，向泗水进发。为了避免那些有经验的战士看见我们的行动乱猜疑，走露消息，我们天不亮就悄悄地离开了营地。当天我们在泗水城南靠近我区的一个村庄隐蔽下来，请了两个熟悉城关情况和地形的向导，在夜幕降临以后大家互相检查了行装，跳一跳有无声音，然后悄悄地向泗城接近。阳历二月初，虽然春天即将来临，山东的深夜，却依然是寒风刺骨，滴水成冰。加上来到敌人的鼻子底下，心情十分紧张。但是由于同志们对战斗的高度责任感，当我们来到泗水城下的时候，寒冷全部消失了，这大概是心中燃起了烈火的缘故吧。我们屏住呼吸，握紧短枪，轻轻地摸进了西关，西关没有敌人，我们又一步一步摸到西门口。西门紧紧关闭着，外面没有岗哨，地堡里也没有人，唯有城门楼上传来敌人的讲话声，咳嗽声和走动的声音。在这静静的寒夜里这些声音听得格外清楚。看到这种情景，我不由得暗自高兴，如果我们奔袭而来，完全可以直接炸开城门冲进去，使敌人来不及清醒就当了我们的俘虏。圆满完成了侦察任务，连夜返回，赶到营地已是一日早晨。我们顾不得休息，立刻向团长、政委及有关人员汇报了侦察情况，并提出了我们的建议。团长很高兴，细心询问了些情况，作了周密思考，最后下定战斗的决心，作了明确的战斗部署，决定下午即向泗水城运动部队，二十二时发起战斗。我们把主攻方向和突破口选在敌人设防最薄弱的西门。一营以一连由西门爆破突击，成功后负责歼灭文庙司令部之敌；二连由西门以北架梯登城，成功后向北发展控占北门；三连待一连突破后跟进，直扑伪县政府。二营负责肃清南关之敌，三营负责在城东北，打击可能出走之敌。尼山独立营在泗水城与曲阜之间设伏构筑工事，阻击由西面来援之敌。
+		 (四)当一连带着爆破组进入泗城西关以后，情况发生了变化，不知何故，敌人突然在西关增设了一个连防守，这就打乱了一连直接爆破西门，突入城内的战斗部署。只好先与守敌展开激战，当三连前来接替一连围歼西关守敌，让一连强爆西门时，二连已在西门北面架梯登城成功了。原来二连听到一连在西关与敌人接了火，就立即组织登城，一排长齐文勇，带领全排迅速突上城头。待二、三排登城时，因上人过多，云梯压断，未能跟进。我登城部队迅速控占西城楼，打开西门，一连、三连和二连的两个排迅速入城，按照任务区分投入战斗，展开巷战。战斗发展很快，至翌日十一时，二营肃清了南关之敌以后，整个战斗只剩下伪县政府高楼、东门和南门三点之敌，于是我们除留少部分兵力包围监视三点固守之敌外，大部分兵力抽出西去，协助尼山独立营打援。尼山独立营执行打援任务，早就布置在曲泗之间金庄至梁公林这段公路上。为了阻止敌人的汽车，他们砍倒公路两侧杨树横在路中间，并作好防御工事，严阵以待。二日十三时，曲阜之日伪军果然出援泗水，我部队立即猛烈反击，援敌很快为我击溃，仓惶西逃，龟缩回它的乌龟壳里去了。二日十九时，我团向困守在伪县政府和东、南二门三点之敌发起了总攻。这三点中，工事比较坚固，兵力较多较强的是伪县政府高楼，这里有日寇指挥官石川、顾问长泽金见及伪县大队近二百人。我们团级指挥员，大部分前来临阵指挥，王吉文团长亲自观察了地形，决定从西北角对敌人炮楼实行爆破。这里有一段五、六十米长的开阔地，通过十分困难。王团长亲自指挥火力掩护，第一名爆破手在通过开阔地时负伤。爆破大王马立训立即跃出掩体，迅速冲上去接过炸药包。透过朦胧的夜幕，只见马立训以他那熟练的动作，敏捷的步伐，忽东忽西，忽进忽停，躲过敌人的扫射，向伪县政府高楼突进。四十米，二十米，十米，转眼就要接近炮楼，忽然见马立训一扑不动了，我们的心一下子提起来。时间一分一秒地过去，我们的心越来越紧张，敌人停止了扫射，王团长两眼紧盯着马立训倒下的地方，大家沉默着，猜测着可能发生的不幸。忽听王团长高兴地喊道：“冲上去啦!”没等我们醒悟过来，就听一声轰鸣，伪县政府高楼下面腾起一股滚滚的浓烟。由于这个高楼是修在一个两米多高的土坎上，未被直接炸倒，但是敌人却被爆炸声震得迷迷糊糊，晕头转向。在我们猛烈的冲锋下，敌人全部交械投降，日寇指挥官石川还想负隅顽抗，被当场击毙。伪十军军长荣子恒在其司令部文庙被攻占以后，带着他的副军长、师长等百余人退守东门城楼。此时他看大势已去，全军覆灭的下场已无可挽回，于是偷偷弄来一条绳子，拴在城楼上，乘黑夜从城楼上溜下来，妄图逃窜。可是我三营无数只警惕的眼睛和黑洞洞的枪口，早已在城下等着他了，当他溜下城楼没跑多远就被击毙了。很快，南门之敌也被全歼。随即敌人在故县、杨家庄的两个主力团，在我强大的军事和政治攻势下，也都乖乖地交械投降。至此，攻克泗水城，消灭荣子恒的战斗，历时二十六小时，全部胜利结束，共歼敌两千多人。其中击毙伪军长荣子恒，副军长陈镇潘、参谋长朱洪、一师副师长朱级动以下一百二十二人，俘虏伪一师师长苏富玉以下近两千人，击毙日敌指挥官石川以下二十人(其中日敌增援部队十四人)，俘伪县长李香亭、伪县大队长孔润阡以下一百八十余人。一九四五年春节就要到了，泗水城的解放，给传统的节日增添了异彩。人民群众敲锣打鼓，庆祝胜利，准备过年。为了让群众欢欢乐乐过个胜利年，经政府和部队领导研究，决定把缴获的大批粮食，除部队留一部分给养外，其余全部分给群众。消息传开，远近百姓扶老携幼，带着口袋、篮子，络绎不绝地赶来泗城领粮。整整一天一夜，泗水城内人山人海，川流不息，人民群众欣喜若狂，赞不绝口地称颂共产党八路军。荣子恒卖国求荣，认贼作父，为虎作伥，饮弹丧命，鲁南军民无不拍手称快，有秧歌调唱得好：李香亭(伪县长)来真无能，东边请来荣子恒。荣子恒更草包，见了八路撒腿跑。荣子恒来大坏蛋，认贼作父当汉奸；费县拣了一条命，来到泗水命归天！"
+
+[node name="DetailVBoxContainer2" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="3"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("13_m4w7x")
+theme_override_font_sizes/font_size = 35
+text = "秦始皇泗水求鼎
+"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2" index="1"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("14_dsla5")
+theme_override_font_sizes/font_size = 16
+text = "		“泗水取鼎”是汉画像石中最广泛的历史故事题材，关于其内容，最早见于《史记·秦始皇本纪》：“始皇还，过彭城，斋戒祷祠，欲出周鼎泗水，使千人没水求之，弗得。”   
+		泗水捞鼎图《水经注·泗水》中记述甚祥而切：“周显王四十二年，九鼎沦没泗渊，秦始皇时而鼎见于斯水，始皇自以德合三代，大喜，使数千人没水求之，不得，所谓‘鼎伏’也；亦云系而行之，未出，龙齿啮断其系，故语曰：‘称乐大早绝鼎系’，当是孟浪之传耳。”传说秦始皇东巡后，路过徐州彭城的泗水，见到水中露出一周鼎，大喜，随命其随从下水捞鼎。即将要把鼎打捞上来时，鼎内一龙头伸出，咬断了系鼎的绳索，鼎复沉入水下，再也无法找到。汉画像石中的图像都是作“系而行之，未出，龙齿啮断其系”的画面（说详下）。
+		而据《史记·秦始皇本纪》：“（秦昭王五十二年）周民东亡，其器九鼎入秦。”《正义》：“禹贡金九牧，铸鼎于荆山之下，各象九州之物，故言九鼎。历殷至周赧王[五]十九年，秦昭王取九鼎，其一飞入泗水，余八入于秦中。”《史记·孝武本纪》载有司曰：“禹收九牧之金，铸九鼎，皆尝鬺烹上帝鬼神，遭圣则兴，迁于夏商。周德衰，宋之社亡，鼎乃沦没而不见。”《史记·封禅书》记载：“秦灭周，周之九鼎入于秦。或曰：宋太丘社亡而鼎没于泗水彭城下。”《太平御览》卷七五六引《史记》则作：“周末有九鼎徙秦氏，[或]曰：[宋]太丘社亡而鼎没于泗水彭城下。其后百一十五年而秦兼天下。始皇二十八年，过彭城，斋戒祷祀，欲出周鼎，使千人没水求之，不得。”汉画像石播报编辑画面中部为“泗水捞鼎图”在汉画像石中形象地刻画了这则故事，如“泗水捞鼎图”，画像的下格，桥上之人为秦始皇，桥两边的众人以绳拉鼎，鼎内一龙头伸出欲咬绳索。
+		《史记·封禅书》言汉文帝十五年，方士新垣平言“周鼎亡在泗水中，今河溢通泗，臣望东北汾阴直有金宝气，意周鼎其出乎？兆见而不迎则不至”，于是，文帝使治庙汾阴南，临河，欲祠出周鼎，但没有成功。可见汉人对鼎没泗水及始皇取鼎泗水的故事是深信不疑的。“九鼎”是我国夏朝时铸造的九只古朴精美，气势庄重的青铜器。《史记·孝武本纪》：“禹收九牧之金，铸九鼎，皆尝鬺烹上帝鬼神。”《汉书·郊祀志》：“禹收九牧之金，铸九鼎，象九州。”夏朝时将天下分为九州。九鼎则代表九州，并将各州名山大川绘画仿刻于九鼎之上。“九鼎”是一套稀世之作，它体现了夏王朝的王权至高无上，被奉为我国的传国之宝。相传成汤迁九鼎于商邑，周武王迁之于洛邑。春秋时期，周王室的统治日渐衰落，诸侯强国欲将九鼎归为已有。公元前606年，楚庄王在东周边境陈兵炫耀武力，劈头问鼎。战国时期，秦国兴兵临周，企图夺鼎，周向齐国求救，齐楚等强国常为九鼎而刀戍相见。公元前254年，秦灭东周，但珍贵的国宝竟下落不明，不翼而飞了。在史籍中，关于九鼎的记载各有不同：司马迁的《史记》中有两种不同说法，其一为《史记·秦本纪》中记载：“周氏东亡，其器九鼎之秦。”即为九鼎落入秦王之手。其二为《史记·封禅书》中记载：“周德衰，宋之社亡，鼎乃沦没，伏而不见。”是说九鼎在东周时就已遗失了。东汉班固的《汉书》中兼收两种说法，但又另有记载。《汉书·郊祀志》中记载：“周显王之四十二年(公元前327年)……鼎伦没于泗水彭城下。”即为秦灭周前九鼎便沉于泗水了。
+		《史记·秦始皇本纪》记载，公元前219年，秦始皇在彭城“斋戒祷祠，欲出周鼎泗水，使千人没水求之不得。”说明九鼎并未入秦或没全部入秦。唐朝张守节的《史记正义》中记载：“周赧王19年秦昭王取九鼎，其一飞入泗水，余七入于秦中。”但此说法未提供资料来源。清朝王先谦的《汉书补注》中提出，周王室为防诸侯强国夺鼎，在东周时已将鼎销毁铸钱了。对外则诡称下落不明，但九鼎被视为天命之所在，只能与社稷共存亡，因畏惧强国夺鼎而毁之似不在情理之中。秦汉时期，秦始皇在泗水中捞鼎未得;汉文帝、汉武帝继续找鼎，据说汉武帝在汾阳寻得沉入泗水的一鼎，但又无法证实是九鼎之一。九鼎究竟何时失落的呢?在何方呢?是否能重现人世间呢?迄今仍是个难解之谜。"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer3" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="4"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("13_m4w7x")
+theme_override_font_sizes/font_size = 35
+text = "泗水历史文化"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3" index="1"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("14_dsla5")
+theme_override_font_sizes/font_size = 16
+text = "		泗水县是山东省济宁市辖县，位于山东省中南部，泰沂山区南麓。行政区域1118.96平方千米。辖2个街道、11个镇。县人民政府驻泗河街道泉兴路。截至2022年末，泗水县常住人口为53.48万人。
+		泗水之地，虞夏属徐州之域。商为卞明国。周为鲁国卞邑。秦仍为卞邑，属薛郡。西汉置卞县，属徐州鲁国，东汉仍沿用西汉旧制。三国属魏。两晋南北朝期间，所属无常，时置时废。隋朝开皇十一年（公元591年）始置泗水县。 
+		泗水县地势南北高，中部低，由东向西倾斜，南北低山丘陵有738.5平方千米，占总面积67%，中部是河谷平地有353.2平方千米。泗水县最高处凤仙山海拔608米。属暖温带季风气候区，年均温13.4℃，无霜期180－220天，常年降水量平均755毫米。主要旅游景点有泉林泉群、泉林卞桥、安山寺、万紫千红度假区，泗张万亩桃花园。
+		2018年10月，获得全国农村一二三产业融合发展先导区。第二批国家农产品质量安全县。2020年11月，入选水利部第一批深化小型水库管理体制改革样板县（市、区）名单。
+		五帝时期，泗水为穷桑地，隶属于曲阜，为古都之近畿。自颛顼称帝，历尧、舜、禹，至汤伐卞，泗水之域先后为幕国（蔑国）、崇国、卞明国之地。夏朝，泗水仍为卞明国，隶属徐州。商朝前期，泗境仍为卞明国地，后期并入奄国。西周，泗水之域隶属鲁国，为卞邑、郚邑、蔑邑（姑蔑）、桃邑。东周前期，泗境仍属鲁国。至战国末期，泗地归属不定。鲁顷公二十四年（公元前248年）楚灭鲁，泗地归楚国。楚王负刍五年（前223年）秦灭楚，泗地属秦国。秦代，泗水地域属薛郡鲁县。西汉时期，在泗境卞邑置卞县，隶属鲁国；在郚邑置郚乡县，隶属东海郡。东汉时期，郚乡县废，入卞县，隶属豫州鲁国。三国魏，泗境仍为卞县，隶属豫州鲁郡。西晋前期，卞县仍隶属鲁郡；惠帝末年，晋乱，卞县废。东晋，泗境先隶属鲁郡鲁县。咸和二年（327年）起，泗地先后归前赵、后赵、冉魏、前燕、前秦、后秦。太和元年（366年），陷于燕。宁康元年（373年），陷于秦。南朝宋初，卞县废。泰始二年（466年）复置卞县，属兖州（后改属徐州）鲁郡。因兖州刺史毕敬众降魏，其后，所属忽宋忽魏。至宋末梁初常属北魏。北魏，县境西部为汶阳县（治所在今中册镇故县村），东部为弁县（“弁”通“卞”），均属兖州鲁郡。北齐、北周，鲁郡改为任城郡，弁、汶阳属之。隋开皇四年（584年），汶阳县并入鲁县，鲁县改称汶阳县，属兖州。开皇十六年（596年），析汶阳县东部区域置泗水县（因泗水发源于境内而得名），属兖州；汶阳县更名曲阜县。 一说，开皇十一年（591年）卞县更名为泗水县，县治卞城；十六年（596年）汶阳县东部划归泗水县，县治迁至虚朾（今泗水县城）大业二年（606年），兖州改为鲁州；次年，废鲁州，设鲁郡，泗水县属之。唐代，泗水县属河南道兖州鲁郡。北宋至道三年（997年），泗水县属京东路兖州；熙宁七年（1074年），京东路分为东西两路，泗水县属京东西路兖州；政和八年（1118年），兖州升为袭庆府，复置鲁郡，泗水县属京东西路袭庆府鲁郡。金代，为山东西路兖州所辖。元代，属济宁路兖州，至元二年（1265年）泗水县并入曲阜。至元三年（1266年）春，因治理不便，置锦川县，县治音义（位于泗城以西八里）；同年冬，废锦川县，复置泗水县，县治位于原县城，仍隶属兖州。明代洪武初年，泗水县隶属山东布政使司济宁府兖州。洪武十八年（1385年），济宁府降为济宁州，兖州升为府，泗水县属兖州府。清代仍属兖州府。民国元年（1912年），民国建立，泗水县衙改称泗水县公署，知县改称县知事。民国二年（1913年），裁撤州、府，改省、道、县三级制，泗水县属山东省岱南道。民国三年（1914年），为济宁道所辖。民国十六年（1927年），废除道制，泗水县直属山东省。民国十九年（1930年）1月，县公署改为县政府，县知事改称县长。民国二十五年（1936年），泗水县属第一行政督察区。民国二十七年（1938年）10月，中共成立抗日民主政权，泗境属曲泗宁中心县。民国二十八年（1939年）春，以滋临公路为界，划为两个县：公路以南为邹东县，以北为泰泗宁中心县。民国二十九年（1940年）2月，撤消曲泗宁中心县，建立泗水中心县。民国三十年（1941年）7月，泗水、曲阜合并为曲泗县。10月，泗河以北属泰泗宁中心县（后改泰宁县），属鲁中区泰山专署；泗河以南属邹泗滕边县（后改邹东县），属鲁南区尼山专署。民国三十一年（1942年）2月，于泗水北境建立泗北办事处（县级），属鲁南区第一行署；10月撤销。民国三十二年（1943年）8月，在泰安、泗水、宁阳县边区设立泰泗宁县，属鲁中行政区第三专区。1950年5月，属泰安专区。1956年2月，泗水县划归济宁专区。1983年8月，泗水县划归泰安地区。1985年3月，泗水县划归济宁市。
+		2022年，泗水县常住人口总数53.48万人，其中城镇人口24.36万人, 农村人口29.12万人，常住人口城镇化率45.55%。年末户籍总人口64.09万人，其中城镇人口23.54万人、乡村人口40.55万人。全年出生户籍人口4212人，死亡人口7757人。 [42]民族泗水县有25个少数民族成分，少数民族人口3562人，占泗水县总人口的0.57%。千人以上的民族有回族，人口2777人，占少数民族总人口的78%。千人以下百人以上的少数民族有佤族，人口239人。20人以上的少数民族有拉祜族、满族、苗族、彝族、黎族、壮族等。主体民族为汉族。
+		卞庄子，春秋鲁卞邑大夫。卞庄子有勇力，武艺高强。曾经在卞城南山坡游猎，刺杀两虎，“两虎相斗，必有一伤”的典故由此而来，泗水泉林人。仲子仲由，（公元前542年—公元前480年），字子路，又字季路，鲁国卞人，孔子得意门生，以政事见称。唐元宗开元二十七年被追封为卫侯，宋真宗大中祥符二年被加封为河内公，度宗咸淳二年被晋封为卫公，明世宗嘉靖九年被追称为先贤仲子。 
+李自良，泗水县人。唐贞元三年（787年）唐德宗诏令李自良接任马燧职务。册封自良为右龙武大将军，并受令驻防河东。自良在任期间，政绩卓著，被授为检校工部尚书，充任河东节度使。贞元十二年（796年），官封尚书左仆射。    
+		杜辂，字从殷，明代泗水人。嘉靖辛酉科举人，第二年就考中壬戌科进士，名列三甲第二名 。有《创修石城记》《重修庙学记》及诗文传世。为彰其功德，明代知县徐卿于泗水城南大街建“进士坊”纪念。
+		风景名胜，山东泗水万紫千红生态养生旅游度假区位于泗张镇，该项目占地11000亩，以1200亩青界湖为中心。规划了白鹭、鸳鸯、喜鹊、野山鸡、野兔等野生动物保护观赏区以及财山、龟山、皇落山、绪子山、鸟岛、青界岛、生态湿地等自然景观观光项目。国家AAAA级旅游景区。泉林泉群泉林泉群泉林泉群景区位于泗水县城东25千米的陪尾山下，是古老泗河的发源地，因名泉荟萃，泉多如林而得名，有名泉七十二，大泉数十，小泉多如牛毛，泉群流量1.35立方米/秒。2008年11月正式批准为国家AAA级旅游景区。
+		安山景区安山景区坐落于风景秀丽的生态旅游名镇泗张镇境内。景区占地面积1000亩，各种植被近百种，自然植被资源面积占有率达60%以上。享有“安山春秀”之称，为泗水十景之一。国家AAA级旅游景区、国家三星级旅游饭店、国家级农业旅游示范点。
+		西侯幽谷位于泗水县政府驻地以北8千米处的中册镇区域内，风景区总面积约13平方千米，区内大小山头14座，峡谷13条，整个山势恰如字母C的形状，其中三条大峡谷延绵20华里，因而被誉为“鲁南第一大峡谷”。省级水利风景名胜区、省级森林公园。"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SongName" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer/SongInfVBoxContainer" index="0"]
+text = "歌唱泗水"
+
+[node name="Music1HboxContainer2" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="6"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2" index="0"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="IconCenterContainer" type="CenterContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2" index="1"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2/IconCenterContainer" index="0"]
+material = SubResource("ShaderMaterial_p3m6p")
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+color = Color(0.905882, 0.666667, 0.482353, 1)
+
+[node name="MusicIconTextureRec" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2/IconCenterContainer" index="1"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = ExtResource("16_q3scr")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SongInfVBoxContainer" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2" index="2"]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+
+[node name="SongName" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2/SongInfVBoxContainer" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "泗水"
+
+[node name="Singer" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2/SongInfVBoxContainer" index="1"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17_bjvpb")
+theme_override_font_sizes/font_size = 15
+
+[node name="Music2Button" type="Button" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2" index="3"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+size_flags_stretch_ratio = 1.5
+theme_override_styles/normal = SubResource("StyleBoxTexture_gbkm1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_n6s0t")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nkc1t")
+toggle_mode = true
+
+[node name="Music1HboxContainer3" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="7"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3" index="0"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="IconCenterContainer" type="CenterContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3" index="1"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3/IconCenterContainer" index="0"]
+material = SubResource("ShaderMaterial_p3m6p")
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+color = Color(0.905882, 0.666667, 0.482353, 1)
+
+[node name="MusicIconTextureRec" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3/IconCenterContainer" index="1"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = ExtResource("16_q3scr")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SongInfVBoxContainer" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3" index="2"]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+
+[node name="SongName" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3/SongInfVBoxContainer" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "泗水之歌"
+
+[node name="Singer" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3/SongInfVBoxContainer" index="1"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17_bjvpb")
+theme_override_font_sizes/font_size = 15
+
+[node name="Music3Button" type="Button" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3" index="3"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+size_flags_stretch_ratio = 1.5
+theme_override_styles/normal = SubResource("StyleBoxTexture_gbkm1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_n6s0t")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nkc1t")
+toggle_mode = true
+
+[node name="Music1HboxContainer4" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="8"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4" index="0"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="IconCenterContainer" type="CenterContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4" index="1"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4/IconCenterContainer" index="0"]
+material = SubResource("ShaderMaterial_p3m6p")
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+color = Color(0.905882, 0.666667, 0.482353, 1)
+
+[node name="MusicIconTextureRec" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4/IconCenterContainer" index="1"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = ExtResource("16_q3scr")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SongInfVBoxContainer" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4" index="2"]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+
+[node name="SongName" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4/SongInfVBoxContainer" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "泗水民歌大辫子甩三甩"
+
+[node name="Singer" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4/SongInfVBoxContainer" index="1"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17_bjvpb")
+theme_override_font_sizes/font_size = 15
+
+[node name="Music4Button" type="Button" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4" index="3"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+size_flags_stretch_ratio = 1.5
+theme_override_styles/normal = SubResource("StyleBoxTexture_gbkm1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_n6s0t")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nkc1t")
+toggle_mode = true
+
+[node name="Audio1StreamPlayer" parent="Musics" index="0"]
+stream = ExtResource("21_fq3mg")
+
+[node name="Audio1StreamPlayer2" type="AudioStreamPlayer" parent="Musics" index="1"]
+stream = ExtResource("22_2jpig")
+
+[node name="Audio1StreamPlayer3" type="AudioStreamPlayer" parent="Musics" index="2"]
+stream = ExtResource("23_l0qtv")
+
+[node name="Audio1StreamPlayer4" type="AudioStreamPlayer" parent="Musics" index="3"]
+stream = ExtResource("24_s3ebv")
+
+[connection signal="toggled" from="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer/Music1Button" to="." method="_on_music_1_button_toggled"]
+[connection signal="toggled" from="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2/Music2Button" to="." method="_on_music_2_button_toggled"]
+[connection signal="toggled" from="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3/Music3Button" to="." method="_on_music_3_button_toggled"]
+[connection signal="toggled" from="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4/Music4Button" to="." method="_on_music_4_button_toggled"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://rc22ohkfv815"
+path="res://.godot/imported/群星 - 弹起我心爱的土琵琶.mp3-9b6f688d4642b1ecb84dceb6d4e698f0.mp3str"
+
+[deps]
+
+source_file="res://main/assets/texture/zaozhuang/薛城区/群星 - 弹起我心爱的土琵琶.mp3"
+dest_files=["res://.godot/imported/群星 - 弹起我心爱的土琵琶.mp3-9b6f688d4642b1ecb84dceb6d4e698f0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

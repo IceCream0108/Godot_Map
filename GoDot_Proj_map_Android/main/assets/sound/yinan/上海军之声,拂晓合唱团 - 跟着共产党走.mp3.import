@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bmnxlaxp88rmu"
+path="res://.godot/imported/上海军之声,拂晓合唱团 - 跟着共产党走.mp3-29f13f06e03ca4a7d3a3ad0ebb74bcbd.mp3str"
+
+[deps]
+
+source_file="res://main/assets/sound/yinan/上海军之声,拂晓合唱团 - 跟着共产党走.mp3"
+dest_files=["res://.godot/imported/上海军之声,拂晓合唱团 - 跟着共产党走.mp3-29f13f06e03ca4a7d3a3ad0ebb74bcbd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

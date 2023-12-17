@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dt7att033u8an"
+path="res://.godot/imported/群星 - 游击队之歌.mp3-e0499f766ad7c29382bcce6ccdfa3f86.mp3str"
+
+[deps]
+
+source_file="res://main/assets/texture/zaozhuang/薛城区/群星 - 游击队之歌.mp3"
+dest_files=["res://.godot/imported/群星 - 游击队之歌.mp3-e0499f766ad7c29382bcce6ccdfa3f86.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

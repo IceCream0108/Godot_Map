@@ -1,0 +1,364 @@
+[gd_scene load_steps=28 format=3 uid="uid://b8as8uj1xxxwy"]
+
+[ext_resource type="Script" path="res://main/scene/feixian.gd" id="1_0hnh3"]
+[ext_resource type="Texture2D" uid="uid://dw14cb72283b8" path="res://main/assets/texture/feixian/景点图片/大青山胜利突围纪念馆2.jpeg" id="2_bq74r"]
+[ext_resource type="Texture2D" uid="uid://1ibhffqllujf" path="res://main/assets/texture/feixian/景点图片/大青山胜利突围纪念馆.jpeg" id="3_cvuj7"]
+[ext_resource type="Texture2D" uid="uid://b1ig6scku3xit" path="res://main/assets/texture/feixian/景点图片/抗大一分校旧址2.jpeg" id="4_kakxi"]
+[ext_resource type="Texture2D" uid="uid://g44jn02b1nfu" path="res://main/assets/texture/feixian/景点图片/抗大一分校旧址.jpeg" id="5_467dd"]
+[ext_resource type="Texture2D" uid="uid://dwcmiixom5vdq" path="res://main/assets/texture/feixian/景点图片/沂蒙山小调博物馆2.jpeg" id="6_jqqdg"]
+[ext_resource type="Texture2D" uid="uid://qqgf3qaidk4u" path="res://main/assets/texture/feixian/景点图片/沂蒙山小调博物馆.jpeg" id="7_tcgnc"]
+[ext_resource type="Texture2D" uid="uid://dxg1pable71g" path="res://main/assets/texture/feixian/景点图片/苏鲁豫皖边区特委纪念馆.jpeg" id="8_bnd05"]
+[ext_resource type="Texture2D" uid="uid://d3jwqpwdjwhx8" path="res://main/assets/texture/icon/音乐.png" id="9_novtg"]
+[ext_resource type="Texture2D" uid="uid://cmnwo2208rb5v" path="res://main/assets/texture/icon/白地图-地标.png" id="9_ohve7"]
+[ext_resource type="FontFile" uid="uid://xi2gj0edmhup" path="res://main/assets/font/TitleSTZHONGS.TTF" id="10_7agcr"]
+[ext_resource type="Shader" path="res://main/assets/shader/ColorCircleShader.gdshader" id="10_838yg"]
+[ext_resource type="AudioStream" uid="uid://2dnr6sqq3kar" path="res://main/assets/sound/feixian/张凤英 - 沂蒙山小调(经典版).mp3" id="10_aj824"]
+[ext_resource type="FontFile" uid="uid://bik6b8g3jwe5i" path="res://main/assets/font/simhei.ttf" id="11_2fudl"]
+[ext_resource type="Texture2D" uid="uid://cci1hiea1b4j2" path="res://main/assets/texture/icon/paper.jpg" id="12_tm6dl"]
+[ext_resource type="Texture2D" uid="uid://ufl2v3qngqkn" path="res://main/assets/texture/icon/白播放2.png" id="15_ptnvx"]
+[ext_resource type="FontFile" uid="uid://d2efdtbddu7o3" path="res://main/assets/font/STFANGSO.TTF" id="15_t0jir"]
+[ext_resource type="Texture2D" uid="uid://dcrvggb3j13tq" path="res://main/assets/texture/icon/白暂停.png" id="16_p8gkm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wa8qp"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7pyny"]
+bg_color = Color(0.313726, 0, 0.803922, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.709804, 0.8, 1, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6oi3a"]
+bg_color = Color(0.458824, 0.321569, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.698039, 0.792157, 1, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u7let"]
+bg_color = Color(0.215686, 0, 0.576471, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.403922, 0.572549, 1, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m22yi"]
+bg_color = Color(0.670588, 0.85098, 0.921569, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vihxa"]
+shader = ExtResource("10_838yg")
+shader_parameter/texture_size = Vector2(100, 100)
+shader_parameter/radius = 50.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_223hb"]
+texture = ExtResource("15_ptnvx")
+modulate_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7migt"]
+texture = ExtResource("15_ptnvx")
+modulate_color = Color(0.313726, 0.313726, 0.313726, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o3byn"]
+texture = ExtResource("16_p8gkm")
+modulate_color = Color(0, 0, 0, 1)
+
+[node name="FeiXian" type="CanvasLayer"]
+offset = Vector2(576, 0)
+transform = Transform2D(1, 0, 0, 1, 576, 0)
+script = ExtResource("1_0hnh3")
+
+[node name="TitleCanvasLayer" type="CanvasLayer" parent="."]
+layer = 5
+
+[node name="Panel" type="Panel" parent="TitleCanvasLayer"]
+offset_right = 576.0
+offset_bottom = 70.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_wa8qp")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TitleCanvasLayer/Panel"]
+layout_mode = 0
+offset_right = 576.0
+offset_bottom = 70.0
+
+[node name="Label" type="Label" parent="TitleCanvasLayer/Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_7agcr")
+theme_override_font_sizes/font_size = 30
+text = "费 县"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 3
+vertical_scroll_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel" type="Panel" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 340)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ImgGridContainer" type="GridContainer" parent="ScrollContainer/VBoxContainer/Panel"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 4032.0
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 7
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/VBoxContainer/Panel/ImgGridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_bq74r")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/VBoxContainer/Panel/ImgGridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_cvuj7")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/VBoxContainer/Panel/ImgGridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("4_kakxi")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextureRect4" type="TextureRect" parent="ScrollContainer/VBoxContainer/Panel/ImgGridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("5_467dd")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextureRect5" type="TextureRect" parent="ScrollContainer/VBoxContainer/Panel/ImgGridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("6_jqqdg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextureRect6" type="TextureRect" parent="ScrollContainer/VBoxContainer/Panel/ImgGridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("7_tcgnc")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextureRect7" type="TextureRect" parent="ScrollContainer/VBoxContainer/Panel/ImgGridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("8_bnd05")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "    费 县
+"
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="ScrollContainer/VBoxContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_7pyny")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6oi3a")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_u7let")
+text = "         查看地图   "
+
+[node name="Sprite2D" type="Sprite2D" parent="ScrollContainer/VBoxContainer/VBoxContainer/HBoxContainer/Button"]
+position = Vector2(36, 31)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("9_ohve7")
+
+[node name="VSplitContainer" type="VSplitContainer" parent="ScrollContainer/VBoxContainer/VBoxContainer"]
+modulate = Color(0.458824, 0.6, 1, 1)
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Panel" type="Panel" parent="ScrollContainer/VBoxContainer/VBoxContainer/VSplitContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_m22yi")
+
+[node name="DetailVBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 10
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/VBoxContainer/DetailVBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_7agcr")
+theme_override_font_sizes/font_size = 35
+text = "费县红色文化简介"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/VBoxContainer/VBoxContainer/DetailVBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/VBoxContainer/VBoxContainer/DetailVBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/VBoxContainer/VBoxContainer/DetailVBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_2fudl")
+theme_override_font_sizes/font_size = 16
+text = "		费县1929年就建立了中国共产党的组织，抗战以来，全县1.2万多人参军，15.6万人支前，1700多人为国捐躯。而且在境内直接进行过大青山胜利突围、柱子山歼灭惯匪刘桂棠、解放费城等大小战斗上百次，共同谱写了一曲曲赞歌和创造了根据地文化、解放区文化，1939年11月上旬，中央军委关于抗大第一分校东迁山东抗日根据地就地培训山东抗日干部，同时对第一分校的领导进行调整，周纯全为校长，李培南为政治委员兼政治部主任，韦国清为副校长兼训练部长。
+		抗大第一分校在敌后办学7年多，其中在沂蒙山区学习、工作、战斗了6年多，为军队和地方培养干部2.4万余名。现有一一五师、抗大一分校和鲁南军直属卫生所旧址，陈毅、罗荣恒、徐向前、谷牧等老一辈革命家在这里战斗工作过，留下了光辉的足迹。1940年抗大一分校文工团团员阮若珊、李林于东蒙山下的白石屋创作的《沂蒙山小调》，已成为代表沂蒙革命历史文化的名曲和省级非物质文化遗产，6０多年来久唱不衰，在国内外产生了深远的影响。特别是发生在1941年的大青山突围战，被原国务院副总理谷牧称为“北有平型关，南有大青山”，大青山革命纪念地已被团中央命名为“全国青少年爱国主义教育基地”。
+四处代表红色景点：
+		1、沂蒙山小调活态博物馆
+		《沂蒙山小调》是山东省经典民歌，诞生于山东临沂沂蒙山望海楼脚下的费县薛庄镇白石屋村。它的前身是1940年由驻沂蒙山区抗大文工团团员李林和阮若珊等人采集创作的《反对黄沙会》。为了更好地保护和弘扬这一宝贵的文化资源，依托沂蒙山小调诞生地，以恢复1940年抗大一分校文工团在此生活时期的村落场景为核心，将白石屋村建成一个活态博物馆，每个院落就是一个展馆，具有文化展示和体验功能。主要建设抗大一分校文工团旧址、沂蒙精神馆、沂蒙历史馆、沂蒙风俗馆、沂蒙物产馆、沂蒙声音馆、沂蒙味道馆和沂蒙人家等。
+		2、大青山胜利突围纪念馆
+		费县大青山胜利突围纪念馆，国家AAA级景区，位于费县薛庄镇驻地北11公里处，占地200余亩，是费县依托“大青山胜利突围战遗址”等丰富的红色资源，打造的一处红色旅游景区。目前，已建成大青山胜利突围纪念馆、纪念碑、纪念广场、抗大碑林、纪念亭、烈士墓区及游客中心等多个参观景点。纪念馆采用“两馆一轴”布展方式，分为序厅、沂蒙烽火燃遍沂蒙、浴血青山胜利突围、蒙山沂水铭记殊功、军民一心水乳交融、薪火相传继往开来等部分，全面展示了1941年11月山东党政军民在大青山突围中浴血奋战、英勇杀敌的悲壮场景。该纪念馆是山东沂蒙党性教育基地现场教学点之一，并先后被评为“全国青少年教育基地”、“省级爱国主义教育基地”、第一批国家级抗战纪念设施、国家级烈士纪念设施。
+		3、苏鲁豫皖边区特委纪念馆
+		苏鲁豫皖边区特委纪念馆位于石井镇高桥村，距石井镇驻地南3公里，国家AA级景区，现为中共临沂党校教学科研基地、青岛理工大学师德教育基地、青少年教育基地。高桥村革命历史悠久，革命战争时期中共苏鲁豫皖特委在此设立，曾是鲁南革命战争的支点。纪念馆建成于2016年，以19世纪三十年代民居风格为基础，主要恢复修建了农民夜校、高桥小学、广德堂药店、展厅、乡村记忆图片展等21间，配套修建广场等设施。该纪念馆的建成，打造形成了“北有大青山教育基地、南有抱犊崮115师纪念园、中有苏鲁豫皖特委纪念馆”的党性教育基地新格局。
+		4、抗大一分校旧址
+		抗大一分校旧址位于费县大田庄乡五圣堂村。抗大一分校从1938年成立到1945年9月抗日战争胜利，办学总共7年，有6年时间是在沂蒙山区，其中较长时间是在费县境内活动。当时，抗大一分校司令部驻大田庄，后勤部驻紫荆关以北的几个村庄，政治部、文工团、民运工作团就驻扎在五圣堂村。为弘扬红色文化，重现当年抗大学员学习训练的场景，费县恢复建设了抗大一分校驻地旧址，将此处打造成为与大青山党性教育基地、周家庄三同教育基地相得益彰的红色教育示范点。"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/VBoxContainer/VBoxContainer/DetailVBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Music1" type="HBoxContainer" parent="ScrollContainer/VBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/VBoxContainer/VBoxContainer/Music1"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="ScrollContainer/VBoxContainer/VBoxContainer/Music1"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/VBoxContainer/VBoxContainer/Music1/CenterContainer"]
+material = SubResource("ShaderMaterial_vihxa")
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+color = Color(0.905882, 0.666667, 0.482353, 1)
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/VBoxContainer/VBoxContainer/Music1/CenterContainer"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("9_novtg")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Music1AudioStreamPlayer" type="AudioStreamPlayer" parent="ScrollContainer/VBoxContainer/VBoxContainer/Music1"]
+stream = ExtResource("10_aj824")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/VBoxContainer/Music1"]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 20
+
+[node name="SongName" type="Label" parent="ScrollContainer/VBoxContainer/VBoxContainer/Music1/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "沂蒙山小调"
+
+[node name="Singer" type="Label" parent="ScrollContainer/VBoxContainer/VBoxContainer/Music1/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("15_t0jir")
+theme_override_font_sizes/font_size = 15
+text = "张凤英"
+
+[node name="Music1Button" type="Button" parent="ScrollContainer/VBoxContainer/VBoxContainer/Music1"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+size_flags_stretch_ratio = 1.5
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_223hb")
+theme_override_styles/hover = SubResource("StyleBoxTexture_7migt")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_o3byn")
+toggle_mode = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -100
+z_as_relative = false
+position = Vector2(-6.10352e-05, 0)
+scale = Vector2(0.192, 0.50996)
+texture = ExtResource("12_tm6dl")
+centered = false
+
+[connection signal="mouse_entered" from="ScrollContainer/VBoxContainer/Panel/ImgGridContainer" to="." method="_on_img_grid_container_mouse_entered"]
+[connection signal="mouse_exited" from="ScrollContainer/VBoxContainer/Panel/ImgGridContainer" to="." method="_on_img_grid_container_mouse_exited"]
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/VBoxContainer/HBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="toggled" from="ScrollContainer/VBoxContainer/VBoxContainer/Music1/Music1Button" to="." method="_on_music_1_button_toggled"]

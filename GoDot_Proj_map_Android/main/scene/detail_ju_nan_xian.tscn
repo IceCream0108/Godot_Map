@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://cmd5nepup73od"]
+
+[ext_resource type="PackedScene" uid="uid://d3dikcgncjlkv" path="res://main/scene/DetailPage.tscn" id="1_gqjfu"]
+[ext_resource type="Texture2D" uid="uid://ccmrmefe5dk2c" path="res://main/assets/texture/lvnan/图片1.png" id="2_gk5i0"]
+[ext_resource type="Texture2D" uid="uid://c7pyi5x8cnxrh" path="res://main/assets/texture/lvnan/图片2.png" id="3_tigrj"]
+[ext_resource type="Texture2D" uid="uid://54cl67lkwmd0" path="res://main/assets/texture/lvnan/图片3.png" id="4_ir17k"]
+
+[node name="DetailJuNanXian" instance=ExtResource("1_gqjfu")]
+ID = "JUNANXIAN"
+
+[node name="TitleLabel" parent="TitleCanvasLayer/TitleHBoxContainer/TitlePanel" index="0"]
+text = "莒南县"
+
+[node name="ImgGridContainer" parent="ScrollContainer/WholeVBoxContainer/Imgs" index="0"]
+columns = 3
+
+[node name="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="0"]
+texture = ExtResource("2_gk5i0")
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_tigrj")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("4_ir17k")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PlaceName" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Title_ButtonHBoxContainer" index="1"]
+text = "莒南县"
+
+[node name="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer" index="0"]
+text = " 莒南县"
+
+[node name="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer/HBoxContainer" index="1"]
+text = "莒南县
+		莒南县内流传的剧种大都由外地传入，柳琴、弦子戏（柳子戏）为地方剧种。
+		莒南县流传的曲艺种类主要有渔鼓、评词、琴书、山东快书、西河大鼓、数来宝、相声等。传统说唱曲目有《金鞭记》《杨家将》《响马传》《包公案》《水浒》等。
+厉家寨精神：
+		在建设新中国的年代中，莒南人民继续发挥着优良的革命传统，并在大生产过程中积累了丰富的经验。为此，1955年，毛泽东主席对高家柳沟、王家坊前、厉家寨3个单位的典型经验作了亲笔批示；1957年毛泽东主席又对大山公社亲笔作了“愚公移山，改造中国，厉家寨是一个好例”的光辉批示
+		沂蒙红色圣地——八路军115师司令部旧址、中共山东分局旧址、山东省政府诞生地，位于山东省临沂市莒南县大店镇。景区以丰富、详实、生动、系统的史料、实物和场景，以现代化的展示手段，全面反映了在血与火的革命战争年代老一辈无产阶级革命家带领山东军民进行艰苦卓绝的革命斗争所取得的丰功伟绩，反映了山东军民特别是沂蒙老区人民舍生忘死、参军参战、出夫支前、抢救伤员的一曲曲让人心灵震撼的史诗和凯歌。景区有115师旧址、115师纪念馆、山东省政府旧址、山东省政府成立纪念馆等，这里是集中展示抗战时期全国四大老区之——沂蒙老区的红色景区。这里有中央电视-事部与大益爱心基金联合布展的《沂蒙红嫂》展馆，该展馆是全国范围内唯一的一处最系统、最全面反映革命战争年代英雄妇女群体形象——沂蒙红嫂的展馆。
+		华夏第一庄园——山东莒南大店庄氏庄园是古文物、古建筑，风雨鉴证600年，一个庞大的地主家族群体，产生了300多个堂号，著名的有72家堂号，是华夏第一庄园。家族中先后有8名进士、23名举人、20名拔贡、8名留洋生、300多名为官者，形成明清两代的名门望族。他们土地横跨苏、鲁、豫、皖，是“洋务”运动的参与者、“五四”运动的支持者，中国民族工商业的拓荒者和山东民族工商业的奠基者。"

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bht3b1kqwqxjb"
+path="res://.godot/imported/群星 - 美丽的台儿庄.mp3-767cef792f7919323b4199ebce497581.mp3str"
+
+[deps]
+
+source_file="res://main/assets/texture/zaozhuang/台儿庄区/群星 - 美丽的台儿庄.mp3"
+dest_files=["res://.godot/imported/群星 - 美丽的台儿庄.mp3-767cef792f7919323b4199ebce497581.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

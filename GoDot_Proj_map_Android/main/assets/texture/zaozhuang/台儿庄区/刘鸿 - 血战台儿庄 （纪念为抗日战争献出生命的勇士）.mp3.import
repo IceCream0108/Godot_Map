@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c5xoropksyay3"
+path="res://.godot/imported/刘鸿 - 血战台儿庄 （纪念为抗日战争献出生命的勇士）.mp3-4faa7688fb3721675a36a39999470256.mp3str"
+
+[deps]
+
+source_file="res://main/assets/texture/zaozhuang/台儿庄区/刘鸿 - 血战台儿庄 （纪念为抗日战争献出生命的勇士）.mp3"
+dest_files=["res://.godot/imported/刘鸿 - 血战台儿庄 （纪念为抗日战争献出生命的勇士）.mp3-4faa7688fb3721675a36a39999470256.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
