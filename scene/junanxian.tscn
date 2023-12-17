@@ -1,0 +1,330 @@
+[gd_scene load_steps=25 format=3 uid="uid://nbk521uplipf"]
+
+[ext_resource type="Script" path="res://main/scene/junanxian.gd" id="1_lj24n"]
+[ext_resource type="Texture2D" uid="uid://ccmrmefe5dk2c" path="res://main/assets/texture/lvnan/图片1.png" id="2_72tpc"]
+[ext_resource type="Texture2D" uid="uid://c7pyi5x8cnxrh" path="res://main/assets/texture/lvnan/图片2.png" id="3_t7wy0"]
+[ext_resource type="Texture2D" uid="uid://54cl67lkwmd0" path="res://main/assets/texture/lvnan/图片3.png" id="4_2rv4p"]
+[ext_resource type="Texture2D" uid="uid://cmnwo2208rb5v" path="res://main/assets/texture/icon/白地图-地标.png" id="9_1375o"]
+[ext_resource type="FontFile" uid="uid://xi2gj0edmhup" path="res://main/assets/font/TitleSTZHONGS.TTF" id="10_dtqkv"]
+[ext_resource type="FontFile" uid="uid://d2efdtbddu7o3" path="res://main/assets/font/STFANGSO.TTF" id="11_3d36h"]
+[ext_resource type="FontFile" uid="uid://bik6b8g3jwe5i" path="res://main/assets/font/simhei.ttf" id="11_tbj1o"]
+[ext_resource type="Shader" path="res://main/assets/shader/ColorCircleShader.gdshader" id="12_2o0vt"]
+[ext_resource type="Texture2D" uid="uid://ufl2v3qngqkn" path="res://main/assets/texture/icon/白播放2.png" id="12_exe7u"]
+[ext_resource type="Texture2D" uid="uid://dcrvggb3j13tq" path="res://main/assets/texture/icon/白暂停.png" id="13_cq27p"]
+[ext_resource type="Texture2D" uid="uid://d3jwqpwdjwhx8" path="res://main/assets/texture/icon/音乐.png" id="13_y3i80"]
+[ext_resource type="AudioStream" uid="uid://2dnr6sqq3kar" path="res://main/assets/sound/feixian/张凤英 - 沂蒙山小调(经典版).mp3" id="14_60l51"]
+[ext_resource type="Texture2D" uid="uid://cci1hiea1b4j2" path="res://main/assets/texture/icon/paper.jpg" id="15_qxws4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ygsgj"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xi02f"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7pyny"]
+bg_color = Color(0.313726, 0, 0.803922, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.709804, 0.8, 1, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6oi3a"]
+bg_color = Color(0.458824, 0.321569, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.698039, 0.792157, 1, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u7let"]
+bg_color = Color(0.215686, 0, 0.576471, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.403922, 0.572549, 1, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m22yi"]
+bg_color = Color(0.670588, 0.85098, 0.921569, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vihxa"]
+shader = ExtResource("12_2o0vt")
+shader_parameter/texture_size = Vector2(100, 100)
+shader_parameter/radius = 50.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ua3bi"]
+content_margin_right = 0.0
+texture = ExtResource("12_exe7u")
+modulate_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yaj12"]
+texture = ExtResource("12_exe7u")
+modulate_color = Color(0.192157, 0.192157, 0.192157, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_40glc"]
+texture = ExtResource("13_cq27p")
+modulate_color = Color(0, 0, 0, 1)
+
+[node name="junan" type="CanvasLayer"]
+offset = Vector2(576, 0)
+transform = Transform2D(1, 0, 0, 1, 576, 0)
+script = ExtResource("1_lj24n")
+
+[node name="TitleCanvasLayer" type="CanvasLayer" parent="."]
+layer = 5
+
+[node name="Panel" type="Panel" parent="TitleCanvasLayer"]
+offset_right = 576.0
+offset_bottom = 70.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ygsgj")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TitleCanvasLayer/Panel"]
+layout_mode = 0
+offset_right = 576.0
+offset_bottom = 70.0
+
+[node name="Label" type="Label" parent="TitleCanvasLayer/Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_dtqkv")
+theme_override_font_sizes/font_size = 30
+text = "莒 南 县"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 3
+vertical_scroll_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel" type="Panel" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 340)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_xi02f")
+
+[node name="ImgGridContainer" type="GridContainer" parent="ScrollContainer/VBoxContainer/Panel"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 1728.0
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 3
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/VBoxContainer/Panel/ImgGridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_72tpc")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/VBoxContainer/Panel/ImgGridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_t7wy0")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/VBoxContainer/Panel/ImgGridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("4_2rv4p")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "    莒 南 县
+"
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="ScrollContainer/VBoxContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_7pyny")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6oi3a")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_u7let")
+text = "         查看地图   "
+
+[node name="Sprite2D" type="Sprite2D" parent="ScrollContainer/VBoxContainer/VBoxContainer/HBoxContainer/Button"]
+position = Vector2(36, 31)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("9_1375o")
+
+[node name="VSplitContainer" type="VSplitContainer" parent="ScrollContainer/VBoxContainer/VBoxContainer"]
+modulate = Color(0.458824, 0.6, 1, 1)
+custom_minimum_size = Vector2(500, 5)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Panel" type="Panel" parent="ScrollContainer/VBoxContainer/VBoxContainer/VSplitContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_m22yi")
+
+[node name="DetailVBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 10
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/VBoxContainer/DetailVBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_dtqkv")
+theme_override_font_sizes/font_size = 35
+text = " 莒南县"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/VBoxContainer/VBoxContainer/DetailVBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 100.0
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/VBoxContainer/VBoxContainer/DetailVBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/VBoxContainer/VBoxContainer/DetailVBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_tbj1o")
+theme_override_font_sizes/font_size = 16
+text = "莒南县
+		莒南县内流传的剧种大都由外地传入，柳琴、弦子戏（柳子戏）为地方剧种。
+		莒南县流传的曲艺种类主要有渔鼓、评词、琴书、山东快书、西河大鼓、数来宝、相声等。传统说唱曲目有《金鞭记》《杨家将》《响马传》《包公案》《水浒》等。
+厉家寨精神：
+		在建设新中国的年代中，莒南人民继续发挥着优良的革命传统，并在大生产过程中积累了丰富的经验。为此，1955年，毛泽东主席对高家柳沟、王家坊前、厉家寨3个单位的典型经验作了亲笔批示；1957年毛泽东主席又对大山公社亲笔作了“愚公移山，改造中国，厉家寨是一个好例”的光辉批示
+		沂蒙红色圣地——八路军115师司令部旧址、中共山东分局旧址、山东省政府诞生地，位于山东省临沂市莒南县大店镇。景区以丰富、详实、生动、系统的史料、实物和场景，以现代化的展示手段，全面反映了在血与火的革命战争年代老一辈无产阶级革命家带领山东军民进行艰苦卓绝的革命斗争所取得的丰功伟绩，反映了山东军民特别是沂蒙老区人民舍生忘死、参军参战、出夫支前、抢救伤员的一曲曲让人心灵震撼的史诗和凯歌。景区有115师旧址、115师纪念馆、山东省政府旧址、山东省政府成立纪念馆等，这里是集中展示抗战时期全国四大老区之——沂蒙老区的红色景区。这里有中央电视-事部与大益爱心基金联合布展的《沂蒙红嫂》展馆，该展馆是全国范围内唯一的一处最系统、最全面反映革命战争年代英雄妇女群体形象——沂蒙红嫂的展馆。
+		华夏第一庄园——山东莒南大店庄氏庄园是古文物、古建筑，风雨鉴证600年，一个庞大的地主家族群体，产生了300多个堂号，著名的有72家堂号，是华夏第一庄园。家族中先后有8名进士、23名举人、20名拔贡、8名留洋生、300多名为官者，形成明清两代的名门望族。他们土地横跨苏、鲁、豫、皖，是“洋务”运动的参与者、“五四”运动的支持者，中国民族工商业的拓荒者和山东民族工商业的奠基者。
+"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/VBoxContainer/VBoxContainer/DetailVBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Music1" type="HBoxContainer" parent="ScrollContainer/VBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/VBoxContainer/VBoxContainer/Music1"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="ScrollContainer/VBoxContainer/VBoxContainer/Music1"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/VBoxContainer/VBoxContainer/Music1/CenterContainer"]
+material = SubResource("ShaderMaterial_vihxa")
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+color = Color(0.905882, 0.666667, 0.482353, 1)
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/VBoxContainer/VBoxContainer/Music1/CenterContainer"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("13_y3i80")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Music1AudioStreamPlayer" type="AudioStreamPlayer" parent="ScrollContainer/VBoxContainer/VBoxContainer/Music1"]
+stream = ExtResource("14_60l51")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/VBoxContainer/Music1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="SongName" type="Label" parent="ScrollContainer/VBoxContainer/VBoxContainer/Music1/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "1"
+
+[node name="Singer" type="Label" parent="ScrollContainer/VBoxContainer/VBoxContainer/Music1/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_3d36h")
+theme_override_font_sizes/font_size = 15
+
+[node name="Music1Button" type="Button" parent="ScrollContainer/VBoxContainer/VBoxContainer/Music1"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+size_flags_stretch_ratio = 2.0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_ua3bi")
+theme_override_styles/hover = SubResource("StyleBoxTexture_yaj12")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_40glc")
+toggle_mode = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -100
+z_as_relative = false
+position = Vector2(-6.10352e-05, 0)
+scale = Vector2(0.192, 0.50996)
+texture = ExtResource("15_qxws4")
+centered = false
+
+[connection signal="mouse_entered" from="ScrollContainer/VBoxContainer/Panel/ImgGridContainer" to="." method="_on_img_grid_container_mouse_entered"]
+[connection signal="mouse_exited" from="ScrollContainer/VBoxContainer/Panel/ImgGridContainer" to="." method="_on_img_grid_container_mouse_exited"]
+[connection signal="pressed" from="ScrollContainer/VBoxContainer/VBoxContainer/HBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="toggled" from="ScrollContainer/VBoxContainer/VBoxContainer/Music1/Music1Button" to="." method="_on_music_1_button_toggled"]

@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://bx75vf2bavy6g"]
+
+[ext_resource type="PackedScene" uid="uid://dbqaa6b17gwea" path="res://main/scene/iteract_area.tscn" id="1_57cry"]
+[ext_resource type="Script" path="res://main/scene/trigger.gd" id="2_xoi2j"]
+[ext_resource type="Texture2D" uid="uid://bd68wtmxoppdo" path="res://main/assets/texture/icon/位置.png" id="3_2c4ev"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qk2x1"]
+radius = 73.0
+height = 192.0
+
+[node name="Trigger" instance=ExtResource("1_57cry")]
+scale = Vector2(0.2, 0.2)
+script = ExtResource("2_xoi2j")
+
+[node name="Sprite2D" type="Sprite2D" parent="." index="0"]
+position = Vector2(-5, -96)
+texture = ExtResource("3_2c4ev")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+position = Vector2(0, -101)
+shape = SubResource("CapsuleShape2D_qk2x1")
+
+[connection signal="Mouse_Enter" from="." to="." method="_on_mouse_enter"]
+[connection signal="Mouse_Exit" from="." to="." method="_on_mouse_exit"]

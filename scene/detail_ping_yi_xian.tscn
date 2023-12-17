@@ -1,0 +1,530 @@
+[gd_scene load_steps=31 format=3 uid="uid://cjy2cl0vaoqld"]
+
+[ext_resource type="PackedScene" uid="uid://d3dikcgncjlkv" path="res://main/scene/DetailPage.tscn" id="1_atyq5"]
+[ext_resource type="Texture2D" uid="uid://85lr7kj0lybl" path="res://main/assets/texture/pingyi/平邑景点图片/微信图片_20231026133546.jpg" id="2_n1wbw"]
+[ext_resource type="Script" path="res://main/scene/detail_ping_yi_xian.gd" id="2_w4k7q"]
+[ext_resource type="Texture2D" uid="uid://brq0m7rngdqqq" path="res://main/assets/texture/pingyi/壮士故事配图.png" id="2_wkwg4"]
+[ext_resource type="Texture2D" uid="uid://dhg4my0shp77j" path="res://main/assets/texture/pingyi/平邑景点图片/微信图片_202310261335461.jpg" id="3_aicy7"]
+[ext_resource type="Texture2D" uid="uid://cv8cxwqwrrflt" path="res://main/assets/texture/pingyi/壮士配图2.png" id="3_jxr8c"]
+[ext_resource type="Texture2D" uid="uid://d3fxecoimiu1o" path="res://main/assets/texture/pingyi/壮士配图3.png" id="4_ls000"]
+[ext_resource type="Texture2D" uid="uid://bf4emebmowspy" path="res://main/assets/texture/pingyi/平邑景点图片/微信图片_202310261335462.jpg" id="4_vtqk7"]
+[ext_resource type="Texture2D" uid="uid://0txsrd3458hp" path="res://main/assets/texture/pingyi/平邑景点图片/微信图片_202310261335463.jpg" id="5_hmipb"]
+[ext_resource type="FontFile" uid="uid://xi2gj0edmhup" path="res://main/assets/font/TitleSTZHONGS.TTF" id="5_xcjb3"]
+[ext_resource type="Texture2D" uid="uid://bp7svi2m36qaj" path="res://main/assets/texture/pingyi/平邑景点图片/微信图片_202310261335464.jpg" id="6_fdbd5"]
+[ext_resource type="FontFile" uid="uid://bik6b8g3jwe5i" path="res://main/assets/font/simhei.ttf" id="6_xkr3v"]
+[ext_resource type="Texture2D" uid="uid://bm2qvh75pqmf8" path="res://main/assets/texture/pingyi/平邑景点图片/微信图片_202310261335465.jpg" id="7_m4pyv"]
+[ext_resource type="Texture2D" uid="uid://cwxj2206svs2e" path="res://main/assets/texture/pingyi/平邑景点图片/微信图片_202310261335466.jpg" id="8_1rlu1"]
+[ext_resource type="Texture2D" uid="uid://c0dvnk12abws7" path="res://main/assets/texture/pingyi/平邑景点图片/微信图片_202310261335467.jpg" id="9_47nos"]
+[ext_resource type="Texture2D" uid="uid://dg8mnstivowf8" path="res://main/assets/texture/pingyi/平邑景点图片/微信图片_202310261335468.jpg" id="10_dcasl"]
+[ext_resource type="AudioStream" uid="uid://bf7k03ubyxgx6" path="res://main/assets/sound/pingyi/圣贤仲村.mp3" id="16_2ahn3"]
+[ext_resource type="Shader" path="res://main/assets/shader/ColorCircleShader.gdshader" id="16_7rxep"]
+[ext_resource type="AudioStream" uid="uid://c7qjjbxtj45ql" path="res://main/assets/sound/pingyi/家在美丽山水间.mp3" id="17_dkvip"]
+[ext_resource type="Texture2D" uid="uid://d3jwqpwdjwhx8" path="res://main/assets/texture/icon/音乐.png" id="17_gmpbc"]
+[ext_resource type="FontFile" uid="uid://d2efdtbddu7o3" path="res://main/assets/font/STFANGSO.TTF" id="18_lqmpo"]
+[ext_resource type="AudioStream" uid="uid://73xjdiml7h18" path="res://main/assets/sound/pingyi/沂蒙小调连大嫂翻身.mp3" id="18_vcbt1"]
+[ext_resource type="Texture2D" uid="uid://ufl2v3qngqkn" path="res://main/assets/texture/icon/白播放2.png" id="19_513ee"]
+[ext_resource type="AudioStream" uid="uid://dt05igfpp1yfl" path="res://main/assets/sound/pingyi/沂蒙精神沂蒙兵.mp3" id="19_svd3d"]
+[ext_resource type="AudioStream" uid="uid://bgjqu2puryv4u" path="res://main/assets/sound/pingyi/金银花香飘天下.mp3" id="20_fdgh0"]
+[ext_resource type="Texture2D" uid="uid://dcrvggb3j13tq" path="res://main/assets/texture/icon/白暂停.png" id="20_o3l4o"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p3m6p"]
+shader = ExtResource("16_7rxep")
+shader_parameter/texture_size = Vector2(100, 100)
+shader_parameter/radius = 50.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gbkm1"]
+texture = ExtResource("19_513ee")
+modulate_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n6s0t"]
+texture = ExtResource("19_513ee")
+modulate_color = Color(0.282353, 0.282353, 0.282353, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nkc1t"]
+texture = ExtResource("20_o3l4o")
+modulate_color = Color(0, 0, 0, 1)
+
+[node name="DetailPingYiXian" instance=ExtResource("1_atyq5")]
+script = ExtResource("2_w4k7q")
+ID = "PINGYIXIAN"
+
+[node name="TitleLabel" parent="TitleCanvasLayer/TitleHBoxContainer/TitlePanel" index="0"]
+text = "平邑县"
+
+[node name="ImgGridContainer" parent="ScrollContainer/WholeVBoxContainer/Imgs" index="0"]
+columns = 9
+
+[node name="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="0"]
+texture = ExtResource("2_n1wbw")
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_aicy7")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("4_vtqk7")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect4" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="3"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("5_hmipb")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect5" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="4"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("6_fdbd5")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect6" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="5"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("7_m4pyv")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect7" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="6"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("8_1rlu1")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect8" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="7"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("9_47nos")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect9" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="8"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("10_dcasl")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PlaceName" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Title_ButtonHBoxContainer" index="1"]
+text = "平邑县"
+
+[node name="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer" index="0"]
+text = "平邑红色故事太皇崮九壮士"
+
+[node name="ImgHBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer" index="1"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer/ImgHBoxContainer" index="0"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("2_wkwg4")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer/ImgHBoxContainer" index="1"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_jxr8c")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer/ImgHBoxContainer" index="2"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("4_ls000")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer/HBoxContainer" index="1"]
+text = "		狼牙山五壮士的故事在中华大地广为流传，在山东省平邑县的太皇崮，曾发生过一个与“狼牙山五壮士”同样悲壮却鲜为人知的激烈战斗。
+		那是在1943年的农历二月二十日，皇崮区区长孟育民等同志在太皇崮北的小黄坡村召开村农救会长会议，讨论组织皇崮区各村民兵，配合主力部队打击日军。会议一直开到深夜，由于群众发现有陌生人的出现，孟区长决定，为了安全起见，转移到崮东的太皇崮村宿营，让孟区长等人没想到是，此时，凶残的日军已经悄悄的盯上了他们。
+ 		二十一日拂晓，杂乱的枪声将孟育民等人惊醒，得到密报的驻白彦等据点日伪军500余人，从三个不同的方向向他们扑来。考虑到随行人员战斗力有限，孟育民带领另外8名同志登上了陡峭的太皇崮，与日伪军展开了殊死搏斗。从早晨7点一直到太阳平西，他们连续打退了敌人的3次冲锋，弹药打光了，同志们就搬起崮顶的石头砸向日伪军。气急败坏的敌人一面让汉奸向孟育民等人喊话，“缴枪吧，投降吧，你们跑不了啦。”“孟区长，下来吧，我能保证你的性命。”一面找来杉杆扎成三十多米高的软梯，从崮北面悬崖峭壁上偷偷爬了上去。
+		孟区长和太皇崮村农救会长李光有率先冲向登上崮顶的敌人，被枪弹击中后壮烈牺牲；民兵谢恒顺、谢学柱端起刺刀与敌人展开白刃战，因寡不敌众，敌人的刺刀穿透了两人的胸膛，鲜血染红了山崮；民兵谢洪连抡起打光了子弹的枪杆，在打倒一个鬼子后，连中几弹倒了下去；皇崮区司务长、被当地群众亲切称为“陈伙夫”的陈立三，抱着一名冲上崮顶敌人滚下悬崖；区中队指导员王万立高喊“打倒日本帝国主义”、“中华民族万岁！”拉响了最后一枚手榴弹与敌人同归于尽；眼看着战友们一个接一个的牺牲，陷入重围的区农救会长公浩誓死不降，用棉衣一蒙头栽下了万丈悬崖；9人中，只有小黄坡村农救会长谢恒玉，因蜷曲在悬崖间的石头缝里一动不动，才成为唯一的幸存者。
+		1944年2月，皇崮区农救会为悼念太皇崮战斗中英勇牺牲的革命先烈，在太皇崮下白彦河东，修建了烈士陵园和太皇崮殉国烈士纪念碑。八名烈士英名万古流芳，英雄精神永垂不朽！
+
+
+
+"
+
+[node name="DetailVBoxContainer2" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="3"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_xcjb3")
+theme_override_font_sizes/font_size = 35
+text = "观音山"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2" index="1"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_xkr3v")
+theme_override_font_sizes/font_size = 16
+text = "	观音山，坐落在平邑郑城镇驻地东北，山顶中间有个石柱子，当地人都叫作挂心崛子，说起这挂心崛子的来历，还有一个叫人伤感的故事呢。很久以前，观音山脚下的桃峪村，住着一位姓廉的寡妇，丈夫很早就死了，撇下她和儿子得根。廉寡妇受尽千辛万苦，才把得根养大。平时有一口好吃的，也要留给得根吃，有一件像样的衣服，也要披在得根身上。得根被廉寡妇宠坏了，整天好吃懒做。村里人就给廉得根起了个外号“懒得很”。直到三十岁出头，他才娶上一门媳妇。俗话说得好：“懒人有懒福”他那媳妇倒也有几分姿色，不过，她面善心狠，为人歹毒，是当地出名的“母老虎”。
+	媳妇过门之后，也是好吃懒做，和廉得根一个德性。正好印证了那句话“弯刀对着瓢切菜，不是一家人不进一家门。”她平常有点好吃好用的，只顾自己享受。自己偷着吃饱喝足，就躺在床上装病，说不想吃饭。对待婆婆，没一点儿人味，一日三餐，只给婆婆一些残汤剩饭。这倒还罢，由于恶儿媳好吃懒做，一向勤劳俭朴的婆婆难免要说叨几句，恶儿媳就视婆婆为眼中钉，肉中刺，经常在廉得根面前吹“枕头风”，说婆婆的坏话。廉得根呢，天生就不是个好玩意，和他老婆是一个鼻孔出气，对老婆的话言听计从。于是，两口子像待牲口一样使唤老娘，稍有不顺，不是打就是骂。可怜老人家早起晚睡，还是吃不饱穿不暖。寒冬腊月穿着双夹鞋片，挪动着冻得红肿的小脚，推碾拉磨，洗衣做饭。周围的街坊邻居都看不下去，暗地里咒骂得根他们俩口子不得善终。
+	得根媳妇因为有几分姿色，嫌恶丈夫粗鲁愚讷，暗中和村里一个青年相好，老母看在眼里，难免数叨几句。恶媳妇嫌老娘多管闲事，在家障手碍眼，加上老人家年老体弱，经常闹病，不能干活，恶媳妇就在丈夫面前一个劲地说婆婆的坏话。廉得根这个畜类，竟和老婆一起，把老娘弄到山上，住在一间草草搭成的石屋里。给她一点粮食，让她自己独自一人在荒山野岭中生活。老娘身体有病、卧床不起，也不管不问。
+	寡妇天天以泪洗面，每想起往事，更是伤心不已。丈夫早年丢下她母子撒手而去，她一个人一把屎一把尿地把儿子拉扯大。本指望着晚年有个依托，过好日子，想不到得根成家后，儿子媳妇都不孝，把亲娘当成仇人。每念及此，便伤心落泪，常常从夜里哭到天亮，又从天亮哭到夜晚，结果把两眼都哭瞎了。眼睛失明，手脚不便，日子就更难捱了。到了冬天，小屋四处透风，廉寡妇冻得了不得，已经断粮好几日了，她又冷又饿，就拄着拐棍，摸索着下了山，来到自己家门口。恶媳妇一看，顿时脸就黑了，想要出门赶她走，已经来不及了，又怕四邻百舍议论。
+	于是，恶媳妇灵机一动，反装着好意迎上门口，拦着婆婆，说：“婆婆，你眼看不清道路，别到处乱走，要吃的，就让孙女给你送去好了。”说着把婆婆领进门，安顿在她原来住的小屋里。转过身来，她板起凶恶的面孔，对得根说：“去!到猪栏看看猪秧子有吃剩下的没有，盛一碗让那老母亲吃个够！”得根虽不情愿，也没办法，就拿着个破瓢，到猪食槽里盛了一碗猪食。恶儿媳又从锅里盛出一碗剩饭，搅和成一大汤碗“烩饭”，让小闺女送去。
+	廉寡妇蒙在鼓里，心想今天是什么好日子，能吃到儿媳妇送上门的饭菜。接过饭碗，就狼吞虎咽的吃起来。但吃着吃着，越吃越觉得不是滋味，问站在身边的小孙女：“你娘给我送来的饭菜是用什么做的?怎么不是个好味呀?”俗话说，孩子嘴里吐实话，小孙女一五一十的告诉了奶奶。廉寡妇一听，伤心透了，嗷嗷大哭起来，把刚吃下去的东西都哇哇吐了出来，一头栽倒在地，昏了过去。待苏醒过来，越想越生气，越想越伤心。
+	到了晚上，廉寡妇取了三炷香点上，跪对苍天，一边哭，一边数叨：“你这个丧尽天良的女人! 欺负我人老眼瞎，给我猪食吃。老天呀! 你若有眼，你就惩罚惩罚这个坏女人吧!”说完，倒在地上死了。
+	不大一会儿，天空乌云翻滚，雷雨大作，“轰隆”一声巨响，一个大火球落在得廉根家的房顶上。天亮以后，人们发现，得根的媳妇被开膛破肚，廉得根也被烧瞎了双眼，只有小女孩被气流从屋里掀到屋外，好好的。有人说，这是大慈大悲的观世音显灵，把得根媳妇的黑心扒出来，挂在了观音山上的石橛子上。后来那个石撅子，被当地人叫做作挂心橛子，以警示世上那些不孝的人们。"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer2/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer3" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="4"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_xcjb3")
+theme_override_font_sizes/font_size = 35
+text = "平邑县同台庄状元府的传说"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3" index="1"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_xkr3v")
+theme_override_font_sizes/font_size = 16
+text = "	山东，因居太行山以东而得名，又称山左。先秦时期隶属于齐国和鲁国，故而别名“齐鲁”，简称“鲁”。山东是儒家文化发源地，儒家思想的创立人孔子、孟子均出生于鲁国。
+	平邑，因属春秋时期鲁国大夫季平子的食邑而得名，北临鲁国封疆内的附庸国——颛臾国，中国古代“四大圣贤”之一的宗圣曾子、“孔门十哲”之一的仲子、“孔门七十二贤”之一的原宪又均出生于平邑。
+	关于曾子，有“啮齿痛心”、“杀猪示信”等许多佳话；关于仲子，有“百里负米”、“君不死冠不免”等许多传说；而关于原宪，最最著名的就是“原宪甘贫”的故事和他那句“若宪，贫也，非病也”的慷慨陈词。
+	如今我们要讲的，是另一个同属于“孔门七十二贤”的高柴的后裔的故事，实际上也就是平邑同台庄的由来。
+	同台庄为什么叫做“同台庄”呢？
+	其实，同台庄最初的名字叫做“同抬庄”。这里的祖祖辈辈都知道，“同抬”就是合力共举的意思。地名嘛，就是一个记号，后世之人喜欢简洁明快，在不知不觉中也就约定俗成地省去了那个提手旁，成了现在的样子。
+	话说后周显德年间，宋太祖发动陈桥兵变，赵匡胤黄袍加身之后，时任殿中侍御史的柴自牧率领家人逃出东京汴梁，也就是现在的河南省开封市。与柴自牧一起逃出的还有高姓、宋姓和梁姓三家。他们一行辗转河北的邢台、沧州，又折返至山东的高唐，最终在平邑小城的北部安顿下来。
+	为什么柴自牧要逃出京都呢？因为当世皇帝乃是柴姓。柴自牧本名柴守敬，柴世宗柴荣皇帝为什么让柴自牧做殿前侍御史呢？因为柴荣皇帝与柴自牧同族同宗。柴自牧为第八十一世，而柴荣皇帝为第八十二世。也就是说，柴自牧是柴荣皇帝的家叔，跟刘备的皇叔身份可以同日而语、等量齐观。殿中侍御史又是个什么样的大官呢？据史书上记载，乃是“掌纠察朝仪，兼知库藏出纳及宫门内事，及京畿纠察事宜”的炙手可热的朝官。官阶不大，从七品以下；“掌纠察朝仪”也不是要害，关键是“兼知库藏出纳及宫门内事”。表面上看，是负责纪检监察的干部，实际上还执掌着大内总管的权力。试想，这样一个生死攸关的职位，除了自己的皇叔还有更佳的人选吗？
+	现在我们再从另一个角度去想，赵匡胤黄袍加身之后，返回汴梁逼宫，不先杀你杀谁呢？！所以柴自牧选择逃离京都应当是别无选择的明智之举。
+高姓、宋姓和梁姓三家为什么一同逃走呢？在后周列传上，这三姓人家应该都能找到他们祖宗的大名。因为他们要么反对赵匡胤篡政，要么就是平素里与赵匡胤不睦。如今是赵匡胤君临天下，“杯酒释兵权”是最光彩的结局，满门抄斩的日子可能就在眼前。所以，“三十六计，走为上计”。
+	三家跟着柴自牧来到现在叫做同台庄的地方，因为柴自牧是“孔门七十二贤”之一的高柴的后代，便在此地尽力寻找仲子和原宪的后代，以期得到某些帮助。而此时，恰好仲子和原宪的后人还有留在原籍耕读经营的，便将部分土地以比较低廉的价格卖给了柴自牧四家。
+	四家从京城逃出时，田产家业均未来得及变卖，或者根本不敢大张旗鼓的出售，打点一些细软就慌不择路似的逃了出来，因此尽管多年为官，但身上并没有多少银两。四家都要买田置宅，以现有的银两计算，哪家也盖不起像样的房子。打头的柴自牧提议，四家先把买田以后剩余的银两集中起来，第一年先给一家造起房子，其他三家先行借住；第二年收成之后，四家再一起给第二家造起房子；以此类推。四家都觉得这个办法最好，于是才有了这个村子的第一套房子。房子盖好之后，该给这个村子起个名字吧，大家想来想去，因为四家是互相帮衬、互相抬举嘛，最后议定就叫“同抬庄”。"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer3/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailVBoxContainer4" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="5"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_xcjb3")
+theme_override_font_sizes/font_size = 35
+text = "平邑县历史文化"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4" index="1"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4/HBoxContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextEdit" type="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4/HBoxContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 100.0
+theme_override_colors/background_color = Color(0.87451, 0.870588, 0.890196, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_xkr3v")
+theme_override_font_sizes/font_size = 16
+text = "	平邑县，隶属于山东省临沂市，位于山东省东南部、临沂市西陲，介于东经117°25′—117°56′，北纬35°07′—35°43′之间，总面积1825平方千米 。截至2022年10月，平邑县下辖1个街道、13个镇 [26]。截至2022年末，平邑县常住人口87.54万人。
+	平邑历史悠久，西周属颛臾国，已有3000多年历史，孔子“七十二贤”中的曾子、原宪、仲由、澹台灭明，近代爱国将领左宝贵都诞生在这里。陈毅、徐向前、罗荣桓、粟裕等老一辈革命家都曾在这里战斗生活过，涌现出了“陈毅担架队”等闻名全国的英雄集体。改革开放以来，铸就闻名全国的“九间棚精神”。境内有5A级景区蒙山风景区、4A级天宇自然博物馆和九间棚等旅游区。
+	夏、商、西周时期，平邑县北部为颛臾国，南部商代属倪国、西周属邾国地。春秋为鲁国大夫季平子的食邑，北部仍为颛臾国，余之分属鲁国之武城、东阳、邱舆、卞等邑。战国先属费国、鲁国，后属齐国。秦平邑县(4张)属薛郡。西汉置平邑侯国，境内置南武阳县、南城县，分属兖州泰山郡、徐州东海郡，并一度置平邑侯国、南城侯国。新莽时，废南城侯国复置南城县，废平邑侯国和南武阳县改置桓宣县。东汉撤桓宣县复称南武阳县。三国、两晋今县境均分属南城县、南武阳县。南朝宋改南武阳县为武阳县。北齐撤南城县并入武阳县。隋开皇十八年（598年），改武阳县为颛臾县。唐贞观元年（627年），撤颛臾县并入费县。此后历经五代十国、宋、元、明、清，至民国二十八年（1939年），今平邑县境除西南、西部少数村庄原分属滕县、泗水县外，均属费县所辖。中华民国抗日战争时期，中国共产党领导创建沂蒙山革命根据地，并相继在今平邑县境内设置了一些县级机构，组建了人民民主政权。民国二十八年（1939年）7月，在康阜庄（今属岐山乡）成立费县联合办事处。民国二十九年（1940年）2月，在大夫宁村（今属保太乡）成立费县抗日民主政府。民国二十九年（1940年）6月，中共山东分局根据抗日斗争需要，以费县境内西部滋（阳）临（沂）公路线段为界，路北置费北县，路南置费南县。费北县政府机构始称费北行署。民国三十一年（1942年）5月，改为费北县抗日民主政府。民国三十一年（1942年）7月，析费南县南境（今平邑县庞庄、临涧、山阴、白彦、魏庄一带）和滕县东境部分地区建置费滕边办事处，又称鲁南实验县。民国三十一年（1942年）11月，析费县天宝、由吾2个区建置费西办事处，又称天宝山办事处。民国三十二年（1943年）10月，撤销费滕边办事处，其辖区分别划归费南县和费滕峄边办事处（1944年改建双山县，1946年4月更名麓水县，1950年撤销，其辖区一部划归白彦县）。民国三十二年（1943年）11月，撤销费西办事处，其天宝区复归费南县，由吾区划归温河县。同年12月，费南县改称费县，隶属鲁南专署。民国三十三年（1944年）8月，隶属鲁南行署第一专署。平邑县(3张)民国三十四年（1945年）8月，改称费北县政府，驻地在卞桥大、小公馆（村）一带，隶属鲁中行署。费南县抗日民主政府，驻地在郑城、常庄、流峪一带，隶属鲁南专署。民国三十五年（1946年）1月，撤销费北县、费东县，合置蒙山县。县人民政府先驻上冶（今属费县），后驻西荆埠。民国三十五年（1946年）4月16日，费县改称平邑县，隶属鲁南行署第一专署。民国三十六年（1947年）8月，析平邑县的山阴、苗庄、白彦3个区与邹县、滕县的部分地区建置白彦县。民国三十七年（1948年）7月，改属鲁中南行署第四专署。1949年7月，隶属滕县专区（今滕州市）。中华人民共和国1952年3月，蒙山县撤销，其西部地区划归平邑县。1953年7月，从滕县专区划出，改属临沂专区。1953年8月，白彦县撤销，其原白彦、山阴、临涧、苗庄等区复归平邑县。
+	平邑县在国家文物局备案的不可移动文物492处，其中全国重点文物保护单位2处，省级文物保护单位15处，市级文物保护单位26处。馆藏文物54429件（套），上自远古，下迄民国，种类齐全，精品众多，新石器时代的大口尊、商代史爵、春秋时期的邾杞簠、汉高浮雕画像石、宋富饶庄墓志、近代左宝贵书信集等都是具有重要历史文化价值的文物珍品。
+	非遗项目平邑县共有非遗项目47项，其中省级2项、市级14项。传说鬼谷子，姓王，名诩，又名王禅，号玄微子。春秋战国时期人，曾任楚国宰相。他是著名思想家、道家代表人物、兵法集大成者、纵横家的鼻祖，精通百家学问，因长期隐居蒙山鬼谷子村，故自称鬼谷先生，“王禅老祖”是后人对鬼谷子的称呼。孙瑞、孙恒昌、孙明文、孙兴本、孙龙花五代传承，通过挖掘、整理和传承鬼谷子文化，发扬光大了这一文化遗产。蒙山喜宴在平邑县凡遇嫁娶、添丁等喜庆事，喜主必设宴款待亲朋，这样的宴席称之为“喜宴”。喜宴是当地宴请的一种，通常有十大碗、粉头席（第一个主菜是豆腐皮炖粉条）、黑头席（第一个主菜是荤菜）、三大件、四大件、十三巧、吃桌看桌、三十二盘盘、四十八海碗等。喜宴不仅菜品考究，主、宾座次也十分讲究。对这一遗产研究比较有影响的有郭道兴、孙令富、孙令秀等人。
+	民间艺术平邑落子落子是平邑县的一种表演艺术，乐器主要由大钹（俗称“光光嚓子”）、竹板、节子等，不用弦乐，演唱时，左手拿大钹、右手拿竹板，运动自如。板式有慢板、中板、快板、急板、垛子等，情绪高亢激扬，风格独特，别具韵味。平邑落子唱为主、说为辅，曲调动听感人，具有较强的地方特色，唱腔为双句体结构，韵律长短句结合，较为押韵，大都一韵到底。表演中说唱者兼扮生、旦、净、丑等角色，另加身段、武功、口技等特技，融喜怒哀乐于一体，有“一人唱出一台戏”之称，颇受书迷赞赏。蔺勇奋、蔺兴田、蔺学全、蔺景旺四代传承，现收徒王洪生。
+	平邑渔鼓平邑渔鼓是一门说唱艺术，由一人演出，能扮演多种角色，曲调优雅，字句押韵，说唱结合，左手抱渔鼓，右手拿签板，主要体现在“三演对”——鼓、板、唱协调统一，唱法简单，通俗易懂，有节奏欢快、活泼、曲调亮亢、豪放等特点。1936年春，宋明海拜邵清传为师，其4个儿子耳濡目染自幼热爱曲艺渔鼓，现将渔鼓戏传给孙子宋学东。蒙山烙画葫芦蒙山烙画葫芦以陈氏葫芦烙画为代表，构图鲜活，技法灵巧，所烙制的葫芦作品有山水、人物、十二生肖等，栩栩如生，精妙绝伦，是珍贵的民间艺术瑰宝。这一技艺始于陈氏十一世祖陈广治（清嘉庆年间人）。陈广治为一代鸿儒，善书画、精工笔。蒙山葫芦烙画，由平邑陈氏十二世陈桂清传给十三世陈德禄、十四世陈宝楼、十五世陈汉臣，十六世陈宗诚病故于1996年，当今传人为十七世陈庆贵。蒙山剪纸艺术蒙山剪纸始于唐代，盛于明、清。当地有剪纸迎春的习俗，在立春日，剪纸为花、春蝶、春钱等。蒙山剪纸有很强的装饰性，图案多种多样——年节喜庆图案、门前花饰、灯彩花等，艺人仅凭一把剪刀、几张彩纸，就能剪出象征吉祥、如意、福寿、财喜等花样来。蒙山剪纸具有简练概括、夸张传神、善用比喻、谐音寓意、构思大胆、幽默取巧、富于装饰、应物赋形等审美特征。孙刘氏、孙瑞兰、宋常虹三代传承。
+	风景名胜播报编辑蒙山古称东蒙、东山，位于平邑县城北，主峰及60%的山峰均在平邑县境内，蒙山平邑龟蒙景区是国家AAAAA级旅游区、国家地质公园、国家森林公园、山东省十大最美的地方、山东省十大新景点、十佳山岳旅游区和十佳自驾车旅游区。主峰龟蒙顶海拔1156米，被誉为“岱宗之亚”。蒙山图册(4张)天宇自然博物馆山东省天宇自然博物馆是国家4A级旅游区，位于平邑县城莲花山路西段，2004年9月建成开放。陈列面积2.8万平方米。博物馆内设科研馆1处，4D动感影院1处，展厅28个，馆藏展品39万余件。先后被命名为“山东省科普教育基地”“山东省关心下一代科普教育基地”和“中国古生物科普教育基地”等。九间棚旅游区电影《沂蒙山人》拍摄基地——九间棚旅游区位于地方镇天宝梨乡，是“九间棚精神”的发源地，被誉为“亚洲最大的天然花园”。先后被评为全国生态文化村、全国文明村、全国村官教育基地、中国幸福村、国家农业旅游示范点、国家3A级旅游区、山东省旅游特色村、山东省党性教育基地。先后有9位党和国家领导人、120多位省部级领导到九间棚考察指导，300多万名党员干部群众到九间棚参观、学习，集中浓缩体现了平邑美丽乡村建设、“山村游”的发展成果。
+	曾子山自然风景区中国“孝”文化的发源地——曾子山旅游区，位于平邑县郑城镇境内，由南武城故城、曾子山、曾子墓园三大景区组成，是春秋时期孔子著名弟子“宗圣”曾子、曾点、澹台灭明，以及西晋政治家、军事家羊祜，书法家羊欣的故里，素有“鲁南奇葩”之称，被评为国家2A级旅游景区、省级地质公园。南武城故城被评为国家文物保护单位。曾子墓园由曾子墓、曾点墓组成。曾子山景区由曾子山、富贵顶、透明崮、印盒山等10多个山崮组成，山势俊朗峭拔、峰奇石怪，有“北方桂林”之称，是中国第五种岩石地貌景观——岱崮地貌集中观赏地之一。"
+wrap_mode = 1
+scroll_fit_content_height = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer4/HBoxContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SongName" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer/SongInfVBoxContainer" index="0"]
+text = "圣贤仲村"
+
+[node name="Music1HboxContainer2" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="7"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2" index="0"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="IconCenterContainer" type="CenterContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2" index="1"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2/IconCenterContainer" index="0"]
+material = SubResource("ShaderMaterial_p3m6p")
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+color = Color(0.905882, 0.666667, 0.482353, 1)
+
+[node name="MusicIconTextureRec" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2/IconCenterContainer" index="1"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = ExtResource("17_gmpbc")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SongInfVBoxContainer" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2" index="2"]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+
+[node name="SongName" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2/SongInfVBoxContainer" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "家在美丽山水间"
+
+[node name="Singer" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2/SongInfVBoxContainer" index="1"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("18_lqmpo")
+theme_override_font_sizes/font_size = 15
+
+[node name="Music2Button" type="Button" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2" index="3"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+size_flags_stretch_ratio = 1.5
+theme_override_styles/normal = SubResource("StyleBoxTexture_gbkm1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_n6s0t")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nkc1t")
+toggle_mode = true
+
+[node name="Music1HboxContainer3" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="8"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3" index="0"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="IconCenterContainer" type="CenterContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3" index="1"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3/IconCenterContainer" index="0"]
+material = SubResource("ShaderMaterial_p3m6p")
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+color = Color(0.905882, 0.666667, 0.482353, 1)
+
+[node name="MusicIconTextureRec" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3/IconCenterContainer" index="1"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = ExtResource("17_gmpbc")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SongInfVBoxContainer" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3" index="2"]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+
+[node name="SongName" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3/SongInfVBoxContainer" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "沂蒙小调连大嫂翻身"
+
+[node name="Singer" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3/SongInfVBoxContainer" index="1"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("18_lqmpo")
+theme_override_font_sizes/font_size = 15
+
+[node name="Music3Button" type="Button" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3" index="3"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+size_flags_stretch_ratio = 1.5
+theme_override_styles/normal = SubResource("StyleBoxTexture_gbkm1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_n6s0t")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nkc1t")
+toggle_mode = true
+
+[node name="Music1HboxContainer4" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="9"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4" index="0"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="IconCenterContainer" type="CenterContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4" index="1"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4/IconCenterContainer" index="0"]
+material = SubResource("ShaderMaterial_p3m6p")
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+color = Color(0.905882, 0.666667, 0.482353, 1)
+
+[node name="MusicIconTextureRec" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4/IconCenterContainer" index="1"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = ExtResource("17_gmpbc")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SongInfVBoxContainer" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4" index="2"]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+
+[node name="SongName" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4/SongInfVBoxContainer" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "沂蒙精神沂蒙兵"
+
+[node name="Singer" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4/SongInfVBoxContainer" index="1"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("18_lqmpo")
+theme_override_font_sizes/font_size = 15
+
+[node name="Music4Button" type="Button" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4" index="3"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+size_flags_stretch_ratio = 1.5
+theme_override_styles/normal = SubResource("StyleBoxTexture_gbkm1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_n6s0t")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nkc1t")
+toggle_mode = true
+
+[node name="Music1HboxContainer5" type="HBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer" index="10"]
+layout_mode = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5" index="0"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="IconCenterContainer" type="CenterContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5" index="1"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5/IconCenterContainer" index="0"]
+material = SubResource("ShaderMaterial_p3m6p")
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+color = Color(0.905882, 0.666667, 0.482353, 1)
+
+[node name="MusicIconTextureRec" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5/IconCenterContainer" index="1"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+texture = ExtResource("17_gmpbc")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SongInfVBoxContainer" type="VBoxContainer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5" index="2"]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+
+[node name="SongName" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5/SongInfVBoxContainer" index="0"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "金银花香飘天下"
+
+[node name="Singer" type="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5/SongInfVBoxContainer" index="1"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("18_lqmpo")
+theme_override_font_sizes/font_size = 15
+
+[node name="Music5Button" type="Button" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5" index="3"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+size_flags_stretch_ratio = 1.5
+theme_override_styles/normal = SubResource("StyleBoxTexture_gbkm1")
+theme_override_styles/hover = SubResource("StyleBoxTexture_n6s0t")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nkc1t")
+toggle_mode = true
+
+[node name="Audio1StreamPlayer" parent="Musics" index="0"]
+stream = ExtResource("16_2ahn3")
+
+[node name="Audio1StreamPlayer2" type="AudioStreamPlayer" parent="Musics" index="1"]
+stream = ExtResource("17_dkvip")
+
+[node name="Audio1StreamPlayer3" type="AudioStreamPlayer" parent="Musics" index="2"]
+stream = ExtResource("18_vcbt1")
+
+[node name="Audio1StreamPlayer4" type="AudioStreamPlayer" parent="Musics" index="3"]
+stream = ExtResource("19_svd3d")
+
+[node name="Audio1StreamPlayer5" type="AudioStreamPlayer" parent="Musics" index="4"]
+stream = ExtResource("20_fdgh0")
+
+[connection signal="toggled" from="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer/Music1Button" to="." method="_on_music_1_button_toggled"]
+[connection signal="toggled" from="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer2/Music2Button" to="." method="_on_music_2_button_toggled"]
+[connection signal="toggled" from="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer3/Music3Button" to="." method="_on_music_3_button_toggled"]
+[connection signal="toggled" from="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer4/Music4Button" to="." method="_on_music_4_button_toggled"]
+[connection signal="toggled" from="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer5/Music5Button" to="." method="_on_music_5_button_toggled"]

@@ -1,0 +1,102 @@
+[gd_scene load_steps=5 format=3 uid="uid://dhtu83p38eod0"]
+
+[ext_resource type="Texture2D" uid="uid://dw14cb72283b8" path="res://main/assets/texture/feixian/景点图片/大青山胜利突围纪念馆2.jpeg" id="1_siper"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kcksq"]
+bg_color = Color(1, 0.898039, 1, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s845i"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f60um"]
+bg_color = Color(0.541176, 0.568627, 0.886275, 0.823529)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+follow_viewport_enabled = true
+
+[node name="BackGround" type="Panel" parent="CanvasLayer"]
+custom_minimum_size = Vector2(1152, 700)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_kcksq")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/BackGround"]
+layout_mode = 0
+offset_right = 1155.0
+offset_bottom = 641.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/BackGround/ScrollContainer"]
+custom_minimum_size = Vector2(1152, 648)
+layout_mode = 2
+
+[node name="HeadLine" type="Panel" parent="CanvasLayer/BackGround/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_s845i")
+
+[node name="Label" type="Label" parent="CanvasLayer/BackGround/ScrollContainer/VBoxContainer/HeadLine"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "景点列表"
+horizontal_alignment = 1
+
+[node name="费县" type="Panel" parent="CanvasLayer/BackGround/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 190)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_f60um")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/BackGround/ScrollContainer/VBoxContainer/费县"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -516.5
+offset_right = 516.5
+offset_bottom = 187.0
+grow_horizontal = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/BackGround/ScrollContainer/VBoxContainer/费县/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/BackGround/ScrollContainer/VBoxContainer/费县/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "费县"
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/BackGround/ScrollContainer/VBoxContainer/费县/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource("1_siper")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="TextEdit" type="TextEdit" parent="CanvasLayer/BackGround/ScrollContainer/VBoxContainer/费县/HBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "111"

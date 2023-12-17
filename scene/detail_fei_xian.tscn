@@ -1,0 +1,103 @@
+[gd_scene load_steps=11 format=3 uid="uid://bajuxlgv3kf2r"]
+
+[ext_resource type="PackedScene" uid="uid://d3dikcgncjlkv" path="res://main/scene/DetailPage.tscn" id="1_n7af3"]
+[ext_resource type="Script" path="res://main/scene/detail_fei_xian.gd" id="2_2bq6i"]
+[ext_resource type="Texture2D" uid="uid://dw14cb72283b8" path="res://main/assets/texture/feixian/景点图片/大青山胜利突围纪念馆2.jpeg" id="2_i3fjk"]
+[ext_resource type="Texture2D" uid="uid://1ibhffqllujf" path="res://main/assets/texture/feixian/景点图片/大青山胜利突围纪念馆.jpeg" id="3_pbmw1"]
+[ext_resource type="Texture2D" uid="uid://b1ig6scku3xit" path="res://main/assets/texture/feixian/景点图片/抗大一分校旧址2.jpeg" id="5_cq6dc"]
+[ext_resource type="AudioStream" uid="uid://2dnr6sqq3kar" path="res://main/assets/sound/feixian/张凤英 - 沂蒙山小调(经典版).mp3" id="5_uf7b2"]
+[ext_resource type="Texture2D" uid="uid://g44jn02b1nfu" path="res://main/assets/texture/feixian/景点图片/抗大一分校旧址.jpeg" id="6_5bdyu"]
+[ext_resource type="Texture2D" uid="uid://dwcmiixom5vdq" path="res://main/assets/texture/feixian/景点图片/沂蒙山小调博物馆2.jpeg" id="7_jutwg"]
+[ext_resource type="Texture2D" uid="uid://qqgf3qaidk4u" path="res://main/assets/texture/feixian/景点图片/沂蒙山小调博物馆.jpeg" id="8_h18b5"]
+[ext_resource type="Texture2D" uid="uid://dxg1pable71g" path="res://main/assets/texture/feixian/景点图片/苏鲁豫皖边区特委纪念馆.jpeg" id="9_kd2gt"]
+
+[node name="DetailFeiXian" instance=ExtResource("1_n7af3")]
+script = ExtResource("2_2bq6i")
+ID = "FEIXIAN"
+
+[node name="TitleLabel" parent="TitleCanvasLayer/TitleHBoxContainer/TitlePanel" index="0"]
+text = "费县"
+
+[node name="ImgGridContainer" parent="ScrollContainer/WholeVBoxContainer/Imgs" index="0"]
+columns = 7
+
+[node name="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="0"]
+texture = ExtResource("2_i3fjk")
+
+[node name="TextureRect2" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_pbmw1")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextureRect3" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("5_cq6dc")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextureRect4" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="3"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("6_5bdyu")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextureRect5" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="4"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("7_jutwg")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextureRect6" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="5"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("8_h18b5")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TextureRect7" type="TextureRect" parent="ScrollContainer/WholeVBoxContainer/Imgs/ImgGridContainer" index="6"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("9_kd2gt")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="PlaceName" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Title_ButtonHBoxContainer" index="1"]
+text = "费 县"
+
+[node name="Label" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer" index="0"]
+text = "费县红色故事简介"
+
+[node name="TextEdit" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/DetailVBoxContainer/HBoxContainer" index="1"]
+text = "		费县1929年就建立了中国共产党的组织，抗战以来，全县1.2万多人参军，15.6万人支前，1700多人为国捐躯。而且在境内直接进行过大青山胜利突围、柱子山歼灭惯匪刘桂棠、解放费城等大小战斗上百次，共同谱写了一曲曲赞歌和创造了根据地文化、解放区文化，1939年11月上旬，中央军委关于抗大第一分校东迁山东抗日根据地就地培训山东抗日干部，同时对第一分校的领导进行调整，周纯全为校长，李培南为政治委员兼政治部主任，韦国清为副校长兼训练部长。
+		抗大第一分校在敌后办学7年多，其中在沂蒙山区学习、工作、战斗了6年多，为军队和地方培养干部2.4万余名。现有一一五师、抗大一分校和鲁南军直属卫生所旧址，陈毅、罗荣恒、徐向前、谷牧等老一辈革命家在这里战斗工作过，留下了光辉的足迹。1940年抗大一分校文工团团员阮若珊、李林于东蒙山下的白石屋创作的《沂蒙山小调》，已成为代表沂蒙革命历史文化的名曲和省级非物质文化遗产，6０多年来久唱不衰，在国内外产生了深远的影响。特别是发生在1941年的大青山突围战，被原国务院副总理谷牧称为“北有平型关，南有大青山”，大青山革命纪念地已被团中央命名为“全国青少年爱国主义教育基地”。
+四处代表红色景点：
+		1、沂蒙山小调活态博物馆
+		《沂蒙山小调》是山东省经典民歌，诞生于山东临沂沂蒙山望海楼脚下的费县薛庄镇白石屋村。它的前身是1940年由驻沂蒙山区抗大文工团团员李林和阮若珊等人采集创作的《反对黄沙会》。为了更好地保护和弘扬这一宝贵的文化资源，依托沂蒙山小调诞生地，以恢复1940年抗大一分校文工团在此生活时期的村落场景为核心，将白石屋村建成一个活态博物馆，每个院落就是一个展馆，具有文化展示和体验功能。主要建设抗大一分校文工团旧址、沂蒙精神馆、沂蒙历史馆、沂蒙风俗馆、沂蒙物产馆、沂蒙声音馆、沂蒙味道馆和沂蒙人家等。
+		2、大青山胜利突围纪念馆
+		费县大青山胜利突围纪念馆，国家AAA级景区，位于费县薛庄镇驻地北11公里处，占地200余亩，是费县依托“大青山胜利突围战遗址”等丰富的红色资源，打造的一处红色旅游景区。目前，已建成大青山胜利突围纪念馆、纪念碑、纪念广场、抗大碑林、纪念亭、烈士墓区及游客中心等多个参观景点。纪念馆采用“两馆一轴”布展方式，分为序厅、沂蒙烽火燃遍沂蒙、浴血青山胜利突围、蒙山沂水铭记殊功、军民一心水乳交融、薪火相传继往开来等部分，全面展示了1941年11月山东党政军民在大青山突围中浴血奋战、英勇杀敌的悲壮场景。该纪念馆是山东沂蒙党性教育基地现场教学点之一，并先后被评为“全国青少年教育基地”、“省级爱国主义教育基地”、第一批国家级抗战纪念设施、国家级烈士纪念设施。
+		3、苏鲁豫皖边区特委纪念馆
+		苏鲁豫皖边区特委纪念馆位于石井镇高桥村，距石井镇驻地南3公里，国家AA级景区，现为中共临沂党校教学科研基地、青岛理工大学师德教育基地、青少年教育基地。高桥村革命历史悠久，革命战争时期中共苏鲁豫皖特委在此设立，曾是鲁南革命战争的支点。纪念馆建成于2016年，以19世纪三十年代民居风格为基础，主要恢复修建了农民夜校、高桥小学、广德堂药店、展厅、乡村记忆图片展等21间，配套修建广场等设施。该纪念馆的建成，打造形成了“北有大青山教育基地、南有抱犊崮115师纪念园、中有苏鲁豫皖特委纪念馆”的党性教育基地新格局。
+		4、抗大一分校旧址
+		抗大一分校旧址位于费县大田庄乡五圣堂村。抗大一分校从1938年成立到1945年9月抗日战争胜利，办学总共7年，有6年时间是在沂蒙山区，其中较长时间是在费县境内活动。当时，抗大一分校司令部驻大田庄，后勤部驻紫荆关以北的几个村庄，政治部、文工团、民运工作团就驻扎在五圣堂村。为弘扬红色文化，重现当年抗大学员学习训练的场景，费县恢复建设了抗大一分校驻地旧址，将此处打造成为与大青山党性教育基地、周家庄三同教育基地相得益彰的红色教育示范点。"
+
+[node name="SongName" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer/SongInfVBoxContainer" index="0"]
+text = "沂蒙山小曲"
+
+[node name="Singer" parent="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer/SongInfVBoxContainer" index="1"]
+text = "张凤英"
+
+[node name="Audio1StreamPlayer" parent="Musics" index="0"]
+stream = ExtResource("5_uf7b2")
+
+[connection signal="toggled" from="ScrollContainer/WholeVBoxContainer/Det_MusicsVBoxContainer/Music1HboxContainer/Music1Button" to="." method="_on_music_1_button_toggled"]
