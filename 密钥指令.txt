@@ -1,0 +1,1 @@
+keytool -keyalg RSA -genkeypair -alias icecream -keypass 084631 -keystore AAAAA.keystore -storepass 084631 -dname "CN=icecream,O=Android,C=CN" -validity 9999 -deststoretype pkcs12
